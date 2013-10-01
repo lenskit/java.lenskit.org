@@ -1,0 +1,33 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    builder (3.2.2)
+    coderay (1.1.0)
+    colored (1.2)
+    cri (2.4.0)
+      colored (>= 1.2)
+    kramdown (1.1.0)
+    mini_portile (0.5.1)
+    mustache (0.99.4)
+    nanoc (3.6.5)
+      cri (~> 2.3)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    nokogiri (1.6.0-java)
+      mini_portile (~> 0.5.0)
+    sass (3.2.9)
+    systemu (2.5.2)
+
+PLATFORMS
+  java
+  ruby
+
+DEPENDENCIES
+  builder
+  coderay (>= 1.1.0)
+  kramdown
+  mustache
+  nanoc (>= 3.6.5)
+  nokogiri (>= 1.6.0)
+  sass
+  systemu

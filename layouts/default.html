@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LensKit Recommender Framework - <%= @item[:title] %></title>
+  <link rel="stylesheet" type="text/css"
+        href="/s/fonts/pt-sans/stylesheet.css">
+  <link rel="stylesheet" type="text/css"
+        href="/s/fonts/liberation/stylesheet.css">
+  <link rel="stylesheet" type="text/css"
+        href="/s/fonts/inconsolata/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+  <link rel="icon" type="image/png" href="/lenskit-mini.png">
+  <link type="application/atom+xml" rel="alternate" href="/news/feed.xml">
+  <script type="text/javascript" src="/s/modernizr.js"></script>
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'PT+Serif:400,400italic:latin', 'PT+Sans:400,700:latin', 'Inconsolata:400,700:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+  <!-- you don't need to keep this, but it's cool for stats! -->
+  <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
+  <!-- page: <%= @item.identifier %> -->
+</head>
+<body>
+<header>
+  <img id="logo" src="/logo.png" alt="LensKit" height="64" >
+  <nav>
+    <ul id="topnav" class="navbar">
+      <!-- FIXME Set the 'current' thing appropriately. -->
+      <% for navitem in @config[:navmenu] do %>
+      <li class="<%= nav_class(item, navitem) %>"><a href="<%= navitem[:url] %>"><%= navitem[:title] %></a>
+      <% end %>
+    </ul>
+  </nav>
+</header>
+
+<aside id="sidebar">
+  <div class="sidebox">
+    Latest version:
+    <a href="https://bintray.com/grouplens/lenskit-releases/lenskit/<%= lenskit.version %>/general"><%= lenskit.version %></a>
+    (<a href="./maven-site/releases/lenskit-<%= lenskit.version %>.html">release notes</a>)<br>
+    Fork it on
+    <a href="http://bitbucket.org/grouplens/lenskit">BitBucket</a> (includes wiki and bug tracker)<br>
+    <a href="https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit">Mailing List</a><br>
+  </div>
+
+  <div class="sidebox news-box">
+    <h1>Recent News</h1>
+    <% for nitem in sorted_articles[0..3] do %>
+    <ul class="news">
+      <li><a href="<%= nitem.path %>"><%= nitem[:title] %></a> <span class="date">(<%= item_date(nitem) %>)</span>
+    </ul>
+    <% end %>
+  </div>
+<% if @item.identifier == '/' || @item.identifier.start_with?('/news/') %>
+  <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <div class="twitterbox">
+    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/LensKitRS" data-widget-id="285782633399599104">Tweets by @LensKitRS</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+<% end %>
+</aside>
+
+<<%= @item[:wrapper] || "article" %> class="main">
+<%= yield %>
+</<%= @item[:wrapper] || "article" %>>
+
+<footer>
+  Copyright &copy; 2010&ndash;2013 Regents of the University of Minnesota. A project of
+  <a href="http://www.grouplens.org">GroupLens Research</a>.<br>
+  This work has been funded by NSF grants IIS 05-34939, IIS 08-08692, IIS 08-12148,
+  and IIS 10-17697.<br>
+  The views and opinions expressed in this page are strictly those of the page
+  author. The contents of this page have not been reviewed or approved by the
+  University of Minnesota.
+</footer>
+
+</body>
+</html>

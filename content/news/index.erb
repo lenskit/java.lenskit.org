@@ -1,0 +1,15 @@
+---
+title: News
+wrapper: section
+---
+
+<h1>LensKit News</h1>
+<div class="news-index">
+<% for news in sorted_articles do %>
+    <article class="item">
+      <h1><a href="<%= news.path %>"><%= news[:title] %></a>
+        <span class="date">(<%= item_date(news) %>)</span></h1>
+      <%= news.compiled_content(:snapshot => :pre) %>
+    </article>
+<% end %>
+</div>

@@ -1,0 +1,5 @@
+<% render 'default' do %>
+    <h1><%= @item[:title] %></h1>
+    <div class="meta">Published: <%= item_date(item) %></div>
+    <%= yield %>
+<% end %>

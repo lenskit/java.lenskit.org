@@ -1,0 +1,14 @@
+/jruby-bin-*.zip
+/jruby-*
+
+/output
+/tmp
+/bin
+/gems
+.sass-cache
+
+*.iml
+*.ipr
+*.iws
+/.idea
+/.idea_modules
