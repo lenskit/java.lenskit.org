@@ -6,6 +6,7 @@
 /bin
 /gems
 .sass-cache
+crash.log
 
 *.iml
 *.ipr
