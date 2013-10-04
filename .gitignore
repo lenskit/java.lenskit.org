@@ -1,5 +1,6 @@
 /jruby-bin-*.zip
 /jruby-*
+local.cfg
 
 /output
 /tmp
