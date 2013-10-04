@@ -44,16 +44,14 @@ Grape.  This is the recommended way to integrate LensKit as a library.
 
 ## Developing LensKit
 
-[BB]: https://bitbucket.org/grouplens/lenskit
-[README]: https://bitbucket.org/grouplens/lenskit/overview
+[GH]: https://github.com/grouplens/lenskit
 [ML]: https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit
 
 The latest development sources for LensKit are in our
-[Mercurial repository][BB] (hosted on BitBucket).  The [README][]
-contains documentation on how to start using the source code with
-various IDEs.
+[Git repository][GH] (hosted on GitHub).  The README contains
+documentation on how to start using the source code with various IDEs.
 
 We welcome patch submissions for LensKit. To submit a patch, just fork
-the repository on BitBucket, prepare your changes, and send a pull
+the repository on GitHub, prepare your changes, and send a pull
 request.  We also encourage you to discuss your proposed changes on the
 LensKit [mailing list][ml].
