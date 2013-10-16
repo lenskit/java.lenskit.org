@@ -4,7 +4,7 @@ title: Downloads
 
 # Download LensKit
 
-[release notes]: maven-site/releases/
+[release notes]: ../maven-site/releases/
 
 The latest version of LensKit is {{lenskit.version}}.  For an
 overview of changes in this release, see the
