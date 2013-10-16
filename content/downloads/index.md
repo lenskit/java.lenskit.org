@@ -8,7 +8,7 @@ title: Downloads
 
 The latest version of LensKit is {{lenskit.version}}.  For an
 overview of changes in this release, see the
-[release notes][].  All downloads are hosted on [Bintray](https://bintray.com/grouplens/lenskit-releases/lenskit/{{lenskit.version}}/general).
+[release notes][].
 
 [source.zip]: https://github.com/grouplens/lenskit/archive/lenskit-{{lenskit.version}}.zip
 [source.tgz]: https://github.com/grouplens/lenskit/archive/lenskit-{{lenskit.version}}.tar.gz

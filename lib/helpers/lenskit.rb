@@ -1,10 +1,10 @@
 module LenskitHelper
   class LensKit
     def version
-      "2.0.2"
+      "2.0.3.2"
     end
     def downloads
-      "http://dl.bintray.com/grouplens/lenskit-releases"
+      "http://files.grouplens.org/lenskit/releases"
     end
     def [](key)
       case key
