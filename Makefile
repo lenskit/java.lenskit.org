@@ -13,15 +13,17 @@ DEPLOY_TARGET ?= $(DEPLOY_PATH)
 endif
 
 JRUBY = ./$(JRUBY_DIR)/bin/jruby
-BUNDLE = ./$(JRUBY_DIR)/bin/bundle
-NANOC = ./bin/nanoc
+BUNDLE_SCRIPT = ./$(JRUBY_DIR)/bin/bundle
+BUNDLE = $(JRUBY) $(BUNDLE_SCRIPT)
+NANOC_SCRIPT = gems/jruby/1.9/bin/nanoc
+NANOC = $(BUNDLE) exec nanoc
 
-.PHONY: build bootstrap prune deploy clean very-clean
+.PHONY: build gems bootstrap prune deploy clean very-clean
 
 build: bootstrap
-	$(JRUBY) $(NANOC) compile
+	$(NANOC) compile
 
-bootstrap: $(NANOC)
+bootstrap: $(NANOC_SCRIPT)
 
 $(JRUBY_ZIPFILE):
 	wget -O $(JRUBY_ZIPFILE) $(JRUBY_URL)
@@ -33,14 +35,14 @@ $(JRUBY): $(JRUBY_ZIPFILE)
 	unzip -u $(JRUBY_ZIPFILE)
 	touch $(JRUBY)
 
-$(BUNDLE): $(JRUBY)
+$(BUNDLE_SCRIPT): $(JRUBY)
 	$(JRUBY) $(JRUBY_DIR)/bin/gem install bundler
 
-$(NANOC): $(BUNDLE) Gemfile
-	$(JRUBY) $(BUNDLE) install
+$(NANOC_SCRIPT): $(BUNDLE) Gemfile
+	$(BUNDLE) install
 
 prune:
-	$(JRUBY) $(NANOC) prune
+	$(NANOC) prune
 
 deploy: build
 	rsync -vrp --chmod=Dg+s,ug+w,Fo-w,+X output/ $(DEPLOY_TARGET)
