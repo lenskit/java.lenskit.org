@@ -1,0 +1,80 @@
+// inspired by http://blog.freeside.co/post/48926142330/using-sass-and-compass-with-gradle
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    jruby
+}
+
+dependencies {
+    jruby group: 'org.jruby', name: 'jruby-complete', version: '1.7.5'
+}
+
+ext {
+    bundlerDir = 'bundler'
+    bundlerScript = file("${bundlerDir}/bin/bundle")
+    bundlerGemPath = file("${bundlerDir}")
+}
+
+def getDeployTarget() {
+    if (!hasProperty('deployPath')) {
+        throw new RuntimeException("no deploy target specified")
+    }
+
+    if (hasProperty('deployHost')) {
+        return "${deployHost}:${deployPath}"
+    } else {
+        return deployPath
+    }
+}
+
+task installBundler(type: JavaExec) {
+    description "Set up Bundler."
+    classpath = configurations.jruby
+    main = "org.jruby.Main"
+    args '-S', 'gem', 'install', '-i', file(bundlerDir)
+    args '--no-ri', '--no-rdoc'
+    args 'bundler'
+
+    onlyIf {
+        !bundlerScript.exists()
+    }
+}
+
+task setup(type: JavaExec, dependsOn: installBundler) {
+    description "Set up site build dependencies."
+    inputs.file 'Gemfile'
+    outputs.file 'Gemfile.lock'
+    outputs.dir 'gems'
+
+    classpath = configurations.jruby
+    main = "org.jruby.Main"
+    environment('GEM_PATH', bundlerGemPath)
+    args bundlerScript, 'install'
+}
+
+task site(type: JavaExec, group: 'build', dependsOn: setup) {
+    description "Build the web site."
+    classpath = configurations.jruby
+    main = "org.jruby.Main"
+    environment('GEM_PATH', bundlerGemPath)
+    args bundlerScript, 'exec', 'nanoc', 'compile'
+}
+
+task deploy(type: Exec, dependsOn: site) {
+    executable = 'rsync'
+    args '-vrp', '--chmod=Dg+s,ug+w,Fo-w,+X'
+    args 'output/'
+    args deployTarget
+}
+
+task clean(type: Delete) {
+    delete 'output', 'tmp'
+}
+
+task veryclean(type: Delete, dependsOn: clean) {
+    description "Remove boostrapped stuff"
+    delete 'gems', bundlerDir
+}

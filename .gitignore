@@ -1,6 +1,7 @@
-/jruby-bin-*.zip
-/jruby-*
+/.gradle
+/bundler
 local.cfg
+gradle.properties
 
 /output
 /tmp
