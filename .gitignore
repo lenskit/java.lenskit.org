@@ -6,7 +6,8 @@ gradle.properties
 /output
 /tmp
 /bin
-/gems
+/ruby
+/.bundle
 .sass-cache
 crash.log
 
