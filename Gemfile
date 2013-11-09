@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
-source "http://rubygems.org"
+source "https://rubygems.org"
 
-gem "nanoc", ">= 3.6.5"
+gem "nanoc", ">= 3.6.6"
 gem "kramdown"
 gem "mustache"
 gem "sass"
