@@ -48,7 +48,7 @@ task site(type: GemExec, group: 'build') {
 
 task deploy(type: Exec, dependsOn: site) {
     executable = 'rsync'
-    args '-vrp', '--chmod=Dg+s,ug+w,Fo-w,+X'
+    args '-vrp', '--chmod=ug=rwX,o=rX'
     args 'output/'
     args deployTarget
 }

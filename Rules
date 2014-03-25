@@ -21,26 +21,6 @@ end
 compile '/s/*' do
 end
 
-compile '/news/feed/' do
-  filter :erb
-end
-
-route '/news/feed' do
-  '/news/feed.xml'
-end
-
-compile '/news/' do
-  filter :erb
-  layout 'default'
-  filter :relativize_paths, :type => :html
-end
-
-compile '/news/*' do
-  filter :kramdown
-  layout 'blog-entry'
-  filter :relativize_paths, :type => :html
-end
-
 compile '*' do
   if item.binary?
     # don’t filter binary items

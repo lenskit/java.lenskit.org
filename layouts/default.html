@@ -42,6 +42,7 @@
     <a href="https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit">Mailing List</a><br>
   </div>
 
+  <% if nil %>
   <div class="sidebox news-box">
     <h1>Recent News</h1>
     <% for nitem in sorted_articles[0..3] do %>
@@ -50,6 +51,7 @@
     </ul>
     <% end %>
   </div>
+  <% end %>
 <% if @item.identifier == '/' || @item.identifier.start_with?('/news/') %>
   <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
   <div class="twitterbox">
