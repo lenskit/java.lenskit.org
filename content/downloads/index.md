@@ -1,25 +1,25 @@
 ---
 title: Downloads
+version: 2.0.5
+baseUrl: http://files.grouplens.org/lenskit/releases
 ---
 
 # Download LensKit
 
 [release notes]: ../maven-site/releases/
 
-The latest version of LensKit is {{lenskit.version}}.  For an
+The latest version of LensKit is {{config.lenskitVersion}}.  For an
 overview of changes in this release, see the
 [release notes][].
 
-[source.zip]: https://github.com/grouplens/lenskit/archive/lenskit-{{lenskit.version}}.zip
-[source.tgz]: https://github.com/grouplens/lenskit/archive/lenskit-{{lenskit.version}}.tar.gz
+[bin.zip]: {{baseUrl}}/lenskit-{{version}}.zip
+[bin.tgz]: {{baseUrl}}/lenskit-{{version}}.tar.gz
+[source.zip]: {{baseUrl}}/lenskit-{{version}}-source.zip
+[source.tgz]: {{baseUrl}}/lenskit-{{version}}-source.tar.gz
 
-- [Binary archive]({{lenskit.downloads}}/lenskit-{{lenskit.version}}.tar.gz) (also
-  available as a [zip file]({{lenskit.downloads}}/lenskit-{{lenskit.version}}.zip)) —
-  contains LensKit JAR files, all dependencies, and scripts to run the
-  LensKit evaluator.
+- [Binary archive][bin.tgz] (also available as a [zip file][bin.zip] — contains LensKit JAR files, all dependencies, and scripts to run the LensKit evaluator.
 
-- [Source archive][source.tgz] (also available as a
-  [zip file][source.zip]).
+- [Source archive][source.tgz] (also available as a [zip file][source.zip]).
 
 ## Using Maven
 
@@ -32,13 +32,13 @@ Grape.  This is the recommended way to integrate LensKit as a library.
 <dependency>
   <groupId>org.grouplens.lenskit</groupId>
   <artifactId>lenskit-core</artifactId>
-  <version>{{lenskit.version}}</version>
+  <version>{{version}}</version>
 </dependency>
 <dependency>
   <groupId>org.grouplens.lenskit</groupId>
   <!-- replace with the appropriate algorithm module -->
   <artifactId>lenskit-knn</artifactId>
-  <version>{{lenskit.version}}</version>
+  <version>{{version}}</version>
 </dependency>
 ~~~~
 
