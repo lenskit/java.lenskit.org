@@ -10,7 +10,7 @@ baseUrl: http://files.grouplens.org/lenskit/releases
 
 [release notes]: ../maven-site/releases/
 
-The latest version of LensKit is {{config.lenskitVersion}}.  For an
+The latest version of LensKit is {{version}}.  For an
 overview of changes in this release, see the
 [release notes][].
 
