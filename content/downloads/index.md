@@ -1,6 +1,8 @@
 ---
 title: Downloads
 version: 2.0.5
+betaVersion: 2.1-M2
+betaTarget: 2.1
 baseUrl: http://files.grouplens.org/lenskit/releases
 ---
 
@@ -17,7 +19,7 @@ overview of changes in this release, see the
 [source.zip]: {{baseUrl}}/lenskit-{{version}}-source.zip
 [source.tgz]: {{baseUrl}}/lenskit-{{version}}-source.tar.gz
 
-- [Binary archive][bin.tgz] (also available as a [zip file][bin.zip] — contains LensKit JAR files, all dependencies, and scripts to run the LensKit evaluator.
+- [Binary archive][bin.tgz] (also available as a [zip file][bin.zip]) — contains LensKit JAR files, all dependencies, and scripts to run the LensKit evaluator.
 
 - [Source archive][source.tgz] (also available as a [zip file][source.zip]).
 
@@ -41,6 +43,24 @@ Grape.  This is the recommended way to integrate LensKit as a library.
   <version>{{version}}</version>
 </dependency>
 ~~~~
+
+{{#betaVersion}}
+## Prerelease Version
+
+LensKit {{betaTarget}} is currently under development.  If you want to use it without tracking {{betaTarget}}-SNAPSHOT or Git `master`, you can use version {{betaVersion}}:
+
+[beta.bin.zip]: {{baseUrl}}/lenskit-{{betaVersion}}.zip
+[beta.bin.tgz]: {{baseUrl}}/lenskit-{{betaVersion}}.tar.gz
+[beta.source.zip]: {{baseUrl}}/lenskit-{{betaVersion}}-source.zip
+[beta.source.tgz]: {{baseUrl}}/lenskit-{{betaVersion}}-source.tar.gz
+
+- [Binary archive][beta.bin.tgz] (also available as a [zip file][beta.bin.zip])
+
+- [Source archive][beta.source.tgz] (also available as a [zip file][beta.source.zip])
+
+LensKit {{betaVersion}} has also been pushed to Maven Central, so you can depend on it like a released version.
+
+{{/betaVersion}}
 
 ## Developing LensKit
 
