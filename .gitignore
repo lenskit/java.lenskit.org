@@ -1,13 +1,9 @@
-/.gradle
-/bundler
+/gems
 local.cfg
-gradle.properties
 
 /output
 /tmp
 /bin
-/ruby
-/.bundle
 .sass-cache
 crash.log
 
