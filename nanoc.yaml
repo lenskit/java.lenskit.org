@@ -98,4 +98,5 @@ navmenu:
 deploy:
   public:
     kind: rsync
-    dst: bento.cs.umn.edu:/web/research/lenskit.grouplens.org
+    options: ['-vrp', '--chmod=ug=rwX,o=rX']
+    dst: /web/research/lenskit.grouplens.org
