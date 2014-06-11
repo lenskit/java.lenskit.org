@@ -1,7 +1,7 @@
 ---
 title: Downloads
 version: 2.0.5
-betaVersion: 2.1-M2
+betaVersion: 2.1-M4
 betaTarget: 2.1
 baseUrl: http://files.grouplens.org/lenskit/releases
 ---
