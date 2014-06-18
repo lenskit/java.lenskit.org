@@ -1,8 +1,18 @@
 @import "settings";
 @import "foundation";
 
+header div{
+  @extend .text-center;
+  padding-top: 50px;
+  height: 200px;
+}
+
 .use-case .uc-header {
   @extend .text-center;
+  .uc-logo {
+    height: 120px;
+    width: 120px;
+  }
 }
 
 // Or selectively include components

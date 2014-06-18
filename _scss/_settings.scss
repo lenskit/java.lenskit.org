@@ -35,7 +35,7 @@
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+$row-width: 1300px;
 // $total-columns: 12;
 
 // Global
@@ -43,7 +43,7 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Liberation Serif', Georgia, serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -120,7 +120,7 @@
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: 'PT Sans', sans-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -151,7 +151,7 @@
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-// $paragraph-font-size: 1rem;
+$paragraph-font-size: 1.2rem;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
