@@ -44,7 +44,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Liberation Serif", Georgia, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -105,7 +105,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 1300px; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -1088,7 +1088,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: "Liberation Serif", Georgia, serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1507,7 +1507,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Liberation Serif", Georgia, serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2759,7 +2759,7 @@ kbd {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Liberation Serif", Georgia, serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3193,7 +3193,7 @@ ul.pagination {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: "Liberation Serif", Georgia, serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -3201,7 +3201,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: "Liberation Serif", Georgia, serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -3431,7 +3431,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: "Liberation Serif", Georgia, serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -3446,7 +3446,7 @@ dialog[open] {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: "Liberation Serif", Georgia, serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3554,7 +3554,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Liberation Serif", Georgia, serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -3766,7 +3766,7 @@ table {
 .text-right {
   text-align: right !important; }
 
-.text-center, .use-case .uc-header {
+.text-center, header div, .use-case .uc-header {
   text-align: center !important; }
 
 .text-justify {
@@ -3929,12 +3929,12 @@ a {
 p {
   font-family: inherit;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {
-    font-size: 1.21875rem;
+    font-size: 1.41875rem;
     line-height: 1.6; }
   p aside {
     font-size: 0.875rem;
@@ -3943,7 +3943,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -4012,7 +4012,7 @@ code {
 ul,
 ol,
 dl {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1.25rem;
   list-style-position: outside;
@@ -4221,7 +4221,7 @@ blockquote p {
       background: #efefef;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: "Liberation Serif", Georgia, serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background: #e1e1e1; }
@@ -4509,7 +4509,7 @@ meta.foundation-mq-topbar {
       color: white;
       padding: 12px 0 12px 0;
       padding-left: 15px;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: "Liberation Serif", Georgia, serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -4689,7 +4689,7 @@ meta.foundation-mq-topbar {
       background: #333333; }
 
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 1300px;
     margin: 0 auto;
     margin-bottom: 0; }
 
@@ -5397,3 +5397,10 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+header div {
+  padding-top: 50px;
+  height: 200px; }
+
+.use-case .uc-header .uc-logo {
+  height: 120px;
+  width: 120px; }
