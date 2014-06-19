@@ -5400,8 +5400,8 @@ nav.top-bar h1 {
   font-family: 'PT Sans Caption', 'PT Sans', sans-serif; }
 
 header div {
-  padding-top: 50px;
-  height: 200px; }
+  padding-top: 95px;
+  padding-bottom: 90px; }
 
 .use-case .uc-header .uc-logo {
   height: 120px;

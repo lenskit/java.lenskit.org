@@ -9,8 +9,8 @@ nav.top-bar {
 
 header div{
   @extend .text-center;
-  padding-top: 50px;
-  height: 200px;
+  padding-top: $topbar-height + 50px;
+  padding-bottom: $topbar-height + 45px;
 }
 
 .use-case .uc-header {
