@@ -15,6 +15,14 @@ header div{
   }
 }
 
+.project-info {
+  .read-more {
+    @extend .text-right;
+    font-style: italic;
+    font-size: $paragraph-font-size;
+  }
+}
+
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
