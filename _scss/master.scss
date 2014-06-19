@@ -21,6 +21,12 @@ pre {
   font-size: $paragraph-font-size;
 }
 
+article {
+  ul, ol {
+    margin-left: 2em;
+  }
+}
+
 .main {
   max-width: $row-width;
   margin: 0 auto;

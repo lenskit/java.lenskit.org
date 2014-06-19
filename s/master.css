@@ -5409,6 +5409,9 @@ header div {
 pre {
   font-size: 1.2rem; }
 
+article ul, article ol {
+  margin-left: 2em; }
+
 .main {
   max-width: 1300px;
   margin: 0 auto; }

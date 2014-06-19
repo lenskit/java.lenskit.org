@@ -1,2 +1,2 @@
 $(document).foundation();
-hljs.initHighlightingOnLoad();
+hljs.initHighlighting();

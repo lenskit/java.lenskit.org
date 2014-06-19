@@ -12,5 +12,8 @@ lenskit:
   next: 2.1
   downloadUrl: http://files.grouplens.org/lenskit
 
-maruku:
-  use_divs: true
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
