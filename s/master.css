@@ -5396,6 +5396,9 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+nav.top-bar h1 {
+  font-family: 'PT Sans Caption', 'PT Sans', sans-serif; }
+
 header div {
   padding-top: 50px;
   height: 200px; }

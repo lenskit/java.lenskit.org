@@ -1,6 +1,12 @@
 @import "settings";
 @import "foundation";
 
+nav.top-bar {
+  h1 {
+    font-family: 'PT Sans Caption', 'PT Sans', sans-serif;
+  }
+}
+
 header div{
   @extend .text-center;
   padding-top: 50px;
