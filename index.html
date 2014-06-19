@@ -1,3 +1,9 @@
+---
+title: Home
+layout: none
+header:
+  title: hide
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,19 +19,7 @@
 </head>
 <body>
 <div class="fixed">
-  <nav class="top-bar">
-    <ul class="title-area">
-      <li class="name"><h1><a href="#">LensKit</a></h1>
-    </ul>
-    <section class="top-bar-section">
-      <ul class="right">
-        <li><a href="/download.html">News</a>
-        <li><a href="/download.html">Download</a>
-        <li><a href="/download.html">Documentation</a>
-        <li><a href="/download.html">Research</a>
-      </ul>
-    </section>
-  </nav>
+  {% include menu.html %}
 </div>
 <header class="row">
   <div class="large-12 columns logo">
@@ -59,13 +53,13 @@
         <li><a href="http://search.maven.org/#artifactdetails|org.grouplens.lenskit|lenskit-all|2.1-M4|jar">Get from Maven Central</a>
         <li><a href="https://github.com/grouplens/lenskit">Get the source on GitHub</a>
       </ul>
-      <div class="read-more"><a href="download.html">More download information &rightarrow;</a></div>
+      <div class="read-more"><a href="download/">More download information &rightarrow;</a></div>
     </section>
     <section>
       <h2>Learn about LensKit</h2>
       <ul class='highlights'>
         <li><a href="http://www.youtube.com/watch?v=ug_JfORWK7w">Watch the video</a>
-        <li><a href="download.html">Read the documentation</a>
+        <li><a href="documentation">Read the documentation</a>
       </ul>
     </section>
     <section>

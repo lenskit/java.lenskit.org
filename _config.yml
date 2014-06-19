@@ -1,7 +1,16 @@
 exclude:
-    - Gemfile
-    - Gemfile.lock
-    - config.rb
-    - bower.json
-    - package.json
-    - Gruntfile.js
+  - Gemfile
+  - Gemfile.lock
+  - config.rb
+  - bower.json
+  - package.json
+  - Gruntfile.js
+
+lenskit:
+  version: 2.0.5
+  prerelease: 2.1-M4
+  next: 2.1
+  downloadUrl: http://files.grouplens.org/lenskit
+
+maruku:
+  use_divs: true

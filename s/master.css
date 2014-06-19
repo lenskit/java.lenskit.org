@@ -4003,8 +4003,8 @@ small {
   line-height: inherit; }
 
 code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-weight: bold;
+  font-family: Inconsolata, Consolas, Courier, monospace;
+  font-weight: normal;
   color: #bd260d; }
 
 /* Lists */
@@ -5399,9 +5399,19 @@ th.hide-for-touch {
 nav.top-bar h1 {
   font-family: 'PT Sans Caption', 'PT Sans', sans-serif; }
 
+body {
+  margin-top: 45px; }
+
 header div {
-  padding-top: 95px;
+  padding-top: 50px;
   padding-bottom: 90px; }
+
+pre {
+  font-size: 1.2rem; }
+
+.main {
+  max-width: 1300px;
+  margin: 0 auto; }
 
 .use-case .uc-header .uc-logo {
   height: 120px;

@@ -7,10 +7,23 @@ nav.top-bar {
   }
 }
 
+body {
+  margin-top: $topbar-height;
+}
+
 header div{
   @extend .text-center;
-  padding-top: $topbar-height + 50px;
+  padding-top: 50px;
   padding-bottom: $topbar-height + 45px;
+}
+
+pre {
+  font-size: $paragraph-font-size;
+}
+
+.main {
+  max-width: $row-width;
+  margin: 0 auto;
 }
 
 .use-case .uc-header {
