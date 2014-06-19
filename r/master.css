@@ -4431,7 +4431,7 @@ meta.foundation-mq-topbar {
       font-size: 1.0625rem;
       margin: 0; }
       .top-bar .name h1 a {
-        font-weight: normal;
+        font-weight: bold;
         color: white;
         width: 75%;
         display: block;
@@ -4508,12 +4508,12 @@ meta.foundation-mq-topbar {
       color: white;
       padding: 12px 0 12px 0;
       padding-left: 15px;
-      font-family: "Liberation Serif", Georgia, serif;
-      font-size: 0.8125rem;
+      font-family: "PT Sans", sans-serif;
+      font-size: 1rem;
       font-weight: normal;
       text-transform: none; }
       .top-bar-section ul li > a.button {
-        font-size: 0.8125rem;
+        font-size: 1rem;
         padding-right: 15px;
         padding-left: 15px;
         background-color: #008cba;
@@ -4548,7 +4548,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
           color: white; }
     .top-bar-section ul li > button {
-      font-size: 0.8125rem;
+      font-size: 1rem;
       padding-right: 15px;
       padding-left: 15px;
       background-color: #008cba;
