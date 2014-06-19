@@ -5404,6 +5404,10 @@ header div {
   height: 120px;
   width: 120px; }
 
+.project-info section {
+  margin-top: 1rem; }
+  .project-info section:first-child {
+    margin-top: 0; }
 .project-info .read-more {
   font-style: italic;
   font-size: 1.2rem; }

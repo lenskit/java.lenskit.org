@@ -16,6 +16,12 @@ header div{
 }
 
 .project-info {
+  section {
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
   .read-more {
     @extend .text-right;
     font-style: italic;
