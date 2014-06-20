@@ -98,45 +98,46 @@ textarea {
 select {
   width: 100%; }
 
-.row {
+.row, footer {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 1300px; }
-  .row:before, .row:after {
+  max-width: 62.5rem; }
+  .row:before, footer:before, .row:after, footer:after {
     content: " ";
     display: table; }
-  .row:after {
+  .row:after, footer:after {
     clear: both; }
-  .row.collapse > .column,
-  .row.collapse > .columns {
+  .row.collapse > .column, footer.collapse > .column,
+  .row.collapse > .columns,
+  footer.collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
-  .row.collapse .row {
+  .row.collapse .row, footer.collapse .row, .row.collapse footer, footer.collapse footer {
     margin-left: 0;
     margin-right: 0; }
-  .row .row {
+  .row .row, footer .row, .row footer, footer footer {
     width: auto;
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none; }
-    .row .row:before, .row .row:after {
+    .row .row:before, footer .row:before, .row footer:before, footer footer:before, .row .row:after, footer .row:after, .row footer:after, footer footer:after {
       content: " ";
       display: table; }
-    .row .row:after {
+    .row .row:after, footer .row:after, .row footer:after, footer footer:after {
       clear: both; }
-    .row .row.collapse {
+    .row .row.collapse, footer .row.collapse, .row footer.collapse, footer footer.collapse {
       width: auto;
       margin: 0;
       max-width: none; }
-      .row .row.collapse:before, .row .row.collapse:after {
+      .row .row.collapse:before, footer .row.collapse:before, .row footer.collapse:before, footer footer.collapse:before, .row .row.collapse:after, footer .row.collapse:after, .row footer.collapse:after, footer footer.collapse:after {
         content: " ";
         display: table; }
-      .row .row.collapse:after {
+      .row .row.collapse:after, footer .row.collapse:after, .row footer.collapse:after, footer footer.collapse:after {
         clear: both; }
 
 .column,
@@ -2220,23 +2221,32 @@ form {
   margin: 0 0 1rem; }
 
 /* Using forms within rows, we need to set some defaults */
-form .row .row {
+form .row .row, form footer .row, form .row footer, form footer footer {
   margin: 0 -0.5rem; }
-  form .row .row .column,
-  form .row .row .columns {
+  form .row .row .column, form footer .row .column, form .row footer .column, form footer footer .column,
+  form .row .row .columns,
+  form footer .row .columns,
+  form .row footer .columns,
+  form footer footer .columns {
     padding: 0 0.5rem; }
-  form .row .row.collapse {
+  form .row .row.collapse, form footer .row.collapse, form .row footer.collapse, form footer footer.collapse {
     margin: 0; }
-    form .row .row.collapse .column,
-    form .row .row.collapse .columns {
+    form .row .row.collapse .column, form footer .row.collapse .column, form .row footer.collapse .column, form footer footer.collapse .column,
+    form .row .row.collapse .columns,
+    form footer .row.collapse .columns,
+    form .row footer.collapse .columns,
+    form footer footer.collapse .columns {
       padding: 0; }
-    form .row .row.collapse input {
+    form .row .row.collapse input, form footer .row.collapse input, form .row footer.collapse input, form footer footer.collapse input {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
-form .row input.column,
+form .row input.column, form footer input.column,
 form .row input.columns,
+form footer input.columns,
 form .row textarea.column,
-form .row textarea.columns {
+form footer textarea.column,
+form .row textarea.columns,
+form footer textarea.columns {
   padding-left: 0.5rem; }
 
 /* Label Styles */
@@ -3765,7 +3775,7 @@ table {
 .text-right, .project-info .read-more {
   text-align: right !important; }
 
-.text-center, header div, .use-case .uc-header {
+.text-center, header div, footer, .use-case .uc-header {
   text-align: center !important; }
 
 .text-justify {
@@ -4404,7 +4414,7 @@ meta.foundation-mq-topbar {
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
-  .top-bar .row {
+  .top-bar .row, .top-bar footer {
     max-width: none; }
   .top-bar form,
   .top-bar input {
@@ -4688,7 +4698,7 @@ meta.foundation-mq-topbar {
       background: #333333; }
 
   .contain-to-grid .top-bar {
-    max-width: 1300px;
+    max-width: 62.5rem;
     margin: 0 auto;
     margin-bottom: 0; }
 
@@ -5413,8 +5423,12 @@ article ul, article ol {
   margin-left: 2em; }
 
 .main {
-  max-width: 1300px;
+  max-width: 62.5rem;
   margin: 0 auto; }
+
+footer {
+  color: #6f6f6f;
+  font-style: italic; }
 
 .use-case .uc-header .uc-logo {
   height: 120px;

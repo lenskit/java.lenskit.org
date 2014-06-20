@@ -1,59 +1,6 @@
 @import "settings";
 @import "foundation";
 
-nav.top-bar {
-  h1 {
-    font-family: 'PT Sans Caption', 'PT Sans', sans-serif;
-  }
-}
-
-body {
-  margin-top: $topbar-height;
-}
-
-header div{
-  @extend .text-center;
-  padding-top: 50px;
-  padding-bottom: $topbar-height + 45px;
-}
-
-pre {
-  font-size: $paragraph-font-size;
-}
-
-article {
-  ul, ol {
-    margin-left: 2em;
-  }
-}
-
-.main {
-  max-width: $row-width;
-  margin: 0 auto;
-}
-
-.use-case .uc-header {
-  @extend .text-center;
-  .uc-logo {
-    height: 120px;
-    width: 120px;
-  }
-}
-
-.project-info {
-  section {
-    margin-top: 1rem;
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-  .read-more {
-    @extend .text-right;
-    font-style: italic;
-    font-size: $paragraph-font-size;
-  }
-}
-
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
@@ -91,3 +38,64 @@ article {
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+nav.top-bar {
+  h1 {
+    font-family: 'PT Sans Caption', 'PT Sans', sans-serif;
+  }
+}
+
+body {
+  margin-top: $topbar-height;
+}
+
+header div{
+  @extend .text-center;
+  padding-top: 50px;
+  padding-bottom: $topbar-height + 45px;
+}
+
+pre {
+  font-size: $paragraph-font-size;
+}
+
+article {
+  ul, ol {
+    margin-left: 2em;
+  }
+}
+
+.main {
+  max-width: $row-width;
+  margin: 0 auto;
+}
+
+footer {
+  @extend .row;
+  @extend .text-center;
+  color: $subheader-font-color;
+  font-style: italic;
+}
+
+.use-case .uc-header {
+  @extend .text-center;
+  .uc-logo {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+.project-info {
+  section {
+    margin-top: 1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .read-more {
+    @extend .text-right;
+    font-style: italic;
+    font-size: $paragraph-font-size;
+  }
+}
+
