@@ -6,14 +6,21 @@ $('.side-nav li').each(function() {
   if (url === undefined || url.match('^(https?:)?\\/\\/')) {
     return;
   }
-  var pat;
-  if (url.charAt(0) == '/') {
-    pat = '^' + url;
+  var mode = $('a', this).attr('data-match');
+  var active = false;
+  if (mode === 'exact') {
+    active = url === window.location.pathname;
   } else {
-    pat = '(^|/)' + url;
+    var pat;
+    if (url.charAt(0) == '/') {
+      pat = '^' + url;
+    } else {
+      pat = '(^|/)' + url;
+    }
+    var regex = new RegExp(pat);
+    active = window.location.pathname.match(regex);
   }
-  var regex = new RegExp(pat);
-  if (window.location.pathname.match(regex)) {
+  if (active) {
     $(this).addClass('active');
   }
 });

@@ -3442,7 +3442,7 @@ dialog[open] {
   list-style-position: inside;
   font-family: "PT Sans", sans-serif; }
   .side-nav li {
-    margin: 0 0 0.4375rem 0;
+    margin: 0 0 0 0;
     font-size: 0.875rem; }
     .side-nav li a:not(.button) {
       display: block;
@@ -3454,7 +3454,7 @@ dialog[open] {
         color: #1cc7ff; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
-      font-weight: normal;
+      font-weight: bold;
       font-family: "PT Sans", sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
@@ -5407,7 +5407,7 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 nav.top-bar h1 {
-  font-family: 'PT Sans Caption', 'PT Sans', sans-serif; }
+  font-family: "PT Sans Caption", "PT Sans", sans-serif; }
 
 body {
   margin-top: 45px; }
@@ -5443,4 +5443,6 @@ footer {
   font-size: 1.2rem; }
 
 .side-nav .heading {
-  font-family: 'PT Sans Caption', 'PT Sans', sans-serif; }
+  font-family: "PT Sans Caption", "PT Sans", sans-serif; }
+  .side-nav .heading a {
+    font-family: "PT Sans Caption", "PT Sans", sans-serif !important; }

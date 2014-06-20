@@ -39,9 +39,10 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+$caption-font: 'PT Sans Caption', 'PT Sans', sans-serif;
 nav.top-bar {
   h1 {
-    font-family: 'PT Sans Caption', 'PT Sans', sans-serif;
+    font-family: $caption-font;
   }
 }
 
@@ -100,6 +101,11 @@ footer {
 }
 
 
-.side-nav .heading {
-  font-family: 'PT Sans Caption', 'PT Sans', sans-serif;
+.side-nav {
+  .heading {
+    font-family: $caption-font;
+    a {
+      font-family: $caption-font !important;
+    }
+  }
 }
