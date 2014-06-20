@@ -3440,7 +3440,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Liberation Serif", Georgia, serif; }
+  font-family: "PT Sans", sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -3455,7 +3455,7 @@ dialog[open] {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "Liberation Serif", Georgia, serif; }
+      font-family: "PT Sans", sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -5441,3 +5441,6 @@ footer {
 .project-info .read-more {
   font-style: italic;
   font-size: 1.2rem; }
+
+.side-nav .heading {
+  font-family: 'PT Sans Caption', 'PT Sans', sans-serif; }

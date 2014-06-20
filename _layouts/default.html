@@ -1,8 +1,15 @@
 ---
 layout: shell
 ---
+{% assign bodyWidth = "medium-12" %}
 <div class="row">
-  <article class="main small-12 columns">
+  {% if page.sidenav %}
+  {% assign bodyWidth = "medium-9" %}
+  <nav class="sidebar medium-3 columns">
+    {% include {{page.sidenav}} %}
+  </nav>
+  {% endif %}
+  <article class="main {{bodyWidth}} columns">
     {{content}}
   </article>
 </div>

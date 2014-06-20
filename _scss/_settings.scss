@@ -949,7 +949,7 @@ $code-font-weight: normal;
 // We use these to control list styles.
 // $side-nav-list-type: none;
 // $side-nav-list-position: inside;
-// $side-nav-list-margin: rem-calc(0 0 7 0);
+$side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
 // $side-nav-link-color: $primary-color;
@@ -958,7 +958,7 @@ $code-font-weight: normal;
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: $font-weight-normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;
-// $side-nav-font-family: $body-font-family;
+$side-nav-font-family: $header-font-family;
 // $side-nav-active-font-family: $side-nav-font-family;
 
 
