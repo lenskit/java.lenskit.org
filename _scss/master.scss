@@ -1,5 +1,9 @@
 @import "settings";
-@import "foundation";
+// @import "foundation";
+@import "foundation/components/grid";
+@import "foundation/components/type";
+@import "foundation/components/top-bar";
+@import "foundation/components/side-nav";
 
 // Or selectively include components
 // @import
