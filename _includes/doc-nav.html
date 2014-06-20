@@ -2,7 +2,9 @@
   <li class="heading">Documentation
   <li><a href="versioning/">Versioning</a>
   <li><a href="/releases/">Release Notes</a>
-  <li><a href="/apidocs/">API Docs (current)</a>
-  <li><a href="/apidocs/">API Docs (current)</a>
+  <li><a href="/apidocs/">API Docs ({{site.lenskit.version}})</a>
+  {%if site.lenskit.prerelease%}
+  <li><a href="/next/apidocs/">API Docs (milestone {{site.lenskit.prerelease}})</a>
+  {%endif%}
   <li><a href="/master/apidocs/">API Docs (development)</a>
 </ul>
