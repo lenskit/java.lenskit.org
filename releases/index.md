@@ -6,7 +6,7 @@ sidenav: rel-nav.html
 
 # LensKit Releases
 
--   [Release 2.1](./lenskit-2.1.html)
+-   [Release 2.1](./lenskit-2.1.html) (in progress)
 
 -   [Release 2.0.5](./lenskit-2.0.5.html)
 
