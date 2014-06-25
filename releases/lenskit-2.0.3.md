@@ -19,9 +19,9 @@ This is the third bugfix release in the 2.0 series.
 
 -   Small performance improvements.
 
--   Initial support for Top-N evaluation (#issue(388)).
+-   Initial support for Top-N evaluation (#388).
 
 
 ## Credits
 
-Thanks to #user("hmf") and #user("ethanl") for reporting bugs fixed in this release.
+Thanks to @hmf and @ethanl for reporting bugs fixed in this release.

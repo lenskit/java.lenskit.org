@@ -1,3 +1,6 @@
+gems:
+  - jekyll-mentions
+
 exclude:
   - Gemfile
   - Gemfile.lock
