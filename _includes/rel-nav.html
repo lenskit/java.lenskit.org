@@ -4,7 +4,7 @@
   {% assign relPages = site.pages | where:'version','release' %}
   {% assign sortedPages = relPages | sort: 'milestone' %}
   {% for rel in relPages %}
-  <li><a href="/releases/lenskit-{{rel.url}}.html">{{rel.title}}
+  <li><a href="{{rel.url}}">{{rel.title}}
     {% if rel == site.lenskit.next %}(in progress)
     {% elsif rel == site.lenskit.version %}(latest)
     {% endif %}
