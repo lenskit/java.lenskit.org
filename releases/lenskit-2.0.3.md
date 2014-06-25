@@ -19,7 +19,7 @@ This is the third bugfix release in the 2.0 series.
 
 -   Small performance improvements.
 
--   Initial support for Top-N evaluation (#388).
+-   Initial support for Top-N evaluation (grouplens/lenskit#388).
 
 
 ## Credits
