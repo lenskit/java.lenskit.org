@@ -1,0 +1,27 @@
+---
+layout: default
+sidenav: rel-nav.html
+---
+
+<h1>Release notes for LensKit {{page.version}}</h1>
+{% if page.snapshot %}
+{% capture changelog %}
+<a href="https://github.com/grouplens/lenskit/commits">Git changelog</a>
+{% endcapture %}
+{% else %}
+{% capture changelog %}
+<a href="https://github.com/grouplens/lenskit/commits/lenskit-{{page.version}}">Git changelog</a>
+{% endcapture %}
+{% endif %}
+
+<p>
+The {{changelog}}
+{% if page.milestone %}
+and the <a href="https://github.com/grouplens/lenskit/issues?milestone={{page.milestone}}&amp;state=closed">list of closed tickets and pull requests</a> provide
+{% else %}
+provides
+{% endif %}
+more information on what has happened, including bugs that have been fixed.
+</p>
+
+{{content}}
