@@ -21,3 +21,5 @@ There are several ways you can connect with LensKit, communicate with other user
 -   [Contribute on GitHub](https://github.com/grouplens/lenskit/), where we
     have the source code and issue tracker.  We take new contributions via
     GitHub pull requests.
+
+-   [Join the Zotero group](https://www.zotero.org/groups/lenskit).
