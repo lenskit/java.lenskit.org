@@ -120,12 +120,24 @@ footer {
         size: $paragraph-font-size;
     }
     padding: {
-        left: 2em;
-        right: 2em;
+        left: 2rem;
+        right: 2rem;
     }
     margin-bottom: $paragraph-margin-bottom;
 
-    .pub-title {
+    .pub-venue {
         font-style: italic;
+    }
+}
+
+aside {
+    font: {
+        style: italic;
+        size: $paragraph-aside-font-size;
+    }
+    margin-bottom: $paragraph-margin-bottom;
+    padding: {
+        left: 2rem;
+        right: 2rem;
     }
 }

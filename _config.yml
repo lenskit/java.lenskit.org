@@ -54,5 +54,5 @@ lenskit:
 markdown: kramdown
 
 kramdown:
-  input: GFM
+  input: kramdown
   hard_wrap: false
