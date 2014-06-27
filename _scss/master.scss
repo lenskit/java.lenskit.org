@@ -105,7 +105,6 @@ footer {
   }
 }
 
-
 .side-nav {
   .heading {
     font-family: $caption-font;
@@ -113,4 +112,20 @@ footer {
       font-family: $caption-font !important;
     }
   }
+}
+
+.citation {
+    line-height: 130%;
+    font: {
+        size: $paragraph-font-size;
+    }
+    padding: {
+        left: 2em;
+        right: 2em;
+    }
+    margin-bottom: $paragraph-margin-bottom;
+
+    .pub-title {
+        font-style: italic;
+    }
 }
