@@ -21,7 +21,5 @@ We also have a [versioning policy](versioning).
 
 LensKit is under continual development, so the documentation for the latest release may not be up-to-date with the latest developments in the LensKit source tree.  If you are using a prerelease milestone, tracking the latest `master` sources, or working on LensKit itself, we have some additional documentation:
 
-{%if site.lenskit.prerelease%}
-- [JavaDoc for {{site.lenskit.prerelease}}](/next/apidocs/), leading up to {{site.lenskit.next}}
-{%endif%}
+{%if site.lenskit.prerelease%}- [JavaDoc for {{site.lenskit.prerelease}}](/next/apidocs/), leading up to {{site.lenskit.next}}{%endif%}
 - [JavaDoc for current dev tree](/master/apidocs/) (built from the `master` branch by our continuous integration builds)
