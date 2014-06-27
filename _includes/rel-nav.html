@@ -1,10 +1,8 @@
 {% include doc-nav.html %}
 <ul class="side-nav">
   <li class="heading"><a href="/releases/" data-match="exact">Releases</a>
-  {% assign relPages = site.pages | where:'version','release' %}
-  {% assign sortedPages = relPages | sort: 'milestone' %}
-  {% for rel in relPages %}
-  <li><a href="{{rel.url}}">{{rel.title}}
+  {% for rel in site.lenskit.releases %}
+  <li><a href="/releases/lenskit-{{rel}}.html">Release {{rel}}
     {% if rel == site.lenskit.next %}(in progress)
     {% elsif rel == site.lenskit.version %}(latest)
     {% endif %}
