@@ -5,7 +5,7 @@ layout: default
 
 # Download LensKit
 
-[release notes]: /releases/
+[release notes]: /releases/lenskit-{{site.lenskit.version}}.html
 
 The latest version of LensKit is {{site.lenskit.version}}.  For an
 overview of changes in this release, see the
@@ -54,6 +54,8 @@ LensKit {{site.lenskit.next}} is currently under development.  If you want to us
 - [Source archive][beta.source.tgz] (also available as a [zip file][beta.source.zip])
 
 LensKit {{site.lenskit.prerelease}} has also been pushed to Maven Central, so you can depend on it like a released version.
+
+You may also want to consult the [release notes](../releases/lenskit-{{site.lenskit.next}}); note that they are likely incomplete.
 
 {{% endif %}}
 
