@@ -22,10 +22,9 @@ defaults:
       category: "news"
 
 lenskit:
-  version: 2.0.5
-  prerelease: 2.1-M4
-  next: 2.1
-  downloadUrl: http://files.grouplens.org/lenskit
+  version: 2.1
+  next: 2.2
+  downloadUrl: http://dl.bintray.com/lenskit/lenskit-releases
   releases:
     - 2.1
     - 2.0.5

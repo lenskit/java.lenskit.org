@@ -11,13 +11,12 @@ The latest version of LensKit is {{site.lenskit.version}}.  For an
 overview of changes in this release, see the
 [release notes][].
 
-[bin.zip]: {{site.lenskit.downloadUrl}}/lenskit-{{site.enskit.version}}.zip
+[bin.zip]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.zip
 [bin.tgz]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.tar.gz
-[source.zip]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}-source.zip
-[source.tgz]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}-source.tar.gz
+[source]: https://github.com/lenskit/lenskit/releases/tag/lenskit-{{site.lenskit.version}}
 
 - [Binary archive][bin.tgz] (also available as a [zip file][bin.zip]) — contains LensKit JAR files, all dependencies, and scripts to run the LensKit evaluator.
-- [Source archive][source.tgz] (also available as a [zip file][source.zip]).
+- Get the source from [GitHub][source].
 
 ## Using Maven
 
