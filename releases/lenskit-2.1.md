@@ -48,6 +48,9 @@ layout: release
     an instance binding to the particular DAO instance rather than attempting
     to let the injector instantiate the DAO.
 
+-   The JDBC DAO now caches query results.  The cache is configurable with
+    Guava's cache builders (#issue(541)).
+
 -   Implemented new `BinaryRatingDAO` to read ratings from a packed binary file
     of rating data.  Build a file with `BinaryRatingPacker` or the `pack` eval
     task.  The new CLI also provides a command to pack rating data.
