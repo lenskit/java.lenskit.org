@@ -42,7 +42,7 @@ Grape.  This is the recommended way to integrate LensKit as a library.
 </dependency>
 ```
 
-{{% if site.lenskit.prerelease %}}
+{% if site.lenskit.prerelease %}
 ## Prerelease Version {#prerelease}
 
 LensKit {{site.lenskit.next}} is currently under development.  If you want to use it without tracking {{site.lenskit.next}}-SNAPSHOT or Git `master`, you can use version {{site.lenskit.prerelease}}:
@@ -59,7 +59,7 @@ LensKit {{site.lenskit.prerelease}} has also been pushed to Maven Central, so yo
 
 You may also want to consult the [release notes](../releases/lenskit-{{site.lenskit.next}}); note that they are likely incomplete.
 
-{{% endif %}}
+{% endif %}
 
 ## Developing LensKit
 
