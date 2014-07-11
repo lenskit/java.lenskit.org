@@ -8,6 +8,9 @@ layout: release
 
 ## General Changes
 
+-   LensKit now uses Gradle (version 2.0) to build instead of Maven.  Artifacts
+    are still pushed to Maven Central.
+
 -   Added `lenskit-all` module so you can easily depend on all of LensKit with
     a single dependency.
 
@@ -51,18 +54,21 @@ layout: release
 
 -   Simple file rating DAO now trims spaces from fields (#590).
 
+-   XZ compression is now supported in most places that can compress or
+    decompress data.
+
 ## Configuration
 
 -   Added `LenskitRecommenderEngineBuilder` and
     `LenskitRecommenderEngineLoader`.
 
-    * Better interface for configuring build & load of recommender engines.
+    -   Better interface for configuring build & load of recommender engines.
 
-    * Allow multiple configurations to contribute to an engine.
+    -   Allow multiple configurations to contribute to an engine.
 
-    * Allow configurations to be removed (to remove e.g. DAOs from the model
-      graph) and re-added to support building & serializing a model with one
-      data access config and loading it with a different one.
+    -   Allow configurations to be removed (to remove e.g. DAOs from the model
+        graph) and re-added to support building & serializing a model with one
+        data access config and loading it with a different one.
 
 -   Added `addComponent` methods to configuration contexts (#issue(457)).  This
     is equivalent to binding a component type to itself, using it to supply
@@ -78,9 +84,9 @@ layout: release
 
 -   Support compression in recommender model serialization (#issue(527))
 
-    - Support writing recommenders to compressed files.
+    -   Support writing recommenders to compressed files.
 
-    - Auto-detect if a serialized recommender stream is compressed.
+    -   Auto-detect if a serialized recommender stream is compressed.
 
 -   Use Grapht 0.8.1.
 
@@ -160,19 +166,22 @@ of algorithms.
     rating normalization is per-item instead of per-user, this allows item-item
     builds to be more efficient.
 
-### SVD CF
-
 
 ### Matrix factorization
 
 -   Refactored FunkSVD to use vectorz vectors and matrices, and have
     factored-out code useful for other matrix factorization recommenders.
 
--   **Configuration change:** the FunkSVDItemScorer no longer returns the
-    baseline score for all Items. It now only returns scores for user-item
+-   **Configuration change:** the `FunkSVDItemScorer` no longer returns the
+    baseline score for all items. It now only returns scores for user-item
     pairs where the scorer has both a user and item vector. If you were relying
-    on the old behavior you can configure a FallbackItemScorer with
-    FunkSVDItemScorer as the primary scorer.
+    on the old behavior you can configure a `FallbackItemScorer` with
+    `FunkSVDItemScorer` as the primary scorer:
+
+    ```groovy
+    bind ItemScorer to FallbackItemScorer
+    bind (PrimaryScorer, ItemScorer) to FunkSVDItemScorer
+    ```
 
 ## Evaluator
 
@@ -201,7 +210,7 @@ of algorithms.
 
 -   Fixed escaping of GraphViz output (#issue(528)).
 
--   The evaluator now has Top-*N* precision and recall support.
+-   Added several Top-*N* metrics (precision and recall, mean reciprocal rank).
 
 -   We have rewritten the evaluator metrics to be easier to write and test.
 
@@ -212,11 +221,13 @@ of algorithms.
 
     - All entropy columns are renamed.
 
+-   `ExecutionInfo` now contains more data on the current execution.
+
 ## Data Structures
 
 -   LensKit now uses [vectorz](http://github.com/mikera/vectorz) for
     (non-sparse) vectors and matrices.  The `Vec` class and related classes are
-    deprecated.
+    deprecated and will be removed in LensKit 3.0.
 
 ## Utilities
 
