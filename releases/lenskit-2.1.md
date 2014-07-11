@@ -34,7 +34,7 @@ layout: release
 -   **Incompatible change:** The `SQLStatementFactory` interface no longer exposes user and item
     count statements (they were unused by all current DAOs).
 
--   **Incompatible chnage:** The `JDBCRatingDAO` is no longer injectable.  It cannot be safely
+-   **Incompatible change:** The `JDBCRatingDAO` is no longer injectable.  It cannot be safely
     constructed by the injector without lifecycle support in the LensKit recommender container
     (#issue(456)).  JDBC rating DAOs can still be injected into other components, but they should
     be configured with an instance binding to the particular DAO instance rather than attempting to
