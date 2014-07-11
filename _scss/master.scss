@@ -98,11 +98,16 @@ footer {
       margin-top: 0;
     }
   }
-  .read-more {
+}
+
+.read-more {
     @extend .text-right;
     font-style: italic;
     font-size: $paragraph-font-size;
-  }
+}
+
+.index article {
+    padding-left: 2rem;
 }
 
 .side-nav {

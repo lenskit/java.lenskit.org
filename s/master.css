@@ -1420,7 +1420,7 @@ th.hide-for-touch {
 .text-left {
   text-align: left !important; }
 
-.text-right, .project-info .read-more {
+.text-right, .read-more {
   text-align: right !important; }
 
 .text-center, header div, footer, .use-case .uc-header {
@@ -2525,9 +2525,13 @@ footer {
   margin-top: 1rem; }
   .project-info section:first-child {
     margin-top: 0; }
-.project-info .read-more {
+
+.read-more {
   font-style: italic;
   font-size: 1.2rem; }
+
+.index article {
+  padding-left: 2rem; }
 
 .side-nav .heading {
   font-family: "PT Sans Caption", "PT Sans", sans-serif; }
