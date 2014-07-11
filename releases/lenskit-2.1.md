@@ -208,6 +208,10 @@ of algorithms.
     creating 5 partitions, each with 10% of the users, instead of forcing
     (100/N)%) (#issue(512)).
 
+-   The evaluator supports binary packed files.  The `pack` task will pack a
+    data source, and the crossfolder will split to packed files if the
+    train/test file names end with `.pack`.
+
 -   Fixed escaping of GraphViz output (#issue(528)).
 
 -   Added several Top-*N* metrics (precision and recall, mean reciprocal rank).
