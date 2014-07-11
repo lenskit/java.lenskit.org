@@ -28,13 +28,13 @@ need to download anything — LensKit  is published to Maven Central, so
 just add  it as a  dependency in  Maven, Ivy, or  use it via  a Groovy
 Grape.  This is the recommended way to integrate LensKit as a library.
 
-```xml
+~~~xml
 <dependency>
   <groupId>org.grouplens.lenskit</groupId>
   <artifactId>lenskit-all</artifactId>
   <version>{{site.lenskit.version}}</version>
 </dependency>
-```
+~~~
 
 {% if site.lenskit.prerelease %}
 ## Prerelease Version {#prerelease}
