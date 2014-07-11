@@ -33,6 +33,11 @@ This list is also available as a [Zotero group collection][zotero].
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
+-   Michael D. Ekstrand. 2014. [*Towards Recommender Engineering: Tools and
+    Experiments for Identifying Recommender
+    Differences*](http://elehack.net/research/thesis). Ph.D thesis, University
+    of Minnesota.
+
 -   Joseph A. Konstan, J.D. Walker, D. Christopher Brooks, Keith Brown, and
     Michael D. Ekstrand. 2014. Teaching Recommender Systems at Large Scale:
     Evaluation and Lessons Learned from a Hybrid MOOC. In Proceedings of the
