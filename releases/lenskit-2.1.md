@@ -44,6 +44,8 @@ layout: release
     Build a file with `BinaryRatingPacker` or the `pack` eval task.  The new CLI also provides a
     command to pack rating data.
 
+-   Simple file rating DAO now trims spaces from fields (#590).
+
 ## Configuration
 
 -   Added `LenskitRecommenderEngineBuilder` and `LenskitRecommenderEngineLoader`.
