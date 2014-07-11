@@ -212,7 +212,8 @@ of algorithms.
 
 -   Added several Top-*N* metrics (precision and recall, mean reciprocal rank).
 
--   We have rewritten the evaluator metrics to be easier to write and test.
+-   We have rewritten the evaluator metric interfaces and implementations to be
+    easier to write and test.
 
 -   **Output change:** The names of several evaluator output columns have
     changed:
