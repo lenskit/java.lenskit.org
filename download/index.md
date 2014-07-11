@@ -31,13 +31,7 @@ Grape.  This is the recommended way to integrate LensKit as a library.
 ```xml
 <dependency>
   <groupId>org.grouplens.lenskit</groupId>
-  <artifactId>lenskit-core</artifactId>
-  <version>{{site.lenskit.version}}</version>
-</dependency>
-<dependency>
-  <groupId>org.grouplens.lenskit</groupId>
-  <!-- replace with the appropriate algorithm module -->
-  <artifactId>lenskit-knn</artifactId>
+  <artifactId>lenskit-all</artifactId>
   <version>{{site.lenskit.version}}</version>
 </dependency>
 ```
