@@ -14,8 +14,11 @@ overview of changes in this release, see the
 [bin.zip]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.zip
 [bin.tgz]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.tar.gz
 [source]: https://github.com/lenskit/lenskit/releases/tag/lenskit-{{site.lenskit.version}}
+[BinTray]: https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.lenskit.version}}/view
 
-- [Binary archive][bin.tgz] (also available as a [zip file][bin.zip]) — contains LensKit JAR files, all dependencies, and scripts to run the LensKit evaluator.
+- [Binary archive][bin.tgz] (also available as a [zip file][bin.zip]) —
+  contains LensKit JAR files, all dependencies, and scripts to run the LensKit
+  evaluator.  LensKit binaries are hosted on [BinTray][].
 - Get the source from [GitHub][source].
 
 ## Using Maven
