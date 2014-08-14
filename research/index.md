@@ -33,12 +33,12 @@ This list is also available as a [Zotero group collection][zotero].
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
--   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eigth ACM Conference on Recommender Systems* (RecSys '14). ACM.
+-   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM.
 
     This work uses [Rival](http://rival.recommenders.net/), a cross-framework
     recommender evaluation toolkit supporting LensKit, Mahout, and others.
 
--   Michael D. Ekstrand, F. Maxwell Harper, Martijn C. Willemsen, and Joseph A. Konstan. 2014. User Perception of Differences in Movie Recommendation Algorithms. In *Proceedings of the Eigth ACM Conference on Recommender Systems* (RecSys '14). ACM.
+-   Michael D. Ekstrand, F. Maxwell Harper, Martijn C. Willemsen, and Joseph A. Konstan. 2014. User Perception of Differences in Movie Recommendation Algorithms. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM.
 
 -   Michael D. Ekstrand. 2014. [*Towards Recommender Engineering: Tools and
     Experiments for Identifying Recommender
