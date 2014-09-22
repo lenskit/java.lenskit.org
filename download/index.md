@@ -5,16 +5,16 @@ layout: default
 
 # Download LensKit
 
-[release notes]: /releases/lenskit-{{site.lenskit.version}}.html
+[release notes]: /releases/lenskit-{{site.data.lenskit.version}}.html
 
-The latest version of LensKit is {{site.lenskit.version}}.  For an
+The latest version of LensKit is {{site.data.lenskit.version}}.  For an
 overview of changes in this release, see the
 [release notes][].
 
-[bin.zip]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.zip
-[bin.tgz]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.tar.gz
-[source]: https://github.com/lenskit/lenskit/releases/tag/lenskit-{{site.lenskit.version}}
-[BinTray]: https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.lenskit.version}}/view
+[bin.zip]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.zip
+[bin.tgz]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.tar.gz
+[source]: https://github.com/lenskit/lenskit/releases/tag/lenskit-{{site.data.lenskit.version}}
+[BinTray]: https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view
 
 - [Binary archive][bin.tgz] (also available as a [zip file][bin.zip]) —
   contains LensKit JAR files, all dependencies, and scripts to run the LensKit
@@ -32,26 +32,26 @@ Grape.  This is the recommended way to integrate LensKit as a library.
 <dependency>
   <groupId>org.grouplens.lenskit</groupId>
   <artifactId>lenskit-all</artifactId>
-  <version>{{site.lenskit.version}}</version>
+  <version>{{site.data.lenskit.version}}</version>
 </dependency>
 ~~~
 
-{% if site.lenskit.prerelease %}
+{% if site.data.lenskit.prerelease %}
 ## Prerelease Version {#prerelease}
 
-LensKit {{site.lenskit.next}} is currently under development.  If you want to use it without tracking {{site.lenskit.next}}-SNAPSHOT or Git `master`, you can use version {{site.lenskit.prerelease}}:
+LensKit {{site.data.lenskit.next}} is currently under development.  If you want to use it without tracking {{site.data.lenskit.next}}-SNAPSHOT or Git `master`, you can use version {{site.data.lenskit.prerelease}}:
 
-[beta.bin.zip]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.prerelease}}.zip
-[beta.bin.tgz]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.prerelease}}.tar.gz
-[beta.source.zip]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.prerelease}}-source.zip
-[beta.source.tgz]: {{site.lenskit.downloadUrl}}/lenskit-{{site.lenskit.prerelease}}-source.tar.gz
+[beta.bin.zip]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.prerelease}}.zip
+[beta.bin.tgz]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.prerelease}}.tar.gz
+[beta.source.zip]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.prerelease}}-source.zip
+[beta.source.tgz]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.prerelease}}-source.tar.gz
 
 - [Binary archive][beta.bin.tgz] (also available as a [zip file][beta.bin.zip])
 - [Source archive][beta.source.tgz] (also available as a [zip file][beta.source.zip])
 
-LensKit {{site.lenskit.prerelease}} has also been pushed to Maven Central, so you can depend on it like a released version.
+LensKit {{site.data.lenskit.prerelease}} has also been pushed to Maven Central, so you can depend on it like a released version.
 
-You may also want to consult the [release notes](../releases/lenskit-{{site.lenskit.next}}); note that they are likely incomplete.
+You may also want to consult the [release notes](../releases/lenskit-{{site.data.lenskit.next}}); note that they are likely incomplete.
 
 {% endif %}
 

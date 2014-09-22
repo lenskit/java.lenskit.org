@@ -7,10 +7,10 @@ sidenav: rel-nav.html
 # LensKit Releases
 
 <ul>
-{% for rel in site.lenskit.releases %}
+{% for rel in site.data.lenskit.releases %}
 <li><a href="/releases/lenskit-{{rel}}.html">Release {{rel}}
-  {% if rel == site.lenskit.next %}(in progress)
-  {% elsif rel == site.lenskit.version %}(latest)
+  {% if rel == site.data.lenskit.next %}(in progress)
+  {% elsif rel == site.data.lenskit.version %}(latest)
   {% endif %}
 </a>
 {% endfor %}
