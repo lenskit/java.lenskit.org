@@ -1,3 +1,9 @@
+---
+title: Slope-One
+---
+
+# Slope-One Recommenders
+
 [org.grouplens.lenskit.slopeone]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/slopeone/package-summary.html
 
 LensKit provides an implementation of the [Slope One](http://arxiv.org/abs/cs/0702144) rating prediction algorithm as part of the `lenskit-slopeone` module, in the [org.grouplens.lenskit.slopeone][] package.
