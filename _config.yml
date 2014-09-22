@@ -13,6 +13,12 @@ defaults:
     values:
       layout: "release"
   - scope:
+      path: "documentation"
+      type: pages
+    values:
+      layout: "default"
+      sidenav: doc-nav.html
+  - scope:
       path: "news"
     values:
       layout: "default"
