@@ -1,10 +1,13 @@
+---
+---
+
 @import "settings";
-// @import "foundation";
-@import "foundation/components/grid";
-@import "foundation/components/visibility";
-@import "foundation/components/type";
-@import "foundation/components/top-bar";
-@import "foundation/components/side-nav";
+@import "foundation";
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/type";
+// @import "foundation/components/top-bar";
+// @import "foundation/components/side-nav";
 
 // Or selectively include components
 // @import
@@ -56,7 +59,7 @@ body {
 }
 
 header div{
-  @extend .text-center;
+  text-align: center;
   padding-top: 50px;
   padding-bottom: $topbar-height + 45px;
 }
@@ -78,13 +81,13 @@ article {
 
 footer {
   @extend .row;
-  @extend .text-center;
+  text-align: center;
   color: $subheader-font-color;
   font-style: italic;
 }
 
 .use-case .uc-header {
-  @extend .text-center;
+  text-align: center;
   .uc-logo {
     height: 120px;
     width: 120px;
@@ -101,7 +104,7 @@ footer {
 }
 
 .read-more {
-    @extend .text-right;
+    text-align: text-right;
     font-style: italic;
     font-size: $paragraph-font-size;
 }
