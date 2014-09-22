@@ -9,6 +9,9 @@ layout: default
 [umncs]: http://www.cs.umn.edu
 
 LensKit is intended to be particularly useful in recommender systems research.
+See the [Experiment Quickstart](/documentation/evaluator/quickstart/) to get
+started using LensKit in your own research.
+
 If you publish research that uses LensKit, please cite:
 
 <div class="citation" markdown="span">
