@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="802.39282"
+   height="218.64291"
+   id="svg2">
+  <defs
+     id="defs4">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         id="path3850"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3853"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend-8"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3853-1"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend-7"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path3853-2"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(96.464287,-804.46924)"
+     id="layer1">
+    <rect
+       width="219.28571"
+       height="28.571432"
+       x="-95.714287"
+       y="894.505"
+       id="rect2987"
+       style="color:#000000;fill:#c8c8c8;fill-opacity:0.50196078;fill-rule:nonzero;stroke:#000000;stroke-width:1.49999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="14.714286"
+       y="914.2193"
+       id="text3757"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption"><tspan
+         x="14.714286"
+         y="914.2193"
+         id="tspan3781">ItemScorer</tspan></text>
+    <rect
+       width="242.14284"
+       height="52.857147"
+       x="188.57143"
+       y="805.21924"
+       id="rect3801"
+       style="color:#000000;fill:#c8c8c8;fill-opacity:0.50196078;fill-rule:nonzero;stroke:#000000;stroke-width:1.49999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="309.57141"
+       y="824.53577"
+       id="text3763"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption"><tspan
+         x="309.57141"
+         y="824.53577"
+         id="tspan3773">RatingPredictor</tspan><tspan
+         x="309.57141"
+         y="849.53577"
+         id="tspan3777">(SimpleRatingPredictor)</tspan></text>
+    <rect
+       width="255.71426"
+       height="52.857147"
+       x="183.21429"
+       y="969.505"
+       id="rect3801-6"
+       style="color:#000000;fill:#c8c8c8;fill-opacity:0.50196078;fill-rule:nonzero;stroke:#000000;stroke-width:1.49999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="309.57141"
+       y="987.39288"
+       id="text3769"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption"><tspan
+         x="309.57141"
+         y="987.39288"
+         id="tspan3771">ItemRecommender</tspan><tspan
+         x="309.57141"
+         y="1012.3929"
+         id="tspan3775">(TopNItemRecommender)</tspan></text>
+    <path
+       d="M 220.95432,217.14282 62.640516,170.71426"
+       transform="translate(0,752.36218)"
+       id="path3844"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <path
+       d="M 208.33338,105.71421 68.690439,142.14282"
+       transform="translate(0,752.36218)"
+       id="path4290"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-mid:none;marker-end:url(#Arrow1Lend)" />
+    <rect
+       width="219.28571"
+       height="28.571432"
+       x="485.89285"
+       y="894.255"
+       id="rect2987-2"
+       style="color:#000000;fill:#c8c8c8;fill-opacity:0.50196078;fill-rule:nonzero;stroke:#000000;stroke-width:1.49999988;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="595.71143"
+       y="915.10217"
+       id="text3757-5"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:PT Sans Caption;-inkscape-font-specification:PT Sans Caption"><tspan
+         x="595.71143"
+         y="915.10217"
+         id="tspan3781-1">Client App</tspan></text>
+    <path
+       d="M 638.88477,89.785765 504.3703,53.607145"
+       transform="translate(-96.464287,804.46924)"
+       id="path5327"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow1Lend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <path
+       d="M 645.4999,118.3572 493.56088,165.03576"
+       transform="translate(-96.464287,804.46924)"
+       id="path5329"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;marker-end:url(#Arrow1Lend);visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  </g>
+</svg>
