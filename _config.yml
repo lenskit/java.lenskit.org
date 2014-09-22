@@ -23,7 +23,3 @@ markdown: kramdown
 kramdown:
   input: kramdown
   hard_wrap: false
-
-sass:
-  load_paths:
-    - bower_components/foundation/scss
