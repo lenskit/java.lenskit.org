@@ -3,8 +3,6 @@ exclude:
   - Gemfile.lock
   - config.rb
   - bower.json
-  - package.json
-  - Gruntfile.js
 
 defaults:
   - scope:
