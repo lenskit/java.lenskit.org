@@ -11,9 +11,15 @@ sidenav: doc-nav.html
 We have prepared several resources to help you learn to use LensKit:
 
 - [Getting Started](getting-started/)
-- [Versioning policy](versioning).
+- [Experiment Quickstart](evaluator/quickstart/)
+- [Using Sparse Vectors](sparse-vectors/) — documentation on LensKit's sparse vector data structure
+- [Structure of an Algorithm](structure/)
+- [Configuring a LensKit Algorithm](configuration/)
+- [LensKit Algorithms](algorithms/)
+- [The LensKit Evaluator](evaluator/)
 - [Java API documentation](/apidocs/) for the current version
   ({{site.data.lenskit.version}}).
+- [Versioning policy](versioning).
 - The [LensKit wiki](http://github.com/lenskit/lenskit/wiki) has documentation
   on developing LensKit.
 
