@@ -13,7 +13,12 @@ We have prepared several resources to help you learn to use LensKit:
 - [Getting Started](http://github.com/grouplens/lenskit/wiki/GettingStarted)
 - The [manual](http://github.com/grouplens/lenskit/wiki/Manual) is
   a directory of help pages on the wiki.
-- [Java API documentation](/apidocs/) for the current version ({{site.lenskit.version}}).
+- [Java API documentation](/apidocs/) for the current version
+  ({{site.lenskit.version}}).
+- Chapter 3 of [Michael Ekstrand's
+  dissertation](http://elehack.net/research/thesis/) describes the design of
+  LensKit's, along with the motivations behind many of the design decisions.
+  It is recommended reading for people wanting to work on the LensKit code.
 
 We also have a [versioning policy](versioning).
 
