@@ -16,12 +16,12 @@ LensKit provides an implementation of [FunkSVD][], an SVD-like collaborative fil
 
 Configuring [FunkSVDItemScorer][] as your [ItemScorer][] implementation is the main thing to do to use FunkSVD.  There are, of course, other knobs you can tweak as well.  This configuration will train 25 features for 125 iterations each, using the default learning rate and regularization:
 
-```groovy
+~~~groovy
 bind ItemScorer to FunkSVDItemScorer
 bind BaselinePredictor to ItemUserMeanPredictor
 set FeatureCount to 25
 set IterationCount to 125
-```
+~~~
 
 
 ## Configuration Points
@@ -62,17 +62,17 @@ Here are some of the additional configuration points (‘@’ indicates a parame
 
 By default, all user-feature values are computed when the model is built and these pre-computed user profiles are used to generate scores.  The item scorer does, however, support updating (or computing fresh) the user's feature scores based on their most current profile.  To enable this, bind the `@RuntimeUpdate`-qualified update rule:
 
-```groovy
+~~~groovy
 bind (RuntimeUpdate, FunkSVDUpateRule) to FunkSVDUpdateRule
-```
+~~~
 
 You can also use context-sensitive bindings to customize runtime (score-time, as opposed to model-time) updating:
 
-```groovy
+~~~groovy
 within (RuntimeUpdate, FunkSVDUpdateRule) {
     bind StoppingCondition to ThresholdStoppingCondition
 }
-```
+~~~
 
 ## Diagram
 

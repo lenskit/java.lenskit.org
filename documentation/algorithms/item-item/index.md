@@ -12,7 +12,7 @@ LensKit provides flexible, performant implementation of item-item collaborative 
 
 The LensKit archetypes provide a basic item-item CF configuration that performs pretty well on the MovieLens data sets:
 
-```groovy
+~~~groovy
 // configure the item scorer
 bind ItemScorer to ItemItemScorer
 // set up a baseline predictor
@@ -21,7 +21,7 @@ bind (BaselineScorer,ItemScorer) to ItemMeanRatingItemScorer
 bind UserVectorNormalizer to BaselineSubtractingUserVectorNormalizer
 // the default neighborhood size is 20, so the next line isn't technically needed
 set NeighborhoodSize to 20
-```
+~~~
 
 ## Configuration points
 

@@ -6,12 +6,12 @@ LensKit provides an implementation of the [Slope One](http://arxiv.org/abs/cs/07
 
 The simplest way to use the Slope One algorithm in a recommender is to bind the `ItemScorer` class to `SlopeOneItemScorer`. A simple configuration for a Slope One recommender is given below:
 
-```groovy
+~~~groovy
 bind ItemScorer to SlopeOneItemScorer
 bind (BaselineScorer,ItemScorer) to UserMeanItemScorer
 bind (UserMeanBaseline,ItemScorer) to ItemMeanRatingItemScorer
 set DeviationDamping to 0.0d
-```
+~~~
 
 ## Using the Weighted Slope One Algorithm
 

@@ -16,7 +16,7 @@ capabilities.
 
 Let's start with an example:
 
-```groovy
+~~~groovy
 import org.grouplens.lenskit.knn.item.*
 import org.grouplens.lenskit.transform.normalize.*
 
@@ -51,7 +51,7 @@ trainTest {
 
     output "eval-results.csv"
 }
-```
+~~~
 
 Save this script in the ML-100K directory as `eval.groovy` and run `lenskit-eval` (included in the [LensKit binary distribution](http://lenskit.grouplens.org/downloads/) — not that this is *not* the same as the `lenskit-eval` Maven goal).
 
@@ -67,14 +67,14 @@ This script does a few things:
 
 You can then load `eval-results.csv` into R, Excel, LibreOffice, or your favorite data analysis tool to inspect and plot the algorithm performance.  So let's use R and draw a box plot of the per-user RMSE:
 
-```r
+~~~r
 library(ggplot2)
 library(data.table)
 results = data.table(read.csv("eval-results.csv"))
 ggplot(results[,list(RMSE=mean(RMSE.ByUser)),by=list(Algorithm,Partition)]) +
     aes(x=Algorithm, y=RMSE) +
     geom_boxplot()
-```
+~~~
 
 ![Per-user RMSE](eval-rmse.png)
 
@@ -93,7 +93,7 @@ In LensKit, the train-test evaluator builds and tests the algorithms on the data
 
 At the beginning of the `trainTest` block, we have the following:
 
-```groovy
+~~~groovy
 dataset crossfold("ml-100k") {
     source csvfile("u.data") {
         delimiter "\t"
@@ -104,7 +104,7 @@ dataset crossfold("ml-100k") {
         }
     }
 }
-```
+~~~
 
 This piece of code loads the main ratings file from the data set and prepares it for cross-validation.
 
@@ -118,7 +118,7 @@ The crossfolder operates on a data source.  In this case it is a CSV file (actua
 
 Next comes a pair of `algorithm` blocks specifying the algorithms to test:
 
-```groovy
+~~~groovy
 algorithm("PersMean") {
     bind ItemScorer to UserMeanItemScorer
     bind (UserMeanBaseline, ItemScorer) to ItemMeanRatingItemScorer
@@ -131,7 +131,7 @@ algorithm("ItemItem") {
         bind (BaselineScorer, ItemScorer) to ItemMeanRatingItemScorer
     }
 }
-```
+~~~
 
 Each algorithm has a name (‘PersMean’ and ‘ItemItem’).  The [algorithm configuration](../configuration/) is based on the concept of *bindings*: binding component interfaces (e.g. `ItemScorer`) to the desired implementations (e.g. `ItemItemScorer` for item-item collaborative filtering).
 
@@ -198,7 +198,7 @@ LensKit eval scripts can also define *targets* to allow complex evaluations to b
 
 Here's a rewrite of the script above to use targets:
 
-```groovy
+~~~groovy
 import org.grouplens.lenskit.knn.item.*
 import org.grouplens.lenskit.baseline.*
 import org.grouplens.lenskit.transform.normalize.*
@@ -247,7 +247,7 @@ target("evaluate") {
 }
 
 defaultTarget "evaluate"
-```
+~~~
 
 In this version, the actual tasks from before — `trainTest` and `crossfold` — are not run immediately.  They are run when the targets containing them are run.
 
@@ -292,13 +292,13 @@ Configuring a top-N metric is a bit more involved than a prediction accuracy met
 
 For example, to compute Top-N nDCG of 10-item lists over all items the user has not rated in the training set:
 
-```groovy
+~~~groovy
 metric topNnDCG {
     listSize 10
     candidates ItemSelectors.allItems()
     exclude ItemSelectors.trainingItems()
 }
-```
+~~~
 
 As of LensKit 2.0.3, the following Top-N metrics are available:
 
@@ -309,7 +309,7 @@ As of LensKit 2.0.3, the following Top-N metrics are available:
 
 Besides `trainTest`, the LensKit evaluator also supports `dumpGraph` task that writes a GraphViz file diagramming the configuration of an evaluator:
 
-```groovy
+~~~groovy
 dumpGraph {
     output "graph.dot"
     algorithm("PersMean") {
@@ -317,7 +317,7 @@ dumpGraph {
         bind (UserMeanBaseline, ItemScorer) to ItemMeanRatingItemScorer
     }
 }
-```
+~~~
 
 ## Further Reading
 

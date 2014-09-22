@@ -18,10 +18,10 @@ We have prepared several resources to help you learn to use LensKit:
 - [LensKit Algorithms](algorithms/)
 - [The LensKit Evaluator](evaluator/)
 - [Java API documentation](/apidocs/) for the current version
-  ({{site.data.lenskit.version}}).
-- [Versioning policy](versioning).
+  ({{site.data.lenskit.version}})
+- [Versioning policy](versioning)
 - The [LensKit wiki](http://github.com/lenskit/lenskit/wiki) has documentation
-  on developing LensKit.
+  on developing LensKit
 
 Additionally, Chapter 3 of [Michael Ekstrand's
 dissertation](http://elehack.net/research/thesis/) describes the design of

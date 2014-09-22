@@ -15,7 +15,7 @@ LensKit provides an implementation of user-user collaborative filtering, the ori
 
 Configuring [UserUserItemScorer][] as your [ItemScorer][] implementation is the main thing to do to use user-user CF.  There are, of course, other knobs you can tweak as well.  This configuration will use a basic user-user collaborative filter with mean-centered cosine similarity and 30 neighbors:
 
-```groovy
+~~~groovy
 bind ItemScorer to UserUserItemScorer
 // use item-user mean when user-user fails
 bind (BaselineScorer,ItemScorer) to UserMeanItemScorer
@@ -26,7 +26,7 @@ within (UserVectorNormalizer) {
     bind VectorNormalizer to MeanCenteringVectorNormalizer
 }
 set NeighborhoodSize to 30
-```
+~~~
 
 ## Configuration Points
 
@@ -49,14 +49,14 @@ Here are some of the additional configuration points (‘@’ indicates a parame
 
 The normalizers used for prediction (where user ratings are normalized, predictions generated, and then the resulting predictions denormalized) and for comparing users can be configured separately using context-sensitive configuration.  To change the normalization for similarity-finding and leave the predict normalization unchanged, you can do this:
 
-```groovy
+~~~groovy
 within (NeighborhoodFinder) {
     // use default normalizer, which uses a vector normalizer
     bind UserVectorNormalizer to DefaultUserVectorNormalizer
     // use the mean-variance normalizer
     bind VectorNormalizer to MeanVarianceVectorNormalizer
 }
-```
+~~~
 
 Unless you use anchored matching (`at` instead of `within`), you need to override the neighborhood finder, not the item scorer, since the item scorer depends on the neighborhood finder.
 
