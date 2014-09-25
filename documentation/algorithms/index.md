@@ -12,5 +12,5 @@ algorithms:
 - [Matrix factorization](svd)
 - [Slope-One](slope-one)
 
-The [recommender structure](../structure/) documentation describes the
+The [recommender structure](../basics/structure/) documentation describes the
 components common to all algorithms.

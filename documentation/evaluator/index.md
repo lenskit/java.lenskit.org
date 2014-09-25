@@ -141,8 +141,8 @@ The item-item CF algorithm (ItemItem) uses standard item-item collaborative filt
 
 For more on configuring algorithms, see:
 
--   [Algorithm Structure](../structure/) (describes the core components common to many algorithms, as well as LensKit baselines)
--   [Configuring LensKit](../configuration/)
+-   [Algorithm Structure](../basics/structure/) (describes the core components common to many algorithms, as well as LensKit baselines)
+-   [Configuring LensKit](../basics/configuration/)
 -   The documentation for various [algorithm families](../algorithms/)
 
 ### Metrics

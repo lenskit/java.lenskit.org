@@ -91,4 +91,4 @@ double score = pred.predict(42, 17);
 - [Configuring LensKit](../configuration/)
 - [How LensKit recommenders are structured](../structure/)
 - [Connecting to data sources](../data-access/)
-- [How to run an algorithm experiment](../evaluator/quickstart/)
+- [How to run an algorithm experiment](../../evaluator/quickstart/)
