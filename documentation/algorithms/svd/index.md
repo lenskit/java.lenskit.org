@@ -23,7 +23,6 @@ set FeatureCount to 25
 set IterationCount to 125
 ~~~
 
-
 ## Configuration Points
 
 As with all LensKit algorithms, the FunkSVD implementation is highly configurable to allow you to experiment with a wide variety of variants and configurations.  This section describes the primary configuration points for customizing the default components that drive the FunkSVD implementation.
@@ -38,12 +37,8 @@ Here are some of the additional configuration points (‘@’ indicates a parame
 [@BaselineScorer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/baseline/BaselineScorer.html
 [@FeatureCount]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/mf/funksvd/FeatureCount.html
 [@InitialFeatureValue]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/mf/funksvd/InitialFeatureValue.html
-[@UseTrailingEstimate]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/mf/funksvd/UseTrailingEstimate.html
 [@LearningRate]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/iterative/LearningRate.html
 [@RegularizationTerm]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/iterative/RegularizationTerm.html
-[ClampingFunction]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/clamp/ClampingFunction.html
-[IdentityClampingFunction]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/clamp/IdentityClampingFunction.html
-[RatingRangeClampingFunction]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/clamp/RatingRangeClampingFunction.html
 [org.grouplens.lenskit.iterative]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/iterative/package-summary.html
 [StoppingCondition]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/iterative/StoppingCondition.html
 [IterationCountStoppingCondition]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/iterative/IterationCountStoppingCondition.html
@@ -54,9 +49,15 @@ Here are some of the additional configuration points (‘@’ indicates a parame
 - [@InitialFeatureValue][] — the initial value to use for every user-feature and item-feature value.  The default of 0.1 is probably suitable for most applications.
 - [@LearningRate][] — the gradient descent learning rate.
 - [@RegularizationTerm][] — the coefficient on the regularization term used to prefer small user-feature and item-feature values.
-- [@UseTrailingEstimate][] – a boolean flag controlling whether trailing estimates are used when computing a feature.  If `true` (the default), then when training one feature, the initial feature value will be used for all features that have not yet been trained.  If `false`, then those values will be considered to be 0 and ignored.
-- [ClampingFunction][] — a function that will be applied to the prediction after each feature is added.  By default, this is the [identity function][IdentityClampingFunction]; you can also use [RatingRangeClampingFunction][].
 - [StoppingCondition][] — the condition used to stop the training loop for each feature.  The default stopping condition is [IterationCountStoppingCondition][], which stops after a fixed number of epochs (controlled by [@IterationCount][]).  There are other stopping conditions in [org.grouplens.lenskit.iterative][].
+
+By default, FunkSVD will clamp each feature's contribution to the rating range.  To disable this, hide the rating range:
+
+~~~groovy
+within (FunkSVDUpdateRule) {
+    bind PreferenceDomain to null
+}
+~~~
 
 ### Runtime Training
 
@@ -79,4 +80,3 @@ within (RuntimeUpdate, FunkSVDUpdateRule) {
 The FunkSVD algorithm is shown below:
 
 ![FunkSVD Components](funksvd.svg)
-    
