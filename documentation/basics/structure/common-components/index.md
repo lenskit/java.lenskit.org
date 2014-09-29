@@ -37,9 +37,3 @@ Certain components, defined in the `lenskit-api` module, are commonly provided b
 [LenskitRecommender]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/core/LenskitRecommender.html
 
 In addition to the public components, LensKit also provides many other components that are used in the LensKit implementations of the public components. These components can be accessed with the `get` method on [LenskitRecommender][].
-
-### Baseline Predictors
-
-[BaselinePredictor]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/baseline/BaselinePredictor.html
-
-The [BaselinePredictor][] interface provides a ''baseline predictor'', which is like a rating predictor but has a restricted interface (only taking a user rating vector as input) and guarantees that it can generate a prediction for all items.  It is commonly used as a fallback or a normalization for more sophisticated prediction algorithms.

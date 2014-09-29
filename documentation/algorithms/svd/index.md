@@ -18,7 +18,8 @@ Configuring [FunkSVDItemScorer][] as your [ItemScorer][] implementation is the m
 
 ~~~groovy
 bind ItemScorer to FunkSVDItemScorer
-bind BaselinePredictor to ItemUserMeanPredictor
+bind (BaselineScorer, ItemScorer) to UserMeanItemScorer
+bind (UserMeanBaseline, ItemScorer) to ItemMeanRatingItemScorer
 set FeatureCount to 25
 set IterationCount to 125
 ~~~
