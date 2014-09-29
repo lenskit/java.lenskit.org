@@ -27,7 +27,7 @@ Extenders
     is closely tied to them (re-implementing particularly internal components, etc.),
     or extends the evaluator.
 
-LensKit version numbers have three components, <Major.Minor.Patch>. The
+LensKit version numbers have three components, *Major.Minor.Patch*. The
 versioning is based on [Semantic Versioning](http://semver.org), adapted
 for the needs of a framework and toolkit.
 
