@@ -11,8 +11,8 @@ The latest version of LensKit is {{site.data.lenskit.version}}.  For an
 overview of changes in this release, see the
 [release notes][].
 
-[bin.zip]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.zip
-[bin.tgz]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.lenskit.version}}.tar.gz
+[bin.zip]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.version}}.zip
+[bin.tgz]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.version}}.tar.gz
 [source]: https://github.com/lenskit/lenskit/releases/tag/lenskit-{{site.data.lenskit.version}}
 [BinTray]: https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view
 
