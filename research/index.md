@@ -60,6 +60,8 @@ Is your project missing from this list? [Let us know](/connect/).
 
 -   Michael Ekstrand and John Riedl. 2012. [When Recommenders Fail: Predicting Recommender Failure for Algorithm Selection and Combination](https://elehack.net/research/pubs/when-recommenders-fail/). Short paper in *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 233-236. DOI=[10.1145/2365952.2366002](http://doi.acm.org/10.1145/2365952.2366002).
 
+-   Guimerà, R., Llorente, A., Moro, E. and Sales-Pardo, M., 2012. Predicting Human Preferences Using the Block Structure of Complex Social Networks. *PLoS ONE*, **7**(9), p.e44620. DOI=[10.1371/journal.pone.0044620](http://dx.doi.org/10.1371/journal.pone.0044620).
+
 -   Michael D. Ekstrand, Michael Ludwig, Joseph A. Konstan, and John T. Riedl. 2011. [Rethinking The Recommender Research Ecosystem: Reproducibility,
     Openness, and LensKit](https://elehack.net/research/pubs/lenskit). In
     *Proceedings of the Fifth ACM Conference on Recommender
