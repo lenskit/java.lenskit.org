@@ -41,6 +41,8 @@ Is your project missing from this list? [Let us know](/connect/).
     This work uses [Rival](http://rival.recommenders.net/), a cross-framework
     recommender evaluation toolkit supporting LensKit, Mahout, and others.
 
+-   Daniel Kluver and Joseph A. Konstan. 2014. Evaluating Recommender Behavior For New Users. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM.
+
 -   Michael D. Ekstrand, F. Maxwell Harper, Martijn C. Willemsen, and Joseph A. Konstan. 2014. User Perception of Differences in Movie Recommendation Algorithms. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM.
 
 -   Michael D. Ekstrand. 2014. [*Towards Recommender Engineering: Tools and
