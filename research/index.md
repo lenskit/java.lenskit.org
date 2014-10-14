@@ -38,11 +38,12 @@ Is your project missing from this list? [Let us know](/connect/).
 
 -   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI [10.1145/2645710.2645746](http://dx.doi.org/10.1145/2645710.2645746)
 
-    This work uses [Rival](http://rival.recommenders.net/), a cross-framework
-    recommender evaluation toolkit supporting LensKit, Mahout, and others.
+    This work introduces and uses [Rival](http://rival.recommenders.net/), a
+    cross-framework recommender evaluation toolkit supporting LensKit, Mahout,
+    and others.
 
--   Daniel Kluver and Joseph A. Konstan. 2014. Evaluating Recommender Behavior
-    For New Users. In *Proceedings of the Eighth ACM Conference on Recommender
+-   Daniel Kluver and Joseph A. Konstan. 2014. [Evaluating Recommender Behavior
+    For New Users](http://grouplens.org/recommending-for-new-users-is-surprisingly-difficult/). In *Proceedings of the Eighth ACM Conference on Recommender
     Systems* (RecSys '14). ACM. DOI [10.1145/2645710.2645742](http://dx.doi.org/10.1145/2645710.2645742).
 
 -   Michael D. Ekstrand, F. Maxwell Harper, Martijn C. Willemsen, and Joseph A.
