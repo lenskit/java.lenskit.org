@@ -14,8 +14,7 @@ defaults:
       path: "documentation"
       type: pages
     values:
-      layout: "default"
-      sidenav: doc-nav.html
+      layout: doc-page
   - scope:
       path: "news"
     values:
