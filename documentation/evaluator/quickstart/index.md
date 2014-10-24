@@ -4,120 +4,62 @@ title: Experiment Quickstart
 
 # Getting Started with the Evaluator
 
-> **Note:** the Maven archetypes are deprecated in favor of using Gradle to run
-> evaluations.  This page needs to be updated.
+The LensKit evaluator lets you train algorithms over data sets, measure their
+performance, and cross-validate the results for robustness.  This page
+describes how to get started using the evaluator for a simple experiment.
 
-LensKit provides two *archetypes* (Maven-speak for project templates) to make it easy to get started doing an offline recommender experiment.
-
--   `lenskit-archetype-simple-analysis` sets up a minimal evaluation
-    project that puts everything in the same directory.
--   `lenskit-archetype-fancy-analysis` creates a more sophisticated
-    project that uses the Maven `src` and `target` directory
-    structures appropriately, and can scale to multiple evaluation and
-    analysis scripts.
-
-You can also run LensKit directly, either with the `Main` class (in the `lenskit-cli` module) or the `lenskit` script in the binary distribution, from another build tool such as Ant, Gradle, or Make.  This page, however, shows you how to create and run an evaluation project with Maven.
+We will use the LensKit command line tool from the binary distribution to run
+the experiment.  You can also run experiments from more sophisticated build
+tools such as [Gradle](http://www.gradle.org).
 
 ## Prerequisites
 
-The archetypes generate projects that have a few external dependencies.  You can modify the resulting projects to remove or alter many of these dependencies.  The requirements are:
+To run the evaluator, you'll need the following:
 
-- Apache Maven (version 3 or later)
-- Java 6 or later (Java 7 or later is best)
-- Python with [Pandas](http://pandas.pydata.org/) and matplotlib to run the included analysis scripts.  You can replace these with analysis scripts in your tool of choice, such as [R](http://www.r-project.org/).
-- For the fancy archetype: a LaTeX installation with `pdflatex`.  Remove the LaTeX plugin from the generated POM file to remove this requirement.
+- Java 6 or later (Java 7 or later is best).
+- The [LensKit binary distribution](https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view).
+- A tool for analyzing the results.  For this example, we will use [R][] with [ggplot2][].
+- The [MovieLens 100K](http://grouplens.org/datasets/movielens/) data set.
 
-## Creating a project
+[R]: http://www.r-project.org/
+[ggplot2]: http://cran.r-project.org/web/packages/ggplot2/index.html
 
-### From the command line
+## Creating the Evaluation Script
 
-To create the project from the command line using the simple archetype, run:
+The core of an experiment is the evaluation script, typically called `eval.groovy`:
 
-    mvn archetype:generate \
-      -DarchetypeGroupId=org.grouplens.lenskit \
-      -DarchetypeArtifactId=lenskit-archetype-simple-analysis \
-      -DarchetypeVersion=2.0.5 \
-      -DinteractiveMode=no \
-      -DgroupId=org.your.group \
-      -DartifactId=your-project-name \
-      -Dversion=0.1
+<script src="https://gist.github.com/elehack/4f86eb836dc4ed35e995.js"></script>
 
-The first three definitions are the specification of the archetype you
-wish to use to create the new project.  They should all be exactly as
-typed above, except possibly for `archetypeArtificatId`, which should
-be the simple or fancy archetype, as you prefer, and
-`archetypeVersion`, which should be the current version of the
-archetype.  (Hint: this is the same as your current LensKit version.)
 
-The last three definitions are the specification of the new project
-you are creating.  In general they can be anything you want.
+Unpack your MovieLens data set (your current directory should have an `eval.groovy` file and a `ml-100k` directory), and run the script:
 
-For cut-and-paste convenience, here's an unformatted version of the same command-line:
+```
+$ lenskit eval
+```
 
-    mvn archetype:generate -DarchetypeGroupId=org.grouplens.lenskit -DarchetypeArtifactId=lenskit-archetype-simple-analysis -DarchetypeVersion=2.0.5 -DinteractiveMode=no -DgroupId=org.your.group -DartifactId=your-project-name -Dversion=0.1
+This does does a few things:
 
-Maven will run for a while, after which `your-directory-name` will
-exist, populated with your new project!
+1.  Splits the MovieLens 100K data set into 5 partitions for cross-validation.
+    These partitions are stored under `ml-100k-crossfold`.
+2.  Generates predictions for test user/item pairs using three algorithms:
+    personalized mean, item-item CF, and Funk-SVD.
+3.  Evaluates these two algorithms with three metric families: coverage, RMSE,
+    and nDCG.
+4.  Writes the evaluation results to `eval-results.csv`, one row for
+    each combination of algorithm and fold.
 
-### From Eclipse
+## Analyzing the Output
 
-Select ‘File → New → Project …’.  In the New Project dialog make sure
-‘Create a simple project’ is *unchecked*, so you can choose an
-archetype.  On the next dialog click the box ‘Include snapshot
-archetypes’ if you want the latest lenskit archetypes, and filter for
-‘lenskit’.  Choose the lenskit archetype you want to use to create
-your project.
+LensKit produces a CSV file containing the evaluation results.  This can be
+analyzed with your choice of tool, for example R:
 
-## Running the Project
+{% gist 14e07223ccca80860aed %}
 
-Run `mvn lenskit-publish` to run all the LensKit evaluation phases.
-This will prepare the data set, run the LensKit evaluator, analyze the
-results with a Python script, and (in the fancy archetype) compile a
-LaTeX document embedding the charts.
+This will produce a box plot of per-user RMSE:
 
-## Experimenting
+![Per-user RMSE box plot](results.png)
 
-The LensKit algorithms and data sets are defined in `eval.groovy`.  Modify this file to change the configurations and add new algorithms.
+## Further Reading
 
-## Fancy Archetype Layout
-
-This archetype is to build more sophisticated projects for doing
-analysis of recommender algorithms.  The key locations are:
-
-- `src/eval`: The key scripts that will be run as part of the evaluation.
-- `target/data`: the location of the MovieLens data files, and the crossfolds.
-- `target/analysis`: the location of the data files output by the evaluation, and the `.pdf` charts generated by the R script.
-
-This archetype is for projects that do all three phases, and that
-organize the input and output according to maven best practices.  All
-of the scripts for the eval are in the src/eval directory.  Each
-script takes in some input data, and produces some output data.  The
-archetype is intended to be used with the following structure:
-
-- `lenskit-pre-eval`: gets data into the target/data directory.  The 
-  ant script in src/eval/get-data.xml is used to fetch the data.
-- `lenskit-eval`: takes data from the target/data directory and creates
-  a set of crossfold datasets also in target/data.  Runs an evaluation
-  script in src/eval/eval.groovy, which operates on the crossfold data
-  in target/data, and produces output in target/analysis.
-- `lenskit-analysis`: runs an R script, producing more output in target/analysis.
-
-The key user files that you are likely to want to edit are:
-- `pom.xml`: to change the value of grouplens.mldata.acknowledgement, 
-  or to change the dataset that is downloaded.
-- `src/eval/get-data.xml`: to change the dataset that is downloaded.  
-  May require changes in pom.xml as well.
-- `src/eval/eval.groovy`: to change the lenskit evaluation that is run, 
-  perhaps by configuring different recommenders.
-- `src/eval/chart.R`: to change the analysis of the output data in target/analysis,  
-  perhaps including the charts that are generated.
-
-This structure fits the Maven model: all input files are in the src
-tree, and all generated files are in the target tree, where they may
-be cleaned by the clean target.
-
-You can run the fancy archetype the same way as the simple archetype (above) -- though the result files will be put in slightly different places.
-
-## More Reading
-
-- [Evaluator documentation](../)
+- This whole project can be [cloned from GitHub](https://github.com/lenskit/simple-eval-demo/).
+- [Evaluator documentation](../).
