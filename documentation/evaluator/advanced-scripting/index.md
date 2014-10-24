@@ -24,7 +24,7 @@ tell it to run a specific script file with the `-f` command line option.
 
 LensKit eval scripts can also define *targets* to allow complex evaluations to be run in a piecewise fashion.  A target is just like a target in other tools like Ant and make: it is a named sequence of tasks to run.  Targets can also depend on other targets.
 
-Here's a rewrite of the script above to use targets:
+Here's a rewrite of the [example script](../quickstart/) to use targets:
 
 ~~~groovy
 import org.grouplens.lenskit.knn.item.*
