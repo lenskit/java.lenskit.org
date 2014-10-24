@@ -10,16 +10,16 @@ LensKit has many different interfaces and components, so it can seem a bit hard 
 
 The heart of most LensKit recommender algorithms is the `ItemScorer`.  If you are trying to implement a new algorithm for LensKit, and it's a traditional score-the-items, pick-the-top-*N* recommender, you probably want to implement an `ItemScorer`.
 
-[ItemScorer]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/ItemScorer.html
+[ItemScorer]: http://lenskit.org/apidocs/org/grouplens/lenskit/ItemScorer.html
 
 [ItemScorer][]s provide user-personalized scores for items.  These scores could be anything; they could be predicted ratings, purchase probabilities, TF-IDF cosine similarity between the item and the user's profile, or whatever method the underlying algorithm uses to score algorithms.  The only restriction on the output of an item scorer is that higher scores should be ‘better’ in whatever sense the scorer measures.
 
 ## Predicting Ratings
 
-[RatingPredictor]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/RatingPredictor.html
-[SimpleRatingPredictor]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/basic/SimpleRatingPredictor.html
-[PreferenceDomain]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/pref/PreferenceDomain.html
-[RatingPredictorItemScorer]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/basic/RatingPredictorItemScorer.html
+[RatingPredictor]: http://lenskit.org/apidocs/org/grouplens/lenskit/RatingPredictor.html
+[SimpleRatingPredictor]: http://lenskit.org/apidocs/org/grouplens/lenskit/basic/SimpleRatingPredictor.html
+[PreferenceDomain]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/pref/PreferenceDomain.html
+[RatingPredictorItemScorer]: http://lenskit.org/apidocs/org/grouplens/lenskit/basic/RatingPredictorItemScorer.html
 
 If you want to present rating predictions to users, you want use a [RatingPredictor][].  Rating predictors are like scorers (in fact, the API is entirely parallel), but their output is predicted ratings in whatever rating scale you use.  With the `ItemScorer` and `RatingPredictor` interfaces, LensKit breaks the rating prediction task into two pieces.  The `ItemScorer` is responsible for computing some kind of score, and the `RatingPredictor` maps those scores onto the rating range.
 
@@ -33,8 +33,8 @@ If you have a rating predictor and want to use it as an item scorer, the [Rating
 
 ## Top-N Recommendation
 
-[ItemRecommender]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/ItemRecommender.html
-[TopNItemRecommender]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/TopNItemRecommender.html
+[ItemRecommender]: http://lenskit.org/apidocs/org/grouplens/lenskit/ItemRecommender.html
+[TopNItemRecommender]: http://lenskit.org/apidocs/org/grouplens/lenskit/TopNItemRecommender.html
 
 The [ItemRecommender][] interface provides Top-N recommendation.  Given a user ID, it produces lists of recommended items.
 

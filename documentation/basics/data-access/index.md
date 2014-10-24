@@ -14,8 +14,8 @@ LensKit's data access is all read-only.  LensKit does not provide any facilities
 
 The core element of LensKit's data model is an *event*, represented by the [Event][] interface.  An event is an action that occured between a user and an item, optionally with a timestamp.  One type of event is a [Rating][], where the user applies a preference to an item (or removes it).  Applications can define additional types of events; all event types must extend the Event interface.
 
-[Event]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/event/Event.html
-[Rating]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/event/Rating.html
+[Event]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/event/Event.html
+[Rating]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/event/Rating.html
 
 Users and items are both represented by `long` IDs.  LensKit places no restrictions on these IDs; they can be any long, positive or negative.
 
@@ -25,13 +25,13 @@ Several of the DAO methods return [Cursor][] objects.  A Cursor is just like an 
 
 In the data access layer, a method named `streamFoo` will return a cursor.  A method named `getFoo` will return an object (which may be a list or a set, but will not be a cursor that client code must close).
 
-[Cursor]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/cursors/Cursor.html
+[Cursor]: http://lenskit.org/apidocs/org/grouplens/lenskit/cursors/Cursor.html
 
 ## Data Access Interfaces
 
 LensKit provides several DAO interfaces to allow components to access data.  These components are all in the [org.grouplens.lenskit.data.dao][dao] package.  The basic ones are:
 
-[dao]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/dao/package-summary.html
+[dao]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/dao/package-summary.html
 
 - `EventDAO` provides access to the database of events.  It allows the entire set of events to be streamed, optionally filtered by type or sorted.
 - `UserEventDAO` provides access to events by user ID.
@@ -49,9 +49,9 @@ Lenskit provides several DAO implementations:
 - [EventCollectionDAO][] implements `EventDAO` in terms of a collection (usually a list) of `Event` objects.
 - [JDBCRatingDAO][] implements all the DAO interfaces by reading data from a table of ratings in an SQL database.
 
-[SimpleFileRatingDAO]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/dao/SimpleFileRatingDAO.html
-[EventCollectionDAO]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/dao/EventCollectionDAO.html
-[JDBCRatingDAO]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/sql/JDBCRatingDAO.html
+[SimpleFileRatingDAO]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/dao/SimpleFileRatingDAO.html
+[EventCollectionDAO]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/dao/EventCollectionDAO.html
+[JDBCRatingDAO]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/sql/JDBCRatingDAO.html
 
 ## CSV Files
 
@@ -71,7 +71,7 @@ It uses two things: a JDBC connection, and an `SQLStatementFactory`.  The statem
 
 LensKit provides [BasicSQLStatementFactory][], which produces queries over a single table of ratings.  The names of the table and the user, item, rating, and timestamp columns can all be customized.
 
-[BasicSQLStatementFactory][]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/data/sql/BasicSQLStatementFactory.html
+[BasicSQLStatementFactory][]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/sql/BasicSQLStatementFactory.html
 
 We expect that many applications will implement their own DAOs to connect to their data state.
 

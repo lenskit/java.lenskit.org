@@ -145,7 +145,7 @@ within(UserVectorNormalizer) {
 }
 ~~~
 
-[load]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/config/ConfigHelpers.html#load%28java.io.File%29
-[ConfigurationLoader]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/config/ConfigurationLoader.html
+[load]: http://lenskit.org/apidocs/org/grouplens/lenskit/config/ConfigHelpers.html#load%28java.io.File%29
+[ConfigurationLoader]: http://lenskit.org/apidocs/org/grouplens/lenskit/config/ConfigurationLoader.html
 
 You can load this by using [ConfigHelpers.load][load] or the [ConfigurationLoader][] class.

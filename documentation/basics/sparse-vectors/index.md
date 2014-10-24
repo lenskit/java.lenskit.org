@@ -2,7 +2,7 @@
 title: Sparse Vectors
 ---
 
-[sv]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/vectors/package-summary.html
+[sv]: http://lenskit.org/apidocs/org/grouplens/lenskit/vectors/package-summary.html
 
 # LensKit Sparse Vectors
 

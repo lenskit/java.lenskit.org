@@ -81,7 +81,7 @@ Next, we set up three metrics:
     metric RMSEPredictMetric
     metric NDCGPredictMetric
 
-[org.grouplens.lenskit.eval.metrics.predict]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/eval/metrics/predict/package-summary.html
+[org.grouplens.lenskit.eval.metrics.predict]: http://lenskit.org/apidocs/org/grouplens/lenskit/eval/metrics/predict/package-summary.html
 
 These metrics are each classes in the [org.grouplens.lenskit.eval.metrics.predict][] package.  The `metric` directive takes either a metric instance or a metric class; it will automatically instantiate the class using its default constructor.
 

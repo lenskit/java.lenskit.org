@@ -8,7 +8,7 @@ title: Evaluator Data Processing
 
 Crossfolding (the `crossfold` command) is implemented by [CrossfoldTask][].  It supports several additional directives to control its behavior:
 
-[CrossfoldTask]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/eval/data/crossfold/CrossfoldTask.html
+[CrossfoldTask]: http://lenskit.org/apidocs/org/grouplens/lenskit/eval/data/crossfold/CrossfoldTask.html
 
 [RandomOrder]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/eval/data/crossfold/RandomOrder.html
 [TimestampOrder]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/eval/data/crossfold/TimestampOrder.html
@@ -22,7 +22,7 @@ Crossfolding (the `crossfold` command) is implemented by [CrossfoldTask][].  It 
 - `train`: a format string taking a single integer specifying the name of the training data output files, e.g. `ml-100k.train.%d.csv`. The default is `name + ".train.%d.csv"`. The format string is applied to the number of the partition.
 - `test`: same as `train`, but for the test set.
 
-[TTDataSet]: http://lenskit.grouplens.org/maven-site/apidocs/org/grouplens/lenskit/eval/data/traintest/TTDataSet.html
+[TTDataSet]: http://lenskit.org/apidocs/org/grouplens/lenskit/eval/data/traintest/TTDataSet.html
 
 The crossfold task, when executed, returns a list of [TTDataSet][]s representing the different train-test partitions.
 
