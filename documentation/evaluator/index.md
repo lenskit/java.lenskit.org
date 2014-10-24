@@ -14,4 +14,4 @@ capabilities.
 -   [Advanced Evaluation Scripting](advanced-scripting)
 -   [Data Processing](data)
 -   [Metrics](metrics)
--   [Evaluator Internals][EvaluatorInternals]
+-   [Evaluator Internals](http://github.com/lenskit/lenskit/wiki/EvaluatorInternals)
