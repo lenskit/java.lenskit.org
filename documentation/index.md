@@ -2,6 +2,7 @@
 title: Documentation
 layout: default
 sidenav: doc-nav.html
+priority: 1
 ---
 
 # LensKit Documentation

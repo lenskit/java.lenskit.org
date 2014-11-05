@@ -10,16 +10,19 @@ defaults:
       type: pages
     values:
       layout: "release"
+      changefreq: monthly
   - scope:
       path: "documentation"
       type: pages
     values:
       layout: doc-page
+      priority: 0.8
   - scope:
       path: "news"
     values:
       layout: "default"
       category: "news"
+      priority: 0.8
 
 markdown: kramdown
 

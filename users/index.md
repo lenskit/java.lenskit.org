@@ -1,6 +1,7 @@
 ---
 title: Users
 layout: default
+priority: 1
 ---
 
 # Sites Using LensKit

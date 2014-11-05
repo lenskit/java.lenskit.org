@@ -2,6 +2,7 @@
 title: Release Notes
 layout: default
 sidenav: rel-nav.html
+changefreq: weekly
 ---
 
 # LensKit Releases

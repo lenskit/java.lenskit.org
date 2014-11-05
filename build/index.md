@@ -1,6 +1,7 @@
 ---
 title: Building Applications
 layout: default
+priority: 1
 ---
 
 # Building Applications with LensKit

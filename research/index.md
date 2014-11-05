@@ -1,6 +1,7 @@
 ---
 title: Research
 layout: default
+priority: 1
 ---
 
 # Research with LensKit
