@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /master/
+Sitemap: http://lenskit.org/sitemap.xml
