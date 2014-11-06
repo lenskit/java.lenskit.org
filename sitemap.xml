@@ -4,7 +4,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% for page in site.pages %}
   <url>
-    <loc>{{ page.url | remove: 'index.html' }}</loc>
+    <loc>http://lenskit.org{{ page.url | remove: 'index.html' }}</loc>
     <!-- {{ page.modified_time }} -->
     {% if page.priority %}<priority>{{page.priority}}</priority>{% endif %}
     <changefreq>{% if page.changefreq %}{{page.changefreq}}{% else %}daily{% endif %}</changefreq>
