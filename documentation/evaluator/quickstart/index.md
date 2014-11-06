@@ -62,4 +62,4 @@ This will produce a box plot of per-user RMSE:
 ## Further Reading
 
 - This whole project can be [cloned from GitHub](https://github.com/lenskit/simple-eval-demo/).
-- [Evaluator documentation](../).
+- [Walk through the eval script](../walkthrough/)
