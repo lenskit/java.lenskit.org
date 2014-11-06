@@ -14,7 +14,7 @@
   {% if page.extname == '.html' %}
   <url>{% assign parts = page.path | split: '/' %}
     <loc>http://lenskit.org{{page.path}}</loc>
-    <lastmodified>{{ page.modified_time | date_to_xmlschema }}</lastmodified>
+    <lastmod>{{ page.modified_time | date_to_xmlschema }}</lastmod>
     {% if parts[1] == 'master' %}
     <priority>0.3</priority>
     <changefreq>daily</changefreq>
