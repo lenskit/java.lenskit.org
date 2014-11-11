@@ -13,6 +13,7 @@ org.grouplens.lenskit.data.history
 org.grouplens.lenskit.data.pref
 org.grouplens.lenskit.data.snapshot
 org.grouplens.lenskit.data.sql
+org.grouplens.lenskit.data.text
 org.grouplens.lenskit.eval
 org.grouplens.lenskit.eval.algorithm
 org.grouplens.lenskit.eval.cli
