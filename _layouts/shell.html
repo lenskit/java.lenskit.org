@@ -16,6 +16,10 @@
 <link rel="stylesheet" href="/s/fonts/pt-sans/stylesheet.css">
 <link rel="stylesheet" href="/s/fonts/inconsolata/stylesheet.css">
 <link rel="stylesheet" href="/bower_components/highlightjs/styles/github.css">
+{% capture basename %}{{ page.url | split:"/" | last }}{% endcapture %}
+{% if basename == 'index.html' %}
+<link rel="canonical" href="{{ page.url | remove: 'index.html' }}">
+{% endif %}
 <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
