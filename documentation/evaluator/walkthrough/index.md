@@ -6,9 +6,10 @@ title: Eval Script Walkthrough
 
 LensKit evaluations are driven by *evaluator scripts*, which define a set of
 operations such as crossfolding a data set an running a train-test evaluation
-over it.  By convention, these script files are named `eval.groovy`, but can
-pick a different name (and specify it with the `-f` option to `lenskit eval` if
-you want to have multiple different evaluations in one directory.
+over it.  By convention, these script files are named `eval.groovy`; if you are
+running several different experiments on the same data set(s), it is useful to
+put them in separate `.groovy` files and select the one you want with the `-f`
+option to `lenskit eval`. 
 
 Consider again the evaluation script from the [Quick Start guide](../quickstart/):
 
