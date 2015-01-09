@@ -4,6 +4,12 @@ title: Eval Script Walkthrough
 
 # Evaluation Scripts
 
+LensKit evaluations are driven by *evaluator scripts*, which define a set of
+operations such as crossfolding a data set an running a train-test evaluation
+over it.  By convention, these script files are named `eval.groovy`, but can
+pick a different name (and specify it with the `-f` option to `lenskit eval` if
+you want to have multiple different evaluations in one directory.
+
 Consider again the evaluation script from the [Quick Start guide](../quickstart/):
 
 {% gist 4f86eb836dc4ed35e995 %}
@@ -15,7 +21,10 @@ To run an evaluation, you need four basic things:
 -   Metrics to measure their performance.
 -   Somewhere to put the output.
 
-In LensKit, the train-test evaluator builds and tests the algorithms on the data, measures their output with the metrics, and writes the results to a file.  The outer block, `trainTest`, tells LensKit that we want to do a train-test evaluation.  There are other commands as well, but we'll get to those later.
+In LensKit, the train-test evaluator builds and tests the algorithms on the
+data, measures their output with the metrics, and writes the results to a file.
+The outer block, `trainTest`, tells LensKit that we want to do a train-test
+evaluation.  There are other commands as well, but we'll get to those later.
 
 ### Input Data
 
