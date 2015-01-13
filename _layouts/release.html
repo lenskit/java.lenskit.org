@@ -17,7 +17,7 @@ sidenav: rel-nav.html
 <p>
 The {{changelog}}
 {% if page.milestone %}
-and the <a href="https://github.com/grouplens/lenskit/issues?milestone={{page.milestone}}&amp;state=closed">list of closed tickets and pull requests</a> provide
+and the <a href="https://github.com/grouplens/lenskit/issues?q=milestone:{{page.version}}+is:closed">list of closed tickets and pull requests</a> provide
 {% else %}
 provides
 {% endif %}
