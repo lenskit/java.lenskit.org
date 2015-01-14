@@ -1,5 +1,7 @@
 ---
 title: Basics
+redirect_from:
+  - /lenskit-data-sructures/index.html
 ---
 
 # LensKit Basics

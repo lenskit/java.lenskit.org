@@ -1,5 +1,7 @@
 ---
 title: Configuration
+redirect_from:
+  - /lenskit-groovy/index.html
 ---
 
 # Configuring a LensKit Recommender
