@@ -19,6 +19,7 @@ Then you will probably want to read the rest of our documentation:
 - [LensKit Basics](basics/) — how to use LensKit and work with its interfaces and data structures.
 - [LensKit Algorithms](algorithms/) — more detailed discussions of the algorithms LensKit provides.
 - [The LensKit Evaluator](evaluator/) — evaluating recommendation quality.
+- [Command Line Tools](cli/) — evaluating recommendation quality.
 - [Java API documentation](/apidocs/) for the current version
   ({{site.data.lenskit.version}})
 - [Versioning policy](versioning/)
