@@ -18,7 +18,7 @@ overview of changes in this release, see the
 [source]: https://github.com/lenskit/lenskit/releases/tag/lenskit-{{site.data.lenskit.version}}
 [BinTray]: https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view
 
-- [Binary archive][bin.tgz] (also available as a [zip file][bin.zip]) —
+- [Binary archive][bin.zip] —
   contains LensKit JAR files, all dependencies, and scripts to run the LensKit
   evaluator.  LensKit binaries are hosted on [BinTray][].
 - Get the source from [GitHub][source].
@@ -48,7 +48,7 @@ LensKit {{site.data.lenskit.next}} is currently under development.  If you want 
 [beta.source.zip]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.prerelease}}-source.zip
 [beta.source.tgz]: {{site.data.lenskit.downloadUrl}}/lenskit-{{site.data.lenskit.prerelease}}-source.tar.gz
 
-- [Binary archive][beta.bin.tgz] (also available as a [zip file][beta.bin.zip])
+- [Binary archive][beta.bin.zip]
 - [Source archive][beta.source.tgz] (also available as a [zip file][beta.source.zip])
 
 LensKit {{site.data.lenskit.prerelease}} has also been pushed to Maven Central, so you can depend on it like a released version.
