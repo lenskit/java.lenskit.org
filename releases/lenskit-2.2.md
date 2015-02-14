@@ -16,7 +16,7 @@ layout: release
 
 ## Data Access
 
-[KnownRatingRatingPredictor]: http://lenskit.org/master/apidocs/org/grouplens/lenskit/predict/KnownRatingRatingPredictor.html
+[ItemNameDAO]: http://lenskit.org/master/apidocs/org/grouplens/lenskit/data/dao/ItemNameDAO.html
 
 - Added [ItemNameDAO][] to provide a standard means of presenting names or
   short descriptions of items, along with a memory-backed implementation and a
