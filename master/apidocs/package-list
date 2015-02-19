@@ -12,6 +12,7 @@ org.grouplens.lenskit.data.event
 org.grouplens.lenskit.data.history
 org.grouplens.lenskit.data.pref
 org.grouplens.lenskit.data.snapshot
+org.grouplens.lenskit.data.source
 org.grouplens.lenskit.data.sql
 org.grouplens.lenskit.data.text
 org.grouplens.lenskit.eval
