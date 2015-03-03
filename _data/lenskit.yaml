@@ -2,7 +2,6 @@ version: 2.1
 prerelease: 2.2-M3
 next: 2.2
 downloadUrl: http://dl.bintray.com/lenskit/lenskit-releases
-preDownloadUrl: http://dl.bintray.com/lenskit/lenskit-snapshots
 releases:
   - 2.2
   - 2.1
