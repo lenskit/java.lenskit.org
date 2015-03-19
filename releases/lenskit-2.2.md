@@ -27,11 +27,11 @@ layout: release
 - Added `global-recommend` command to do global (non-personalized)
   recommendation with reference items.
 
-- The `recommend` and `global-recommend` commands use the `ItemNameDAO`, if
-  available, to print item names (e.g. movie titles).
+- The `recommend`, `global-recommend`, and `predict` commands use the
+  `ItemNameDAO`, if available, to print item names (e.g. movie titles).
 
-- The `recommend` and `global-recommend` commands accept a `--item-names`
-  command to specify a CSV file mapping item IDs to item names.
+- The `recommend`, `global-recommend`, and `predict` commands accept a
+  `--item-names` command to specify a CSV file mapping item IDs to item names.
 
 ## Evaluator
 
