@@ -17,7 +17,6 @@ org.grouplens.lenskit.data.sql
 org.grouplens.lenskit.data.text
 org.grouplens.lenskit.eval
 org.grouplens.lenskit.eval.algorithm
-org.grouplens.lenskit.eval.cli
 org.grouplens.lenskit.eval.data
 org.grouplens.lenskit.eval.data.crossfold
 org.grouplens.lenskit.eval.data.pack
