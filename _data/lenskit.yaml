@@ -1,5 +1,5 @@
 version: 2.1
-prerelease: 2.2-M3
+prerelease: 2.2-M4
 next: 2.2
 downloadUrl: http://dl.bintray.com/lenskit/lenskit-releases
 releases:

@@ -43,7 +43,7 @@ Grape.  This is the recommended way to integrate LensKit as a library.
 
 LensKit {{site.data.lenskit.next}} is currently under development.  If you want to use it without tracking {{site.data.lenskit.next}}-SNAPSHOT or Git `master`, you can use version {{site.data.lenskit.prerelease}}:
 
-[beta.bin.zip]: https://github.com/lenskit/lenskit/releases/download/lenskit-{{site.data.lenskit.prerelease}}/lenskit-{{site.data.lenskit.prelease}}.zip
+[beta.bin.zip]: https://github.com/lenskit/lenskit/releases/download/lenskit-{{site.data.lenskit.prerelease}}/lenskit-{{site.data.lenskit.prerelease}}.zip
 [beta.tag]: https://github.com/lenskit/lenskit/releases/lenskit-{{site.data.lenskit.prerelease}}
 
 - [Binary archive][beta.bin.zip]
@@ -51,7 +51,7 @@ LensKit {{site.data.lenskit.next}} is currently under development.  If you want 
 
 LensKit {{site.data.lenskit.prerelease}} has also been pushed to Maven Central, so you can depend on it like a released version.
 
-You may also want to consult the [release notes](../releases/lenskit-{{site.data.lenskit.next}}); note that they are likely incomplete.
+You may also want to consult the [release notes](../releases/lenskit-{{site.data.lenskit.next}}.html); note that they are likely incomplete.
 
 {% endif %}
 

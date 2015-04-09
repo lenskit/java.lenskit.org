@@ -16,11 +16,23 @@ layout: release
 
 ## Data Access
 
-[ItemNameDAO]: http://lenskit.org/master/apidocs/org/grouplens/lenskit/data/dao/ItemNameDAO.html
+[ItemNameDAO]: /master/apidocs/org/grouplens/lenskit/data/dao/ItemNameDAO.html
+[TextEventDAO]: /master/apidocs/org/grouplens/lenskit/data/text/TextEventDAO.html
+[ml-format]: /master/apidocs/org/grouplens/lenskit/data/text/Formats.html#movieLensLatest()
 
 - Added [ItemNameDAO][] to provide a standard means of presenting names or
   short descriptions of items, along with a memory-backed implementation and a
   provider to read it from a file.
+
+- Added support to [TextEventDAO][] for skipping header lines.  The number of
+  header lines to skip are specified by the `EventFormat`;
+  `DelimitedColumnEventFormat` has a setter to specify to skip some header
+  lines (e.g. 1 line for a CSV file with headers).
+
+- Added pre-defined format [`Formats.movieLensFormat()`][ml-format] for the [new MovieLens
+  data sets][ML20M].
+
+[ML20M]: http://grouplens.org/new-movielens-datasets-released/
 
 ## Command Line
 

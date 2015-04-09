@@ -150,3 +150,14 @@ aside {
         right: 2rem;
     }
 }
+
+a:link, a:visited {
+  code {
+    color: $anchor-font-color;
+  }
+}
+a:hover {
+  code {
+    color: $anchor-font-color-hover;
+  }
+}
