@@ -1,5 +1,5 @@
 ---
-title: lenskit-recommend(1)
+title: lenskit-global-recommend(1)
 ---
 
 lenskit-recommend
@@ -13,20 +13,21 @@ Name
 Synopsis
 --------
 
-**lenskit** [GLOBAL OPTIONS] **recommend** [OPTIONS] *USER*...
+**lenskit** [GLOBAL OPTIONS] **global-recommend** [OPTIONS] *ITEM*...
 
 Description
 -----------
 
-The `recommend` command recommends items for some users. It loads a
-recommender from a trained model file and/or LensKit configuration
-scripts and uses the configured algorithm to produce recommendations.
+The `global-recommend` command recommends items based on some reference
+items (e.g. a shopping basket). It loads a recommender from a trained
+model file and/or LensKit configuration scripts and uses the configured
+algorithm to produce recommendations.
 
 Options
 -------
 
-*USER*
-:   A user to recommend for.
+*ITEM*
+:   One or more items to use as a reference.
 
 --help
 :   Show usage help.
