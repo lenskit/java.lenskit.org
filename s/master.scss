@@ -161,3 +161,8 @@ a:hover {
     color: $anchor-font-color-hover;
   }
 }
+
+// fix the definition lists
+dd {
+    padding-left: 2em;
+}
