@@ -6,6 +6,10 @@ snapshot: true
 layout: release
 ---
 
+## General Changes
+
+- Fast iteration is now a no-op, and some algorithms have been refactored to maintain performance.
+
 ## Algorithms
 
 [KnownRatingRatingPredictor]: http://lenskit.org/master/apidocs/org/grouplens/lenskit/predict/KnownRatingRatingPredictor.html
@@ -13,6 +17,8 @@ layout: release
 - Add [KnownRatingRatingPredictor][], a rating predictor that just returns the
   user's existing ratings
   ([#563](https://github.com/lenskit/lenskit/issues/563)).
+
+- The item-item CF implementation's model representation has been changed to be more efficient without fast iteration.
 
 ## Data Access
 
@@ -32,6 +38,8 @@ layout: release
 - Added pre-defined format [`Formats.movieLensFormat()`][ml-format] for the [new MovieLens
   data sets][ML20M].
 
+- The `Like` and `LikeBatch` event types provide a standard type for unary and count data in LensKit.
+
 [ML20M]: http://grouplens.org/new-movielens-datasets-released/
 
 ## Command Line
@@ -44,6 +52,10 @@ layout: release
 
 - The `recommend`, `global-recommend`, and `predict` commands accept a
   `--item-names` command to specify a CSV file mapping item IDs to item names.
+
+- Fixed configuration loading to properly handle custom classpaths.
+
+- The `--help` output is now more thorough.
 
 ## Evaluator
 
@@ -59,3 +71,13 @@ layout: release
     deferred to test time, making timings irrelevant, if the component cache
     was disabled (an important piece of making timings relevant).  Fixed in [PR
     692](https://github.com/lenskit/lenskit/pull/629).
+
+-   Outputting recommendations and predictions is now handled by the `recommendations` and `predictions` metrics, rather than the old `predictFile` and related settings.  This allows the recommendation output to be configured (candidate items, exclude set, and # of items to recommend).
+
+-   Added a Mean Average Precision (MAP) metric (`topNMAP`).
+
+-   Fixed broken top-*N* metric files.
+
+## Advanced Features
+
+-   `LenskitRecommenderEngine` now has a `getComponent()` method to allow a component to be extracted from the model without needing to first create a recommender object.
