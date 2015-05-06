@@ -20,7 +20,7 @@ The main LensKit command has several subcommands that do the real work:
 
 - [lenskit-version](./lenskit-version.1.html)
 - [lenskit-eval](./lenskit-eval.1.html)
-- [lenskit-grain-model](./lenskit-grain-model.1.html)
+- [lenskit-train-model](./lenskit-train-model.1.html)
 - [lenskit-predict](./lenskit-predict.1.html)
 - [lenskit-recommend](./lenskit-predict.1.html)
 - [lenskit-graph](./lenskit-graph.1.html)
