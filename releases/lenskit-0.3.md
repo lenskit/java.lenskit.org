@@ -2,7 +2,6 @@
 title: Release 0.3
 version: 0.3
 milestone: 8
-layout: release
 ---
 
 ## Event Infrastructure

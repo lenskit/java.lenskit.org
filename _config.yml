@@ -9,7 +9,7 @@ exclude:
 
 defaults:
   - scope:
-      path: "releases/"
+      path: releases
       type: pages
     values:
       layout: "release"
