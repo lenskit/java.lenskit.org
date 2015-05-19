@@ -2,14 +2,14 @@
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for page in site.pages %}
+  {% for page in site.pages %}{% if page.nositemap %}{% else %}
   <url>
     <loc>http://lenskit.org{{ page.url | remove: 'index.html' }}</loc>
     <!-- {{ page.modified_time }} -->
     {% if page.priority %}<priority>{{page.priority}}</priority>{% endif %}
     <changefreq>{% if page.changefreq %}{{page.changefreq}}{% else %}daily{% endif %}</changefreq>
   </url>
-  {% endfor %}
+  {% endif %}{% endfor %}
   {% for page in site.static_files %}
   {% if page.extname == '.html' %}
   <url>{% assign parts = page.path | split: '/' %}
