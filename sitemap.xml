@@ -5,13 +5,11 @@
   {% for page in site.pages %}{% if page.nositemap %}{% else %}
   <url>
     <loc>http://lenskit.org{{ page.url | remove: 'index.html' }}</loc>
-    <!-- {{ page.modified_time }} -->
     {% if page.priority %}<priority>{{page.priority}}</priority>{% endif %}
     <changefreq>{% if page.changefreq %}{{page.changefreq}}{% else %}daily{% endif %}</changefreq>
   </url>
   {% endif %}{% endfor %}
-  {% for page in site.static_files %}
-  {% if page.extname == '.html' %}
+  {% for page in site.static_files %}{% if page.extname == '.html' %}
   <url>{% assign parts = page.path | split: '/' %}
     <loc>http://lenskit.org{{page.path}}</loc>
     <lastmod>{{ page.modified_time | date_to_xmlschema }}</lastmod>
@@ -23,6 +21,5 @@
     <changefreq>weekly</changefreq>
     {% endif %}
   </url>
-  {% endif %}
-  {% endfor %}
+  {% endif %}{% endfor %}
 </urlset>
