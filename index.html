@@ -9,10 +9,11 @@ header:
 redirect_from:
   - /maven-site/index.html
 ---
+<div itemscope itemtype="http://schema.org/SoftwareApplication">
 <header class="row">
   <div class="large-12 columns logo">
-    <img src="/s/logo.png" alt="LensKit">
-    <p>Open-Source Tools for Recommender Systems
+    <a href="http://lenskit/" itemprop="url"><img src="/s/logo.png" alt="LensKit" itemprop="image"></a>
+    <p itemprop="description">Open-Source Tools for Recommender Systems
   </div>
 </header>
 <div class="row">
@@ -34,9 +35,9 @@ redirect_from:
 <div class="row">
   <div class="medium-6 columns project-info">
     <section>
-      <h2>Get LensKit</h2>
+      <h2>Get <span itemprop="name">LensKit</span></h2>
       <ul class='highlights'>
-        <li><a href="https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view">Download latest binaries</a> (<a href="/releases/lenskit-{{site.data.lenskit.version}}.html">version {{site.data.lenskit.version}}</a>)
+        <li><a itemprop="downloadUrl" href="https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view">Download latest binaries</a> (<a itemprop="releaseNotes" href="/releases/lenskit-{{site.data.lenskit.version}}.html">version <span itemprop="softwareVersion">{{site.data.lenskit.version}}</span></a>)
         <li>Latest version: <a href="/releases/lenskit-{{site.data.lenskit.version}}.html">{{site.data.lenskit.version}}</a>
         {% if site.data.lenskit.prerelease %}
         <li>Latest prelease: <a href="/releases/lenskit-{{site.data.lenskit.next}}.html">{{site.data.lenskit.prerelease}}</a>
@@ -50,13 +51,13 @@ redirect_from:
       <h2>Learn about LensKit</h2>
       <ul class='highlights'>
         <li><a href="http://www.youtube.com/watch?v=ug_JfORWK7w">Watch the video</a>
-        <li><a href="documentation">Read the documentation</a>
+        <li><a itemprop="softwareHelp" href="documentation/">Read the documentation</a>
       </ul>
     </section>
     <section>
       <h2>Connect with LensKit</h2>
       <ul class='highlights'>
-        <li>Join our <a href="https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit">mailing list</a>
+        <li>Join our <a itemprop="discussionUrl" href="https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit">mailing list</a>
         <li>Report and discuss <a href="https://github.com/grouplens/lenskit/issues">issues on GitHub</a>
         <li><a href="https://twitter.com/intent/user?screen_name=LensKitRS">Follow LensKit on Twitter</a>
       </ul>
@@ -68,8 +69,10 @@ redirect_from:
   </div>
 </div>
 <div class="row">
+  <p>LensKit is free and open-source software, available under the terms of the <a href="https://www.gnu.org/licenses/lgpl-2.1.html" itemprop="license">GNU Lesser General Public license version 2.1 or later</a></p>
   <section class="small-12 columns">
     <h2 class="subheader">Acknowledgements</h2>
     {% include thanks.html %}
   </section>
+</div>
 </div>
