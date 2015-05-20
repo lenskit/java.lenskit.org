@@ -61,3 +61,4 @@ org.grouplens.lenskit.vectors.similarity
 org.lenskit.cli
 org.lenskit.cli.commands
 org.lenskit.cli.util
+org.lenskit.util.math
