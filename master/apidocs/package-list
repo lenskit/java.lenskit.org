@@ -61,4 +61,6 @@ org.grouplens.lenskit.vectors.similarity
 org.lenskit.cli
 org.lenskit.cli.commands
 org.lenskit.cli.util
+org.lenskit.eval
+org.lenskit.eval.crossfold
 org.lenskit.util.math
