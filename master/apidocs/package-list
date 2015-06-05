@@ -63,4 +63,5 @@ org.lenskit.cli.commands
 org.lenskit.cli.util
 org.lenskit.eval
 org.lenskit.eval.crossfold
+org.lenskit.util
 org.lenskit.util.math
