@@ -58,10 +58,14 @@ org.grouplens.lenskit.util.table
 org.grouplens.lenskit.util.table.writer
 org.grouplens.lenskit.vectors
 org.grouplens.lenskit.vectors.similarity
+org.lenskit
+org.lenskit.api
+org.lenskit.basic
 org.lenskit.cli
 org.lenskit.cli.commands
 org.lenskit.cli.util
 org.lenskit.eval
 org.lenskit.eval.crossfold
+org.lenskit.results
 org.lenskit.util
 org.lenskit.util.math
