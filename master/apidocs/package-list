@@ -43,7 +43,6 @@ org.grouplens.lenskit.predict
 org.grouplens.lenskit.predict.ordrec
 org.grouplens.lenskit.scored
 org.grouplens.lenskit.slopeone
-org.grouplens.lenskit.specs
 org.grouplens.lenskit.symbols
 org.grouplens.lenskit.transform.clamp
 org.grouplens.lenskit.transform.normalize
@@ -64,7 +63,6 @@ org.lenskit.basic
 org.lenskit.cli
 org.lenskit.cli.commands
 org.lenskit.cli.util
-org.lenskit.eval
 org.lenskit.eval.crossfold
 org.lenskit.results
 org.lenskit.util
