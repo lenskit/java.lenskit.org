@@ -4,7 +4,7 @@ title: Slope-One
 
 # Slope-One Recommenders
 
-[org.grouplens.lenskit.slopeone]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/slopeone/package-summary.html
+[org.grouplens.lenskit.slopeone]: http://lenskit.org/apidocs/org/grouplens/lenskit/slopeone/package-summary.html
 
 LensKit provides an implementation of the [Slope One](http://arxiv.org/abs/cs/0702144) rating prediction algorithm as part of the `lenskit-slopeone` module, in the [org.grouplens.lenskit.slopeone][] package.
 
@@ -25,9 +25,9 @@ LensKit also offers an improved version of the standard Slope One algorithm that
 
 ## Model Builder
 
-[SlopeOneModel]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/slopeone/SlopeOneModel.html
+[SlopeOneModel]: http://lenskit.org/apidocs/org/grouplens/lenskit/slopeone/SlopeOneModel.html
 
-[SlopeOneModelBuilder]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/slopeone/SlopeOneModelBuilder.html
+[SlopeOneModelBuilder]: http://lenskit.org/apidocs/org/grouplens/lenskit/slopeone/SlopeOneModelBuilder.html
 
 The backing [SlopeOneModel][] is produced by the [SlopeOneModelBuilder][] by default. This is configurable, meaning an alternate builder may be used if desired.
 
@@ -35,7 +35,7 @@ The [SlopeOneModel][] consists of two matrices, one to store deviation values an
 
 ## Other Configuration Points
 
-[Deviation Damping]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/slopeone/DeviationDamping.html
+[Deviation Damping]: http://lenskit.org/apidocs/org/grouplens/lenskit/slopeone/DeviationDamping.html
 
 - `@DeviationDamping`: The only configurable parameter for Slope One is [Deviation Damping][]. This is a constant value that is added to the number of coratings when calculating the deviation of an item pair. The default value for this parameter is 0.
 

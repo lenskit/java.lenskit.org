@@ -6,7 +6,7 @@ redirect_from:
 
 # Configuring a LensKit Recommender
 
-[LenskitRecommenderEngineFactory]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/core/LenskitRecommenderEngineFactory.html
+[LenskitRecommenderEngineFactory]: http://lenskit.org/apidocs/org/grouplens/lenskit/core/LenskitRecommenderEngineFactory.html
 
 One of LensKit's goals is to be highly configurable with regards to
 the algorithms used, choice of parameters for them, and various
@@ -26,8 +26,8 @@ work. In the example code in GettingStarted, we find this line:
 factory.bind(RatingPredictor.class).to(ItemItemRatingPredictor.class);
 ~~~
 
-[ItemItemRatingPredictor]: http://lenskit.grouplens.org/apidocs/org/grouplens/knn/item/ItemItemRatingPredictor.html
-[RatingPredictor]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/RatingPredictor.html
+[ItemItemRatingPredictor]: http://lenskit.org/apidocs/org/grouplens/knn/item/ItemItemRatingPredictor.html
+[RatingPredictor]: http://lenskit.org/apidocs/org/grouplens/lenskit/RatingPredictor.html
 [Guice]: https://code.google.com/p/google-guice/
 [WP:DI]: http://en.wikipedia.org/wiki/Dependency_injection
 
@@ -40,7 +40,7 @@ then asks the recommender for a rating predictor, it will use an
 `RatingPredictor`, such as an `ItemItemRecommender`, will use the
 `ItemItemRatingPredictor`.
 
-[ItemItemRecommender]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/ItemItemRecommender.html
+[ItemItemRecommender]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/ItemItemRecommender.html
 [Grapht]: http://github.com/grouplens/grapht
 
 When you look at the JavaDoc for a component implementation, such as
@@ -74,7 +74,7 @@ factory.within(SimpleNeighborhoodFinder.class)
        .to(BaselineSubtractingNormalizer.class);
 ~~~
 
-[SimpleNeighborhoodFinder]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/user/SimpleNeighborhoodFinder.html
+[SimpleNeighborhoodFinder]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/SimpleNeighborhoodFinder.html
 
 This uses the baseline-subtracting normalizer as the vector
 normalizer, but only when building the [SimpleNeighborhoodFinder][] or
@@ -94,7 +94,7 @@ Grapht also provides an `at` method, in addition to `within`; if you use `at` in
 
 ### Parameters
 
-[NeighborhoodSize]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/params/NeighborhoodSize.html
+[NeighborhoodSize]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/params/NeighborhoodSize.html
 
 LensKit provides many parameters, which are annotated with various
 annotations (such as [NeighborhoodSize][].  These parameters are set

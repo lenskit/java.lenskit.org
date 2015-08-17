@@ -2,9 +2,9 @@
 title: Item-Item CF
 ---
 
-# Item-Item Collaborative Filtering 
+# Item-Item Collaborative Filtering
 
-[org.grouplens.lenskit.knn.item]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/package-summary.html
+[org.grouplens.lenskit.knn.item]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/package-summary.html
 
 LensKit provides flexible, performant implementation of item-item collaborative filtering [Sarwar et al. 2001; Deshpande and Karypis 2004] as part of the `lenskit-knn` module, in the [org.grouplens.lenskit.knn.item][] package.
 
@@ -31,35 +31,35 @@ Alternative component implementations can add additional configuration points, b
 
 ### Scorer/Predictor
 
-[ItemItemScorer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/ItemItemScorer.html
-[ItemItemRatingPredictor]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/ItemItemRatingPredictor.html
+[ItemItemScorer]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/ItemItemScorer.html
+[ItemItemRatingPredictor]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/ItemItemRatingPredictor.html
 
 The [ItemItemScorer][] class is the main driver for the item-item implementation and its configuration.  Configuring it as your item scorer is the primary way to configure that item-item CF is to be used.  It has a couple direct parameters and dependencies that can be configured:
 
-[NeighborhoodSize]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/params/NeighborhoodSize.html
-[DefaultItemScoreAlgorithm]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/DefaultItemScoreAlgorithm.html
-[UserHistorySummarizer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/data/history/UserHistorySummarizer.html
-[Rating]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/data/event/Rating.html
-[EventCountUserHistorySummarizer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/data/history/EventCountUserHistorySummarizer.html
+[NeighborhoodSize]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/params/NeighborhoodSize.html
+[DefaultItemScoreAlgorithm]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/DefaultItemScoreAlgorithm.html
+[UserHistorySummarizer]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/history/UserHistorySummarizer.html
+[Rating]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/event/Rating.html
+[EventCountUserHistorySummarizer]: http://lenskit.org/apidocs/org/grouplens/lenskit/data/history/EventCountUserHistorySummarizer.html
 
 - `@NeighborhoodSize`: [NeighborhoodSize][] sets how many neighbors to use for each prediction.  This is actually declared as a dependency of [DefaultItemScoreAlgorithm][], but most of the time that implementation detail doesn't matter.
 - `UserHistorySummarizer`: The summarizer (see [UserHistorySummarizer][]) is used to extract score vectors from user histories.  When using the rating predictor, these vectors should be rating vectors.  The default summarizer uses all the user's [Rating][] events to construct a rating vector.  Bind this to [EventCountUserHistorySummarizer][] to use event (e.g. purchase) counts in an implicit feedback context.
 
 ### Model Builder
 
-[ItemItemModelBuilder]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/model/ItemItemModelBuilder.html
+[ItemItemModelBuilder]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/model/ItemItemModelBuilder.html
 
 The item-item CF model (similarity matrix) is built by [ItemItemModelBuilder][].  This is, of course, also configurable.
 
-[ItemSimilarity]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/ItemSimilarity.html
-[ItemVectorSimilarity]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/ItemVectorSimilarity.html
-[VectorSimilarity]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/vectors/similarity/VectorSimilarity.html
-[SimpleSimilarityMatrixAccumulatorFactory]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/item/model/SimpleSimilarityMatrixAccumulatorFactory.html
-[Threshold]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/threshold/Threshold.html
-[BaselineSubtractingUserVectorNormalizer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/normalize/BaselineSubtractingUserVectorNormalizer.html
-[DefaultUserVectorNormalizer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/normalize/DefaultUserVectorNormalizer.html
-[MeanVarianceNormalizer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/normalize/MeanVarianceNormalizer.html
-[IdentityVectorNormalizer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/normalize/IdentityVectorNormalizer.html
+[ItemSimilarity]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/ItemSimilarity.html
+[ItemVectorSimilarity]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/ItemVectorSimilarity.html
+[VectorSimilarity]: http://lenskit.org/apidocs/org/grouplens/lenskit/vectors/similarity/VectorSimilarity.html
+[SimpleSimilarityMatrixAccumulatorFactory]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/model/SimpleSimilarityMatrixAccumulatorFactory.html
+[Threshold]: http://lenskit.org/apidocs/org/grouplens/lenskit/transform/threshold/Threshold.html
+[BaselineSubtractingUserVectorNormalizer]: http://lenskit.org/apidocs/org/grouplens/lenskit/transform/normalize/BaselineSubtractingUserVectorNormalizer.html
+[DefaultUserVectorNormalizer]: http://lenskit.org/apidocs/org/grouplens/lenskit/transform/normalize/DefaultUserVectorNormalizer.html
+[MeanVarianceNormalizer]: http://lenskit.org/apidocs/org/grouplens/lenskit/transform/normalize/MeanVarianceNormalizer.html
+[IdentityVectorNormalizer]: http://lenskit.org/apidocs/org/grouplens/lenskit/transform/normalize/IdentityVectorNormalizer.html
 
 - `ItemSimilarity`: The [ItemSimilarity][] component specifies the similarity function used to compare items.  The default implementation is [ItemVectorSimilarity][], which uses a general [VectorSimilarity][] to compare the item's score (rating) vectors.  The default `VectorSimilarity`, in turn, is cosine similarity.
 - `Threshold`: A [Threshold][] that determines what item similarities are to be kept. By default, all positive similarities are considered for the model.
@@ -74,7 +74,7 @@ Indirectly, it also makes use of the following configuration points:
 
 When using the default item similarity function, which delegates to a vector similarity, there are a couple of interesting parameters to configure on it:
 
-[SimilarityDamping]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/vectors/similarity/SimilarityDamping.html
+[SimilarityDamping]: http://lenskit.org/apidocs/org/grouplens/lenskit/vectors/similarity/SimilarityDamping.html
 
 - `VectorSimilarity`: The vector similarity function, such as cosine or Pearson, to compare item vectors. This is used to allow both item and user similarities to reuse the same general vector similarity functions.
 - `@SimilarityDamping`: Many similarity functions take a [SimilarityDamping][] parameter, which shrinks the similarity towards 0 when comparing vectors with few users in common.

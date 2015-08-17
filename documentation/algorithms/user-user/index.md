@@ -4,14 +4,14 @@ title: User-User CF
 
 # User-User Collaborative Filtering
 
-[org.grouplens.lenskit.knn.user]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/user/package-summary.html
+[org.grouplens.lenskit.knn.user]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/package-summary.html
 
 LensKit provides an implementation of user-user collaborative filtering, the original automatic collaborative filtering algorithm [Resnick et al., 1994].  This code lives in the `lenskit-knn` module, under the [org.grouplens.lenskit.knn.user][] package.
 
 ## Quick Start
 
-[UserUserItemScorer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/user/UserUserItemScorer.html
-[ItemScorer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/ItemScorer.html
+[UserUserItemScorer]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/UserUserItemScorer.html
+[ItemScorer]: http://lenskit.org/apidocs/org/grouplens/lenskit/ItemScorer.html
 
 Configuring [UserUserItemScorer][] as your [ItemScorer][] implementation is the main thing to do to use user-user CF.  There are, of course, other knobs you can tweak as well.  This configuration will use a basic user-user collaborative filter with mean-centered cosine similarity and 30 neighbors:
 
@@ -36,12 +36,12 @@ Unlike most other algorithms, the user-user filter does not really have a model 
 
 Here are some of the additional configuration points (‘@’ indicates a parameter to be set with `set` rather than `bind`):
 
-[UserVectorNormalizer]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/transform/normalize/UserVectorNormalizer.html
-[NeighborhoodFinder]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/user/NeighborhoodFinder.html
-[SimpleNeighborhoodFinder]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/user/SimpleNeighborhoodFinder.html
-[UserSimilarity]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/knn/user/UserSimilarity.html
-[VectorSimilarity]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/vectors/similarity/VectorSimilarity.html
-[CosineVectorSimilarity]: http://lenskit.grouplens.org/apidocs/org/grouplens/lenskit/vectors/similarity/CosineVectorSimilarity.html
+[UserVectorNormalizer]: http://lenskit.org/apidocs/org/grouplens/lenskit/transform/normalize/UserVectorNormalizer.html
+[NeighborhoodFinder]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/NeighborhoodFinder.html
+[SimpleNeighborhoodFinder]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/SimpleNeighborhoodFinder.html
+[UserSimilarity]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/UserSimilarity.html
+[VectorSimilarity]: http://lenskit.org/apidocs/org/grouplens/lenskit/vectors/similarity/VectorSimilarity.html
+[CosineVectorSimilarity]: http://lenskit.org/apidocs/org/grouplens/lenskit/vectors/similarity/CosineVectorSimilarity.html
 
 - [UserVectorNormalizer][] — normalizes user rating vectors prior to similarity computation and prediction.
 - [NeighborhoodFinder][] — finds neighborhoods for scoring items.  The default implementation is [SimpleNeighborhoodFinder][].  Since LensKit 2.1, you can use `SnapshotNeighborhoodFinder` to embed an optimized snapshot of the ratings data into the neighborhood finder to improve performance on medium-sized data sets.

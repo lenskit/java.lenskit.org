@@ -26,7 +26,7 @@ section of your application's `pom.xml`:
 
 `lenskit-all` will pull in all of LensKit except the command line interface.  You can instead depend on the particular pieces of LensKit that you need, if you want.  But `lenskit-all` is a good way to get started.
 
-You can also retrieve LensKit from Maven using Gradle, SBT, Ivy, or any other Maven-compatible dependency resolver.  If you don't want to let your build system manage your dependencies, download the [binary distribution](http://lenskit.grouplens.org/download.html) and put the JARs in your project's library directory.
+You can also retrieve LensKit from Maven using Gradle, SBT, Ivy, or any other Maven-compatible dependency resolver.  If you don't want to let your build system manage your dependencies, download the [binary distribution](http://lenskit.org/download.html) and put the JARs in your project's library directory.
 
 ## Configuring the Recommender
 

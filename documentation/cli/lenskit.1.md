@@ -114,7 +114,7 @@ See Also
     [**lenskit-graph**(1)](lenskit-graph.1.html),
     [**lenskit-eval**(1)](lenskit-eval.1.html),
     [**lenskit-pack-ratings**(1)](lenskit-pack-ratings.1.html)
--   The [LensKit home page](http://lenskit.grouplens.org)
+-   The [LensKit home page](http://lenskit.org)
 -   The [LensKit
     manual](http://github.com/grouplens/lenskit/wiki/Manual)
 
