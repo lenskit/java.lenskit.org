@@ -140,6 +140,20 @@ footer {
     }
 }
 
+.alert-box {
+  border: {
+    style: none none none solid;
+    width: 6px;
+  }
+  &.warning {
+    background: #F7F7F7 none repeat scroll 0% 0%;
+    color: #333;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 aside {
     font: {
         style: italic;

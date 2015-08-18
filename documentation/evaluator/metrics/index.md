@@ -57,7 +57,9 @@ metric topNMRR {
 }
 ~~~
 
-> **Note:** it is possible for a training item to appear among the 100 decoys. It will be excluded by the `exclude` set, but the resulting recommendation run will have fewer decoys.  This is probably not desired, and is tracked by [#759][].
+<div class="alert-box warning" markdown="1">
+**Note:** it is possible for a training item to appear among the 100 decoys. It will be excluded by the `exclude` set, but the resulting recommendation run will have fewer decoys.  This is probably not desired, and is tracked by [#759][].
+</div>
 
 [#759]: https://github.com/lenskit/lenskit/issues/759
 
