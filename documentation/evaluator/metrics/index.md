@@ -19,9 +19,9 @@ LensKit provides several metrics for measuring prediction accuracy. They are imp
 
 To use one of these metrics, just mention its class by name in your `trainTest` block:
 
-```groovy
+~~~
 metric RMSEPredictMetric
-```
+~~~
 
 ## Top-N metrics
 
