@@ -66,4 +66,6 @@ org.lenskit.cli.util
 org.lenskit.eval.crossfold
 org.lenskit.results
 org.lenskit.util
+org.lenskit.util.collections
+org.lenskit.util.keys
 org.lenskit.util.math
