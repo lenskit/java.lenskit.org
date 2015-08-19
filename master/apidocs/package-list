@@ -46,7 +46,6 @@ org.grouplens.lenskit.slopeone
 org.grouplens.lenskit.symbols
 org.grouplens.lenskit.transform.clamp
 org.grouplens.lenskit.transform.normalize
-org.grouplens.lenskit.transform.quantize
 org.grouplens.lenskit.transform.threshold
 org.grouplens.lenskit.transform.truncate
 org.grouplens.lenskit.util
@@ -65,6 +64,7 @@ org.lenskit.cli.commands
 org.lenskit.cli.util
 org.lenskit.eval.crossfold
 org.lenskit.results
+org.lenskit.transform.quantize
 org.lenskit.util
 org.lenskit.util.collections
 org.lenskit.util.keys
