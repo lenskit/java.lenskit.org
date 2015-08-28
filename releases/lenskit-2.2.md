@@ -2,7 +2,6 @@
 title: Release 2.2
 version: 2.2
 milestone: 2.2
-snapshot: true
 layout: release
 ---
 

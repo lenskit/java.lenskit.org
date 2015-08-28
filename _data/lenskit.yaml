@@ -3,6 +3,7 @@ version: 2.2
 next: 3.0
 downloadUrl: http://dl.bintray.com/lenskit/lenskit-releases
 releases:
+  - 3.0
   - 2.2
   - 2.1
   - 2.0.5
