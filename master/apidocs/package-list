@@ -5,13 +5,10 @@ org.grouplens.lenskit.cli
 org.grouplens.lenskit.collections
 org.grouplens.lenskit.config
 org.grouplens.lenskit.core
-org.grouplens.lenskit.cursors
 org.grouplens.lenskit.data.dao
 org.grouplens.lenskit.data.dao.packed
 org.grouplens.lenskit.data.event
 org.grouplens.lenskit.data.history
-org.grouplens.lenskit.data.pref
-org.grouplens.lenskit.data.snapshot
 org.grouplens.lenskit.data.source
 org.grouplens.lenskit.data.sql
 org.grouplens.lenskit.data.text
@@ -29,7 +26,6 @@ org.grouplens.lenskit.eval.metrics.topn
 org.grouplens.lenskit.eval.results
 org.grouplens.lenskit.eval.script
 org.grouplens.lenskit.eval.traintest
-org.grouplens.lenskit.indexes
 org.grouplens.lenskit.inject
 org.grouplens.lenskit.iterative
 org.grouplens.lenskit.scored
@@ -53,7 +49,8 @@ org.lenskit.basic
 org.lenskit.cli
 org.lenskit.cli.commands
 org.lenskit.cli.util
-org.lenskit.data.summary
+org.lenskit.data.events
+org.lenskit.data.ratings
 org.lenskit.eval.crossfold
 org.lenskit.external
 org.lenskit.knn
