@@ -40,6 +40,10 @@ Is your project missing from this list? [Let us know](/connect/).
 
 -   Michael D. Ekstrand, Daniel Kluver, F. Maxwell Harper, and Joseph A. Konstan. 2015. [Letting Users Choose Recommender Algorithms: An Experimental Study](http://md.ekstrandom.net/research/pubs/choose-recs). In Proceedings of the Ninth ACM Conference on Recommender Systems (RecSys ‘15). ACM. DOI=[10.1145/2792838.2800195](http://doi.acm.org/10.1145/2792838.2800195).
 
+-   Maria Soledad Pera and Yiu-kai Ng. 2015. A Recommendation-Based Book-Exchange System Without Using Wish Lists. Poster at ACM RecSys 2015.
+
+-   Nevena Dragovic and Maria Soledad Pera. 2015. Exploiting Reviews to Guide Users' Selections. Poster at ACM RecSys 2015.
+
 -   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI [10.1145/2645710.2645746](http://dx.doi.org/10.1145/2645710.2645746)
 
     This work introduces and uses [Rival](http://rival.recommenders.net/), a
