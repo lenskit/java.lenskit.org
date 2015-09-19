@@ -39,13 +39,13 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2015
 
--   F. Maxwell Harper, Funing Xu, Harmanpreet Kaur, Kyle Condiff, Shuo Chang, and Loren Terveen. 2015. Putting Users in Control of Their Recommendations. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. New York, NY, USA: ACM, 3–10. DOI=[10.1145/2792838.2800179](http://dx.doi.org/10.1145/2792838.2800179)
+-   F. Maxwell Harper, Funing Xu, Harmanpreet Kaur, Kyle Condiff, Shuo Chang, and Loren Terveen. 2015. Putting Users in Control of Their Recommendations. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. ACM. DOI=[10.1145/2792838.2800179](http://dx.doi.org/10.1145/2792838.2800179)
 
 -   Michael D. Ekstrand, Daniel Kluver, F. Maxwell Harper, and Joseph A. Konstan. 2015. [Letting Users Choose Recommender Algorithms: An Experimental Study](http://md.ekstrandom.net/research/pubs/choose-recs). In *Proceedings of the Ninth ACM Conference on Recommender Systems (RecSys ‘15)*. ACM. DOI=[10.1145/2792838.2800195](http://doi.acm.org/10.1145/2792838.2800195).
 
--   Axel Magnuson, Vijay Dialani, and Deepa Mallela. 2015. Event Recommendation Using Twitter Activity. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. New York, NY, USA: ACM, 331–332. DOI=[10.1145/2792838.2796556](http://dx.doi.org/10.1145/2792838.2796556).
+-   Axel Magnuson, Vijay Dialani, and Deepa Mallela. 2015. Event Recommendation Using Twitter Activity. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. ACM. DOI=[10.1145/2792838.2796556](http://dx.doi.org/10.1145/2792838.2796556).
 
--  Martin Wischenbart, Sergio Firmenich, Gustavo Rossi, and Manuel Wimmer. 2015. [Recommender Systems for the People — Enhancing Personalization in Web Augmentation](http://ceur-ws.org/Vol-1438/paper10.pdf). In *Proceedings of the RecSys '15 Join Workshop on Interfaces and Human Decision Making for Recommender Systems (IntIRS '15)*.
+-  Martin Wischenbart, Sergio Firmenich, Gustavo Rossi, and Manuel Wimmer. 2015. [Recommender Systems for the People — Enhancing Personalization in Web Augmentation](http://ceur-ws.org/Vol-1438/paper10.pdf). In *Proceedings of the RecSys '15 Joint Workshop on Interfaces and Human Decision Making for Recommender Systems (IntIRS '15)*.
 
 -   Maria Soledad Pera and Yiu-kai Ng. 2015. [A Recommendation-Based Book-Exchange System Without Using Wish Lists](http://ceur-ws.org/Vol-1441/recsys2015_poster1.pdf). In *Poster Proceedings of ACM RecSys 2015*.
 
