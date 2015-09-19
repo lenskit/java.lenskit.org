@@ -30,19 +30,45 @@ href="http://dx.doi.org/10.1145/2043932.2043958">10.1145/2043932.2043958</a>.
 
 [zotero]: https://www.zotero.org/groups/lenskit/items/collectionKey/MQR6B47C
 
-LensKit has been used in a number of published papers.
+LensKit has been used in a number of published papers.  In this list, we have attempted to collect published research that has used the LensKit software in some capacity.
 This list is also available as a [Zotero group collection][zotero].
 
 <aside markdown="span">
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
+### 2015
 
--   Michael D. Ekstrand, Daniel Kluver, F. Maxwell Harper, and Joseph A. Konstan. 2015. [Letting Users Choose Recommender Algorithms: An Experimental Study](http://md.ekstrandom.net/research/pubs/choose-recs). In Proceedings of the Ninth ACM Conference on Recommender Systems (RecSys ‘15). ACM. DOI=[10.1145/2792838.2800195](http://doi.acm.org/10.1145/2792838.2800195).
+-   F. Maxwell Harper, Funing Xu, Harmanpreet Kaur, Kyle Condiff, Shuo Chang, and Loren Terveen. 2015. Putting Users in Control of Their Recommendations. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. New York, NY, USA: ACM, 3–10. DOI=[10.1145/2792838.2800179](http://dx.doi.org/10.1145/2792838.2800179)
 
--   Maria Soledad Pera and Yiu-kai Ng. 2015. A Recommendation-Based Book-Exchange System Without Using Wish Lists. Poster at ACM RecSys 2015.
+-   Michael D. Ekstrand, Daniel Kluver, F. Maxwell Harper, and Joseph A. Konstan. 2015. [Letting Users Choose Recommender Algorithms: An Experimental Study](http://md.ekstrandom.net/research/pubs/choose-recs). In *Proceedings of the Ninth ACM Conference on Recommender Systems (RecSys ‘15)*. ACM. DOI=[10.1145/2792838.2800195](http://doi.acm.org/10.1145/2792838.2800195).
 
--   Nevena Dragovic and Maria Soledad Pera. 2015. Exploiting Reviews to Guide Users' Selections. Poster at ACM RecSys 2015.
+-   Axel Magnuson, Vijay Dialani, and Deepa Mallela. 2015. Event Recommendation Using Twitter Activity. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. New York, NY, USA: ACM, 331–332. DOI=[10.1145/2792838.2796556](http://dx.doi.org/10.1145/2792838.2796556).
+
+-  Martin Wischenbart, Sergio Firmenich, Gustavo Rossi, and Manuel Wimmer. 2015. [Recommender Systems for the People — Enhancing Personalization in Web Augmentation](http://ceur-ws.org/Vol-1438/paper10.pdf). In *Proceedings of the RecSys '15 Join Workshop on Interfaces and Human Decision Making for Recommender Systems (IntIRS '15)*.
+
+-   Maria Soledad Pera and Yiu-kai Ng. 2015. [A Recommendation-Based Book-Exchange System Without Using Wish Lists](http://ceur-ws.org/Vol-1441/recsys2015_poster1.pdf). In *Poster Proceedings of ACM RecSys 2015*.
+
+-   Nevena Dragovic and Maria Soledad Pera. 2015. [Exploiting Reviews to Guide Users' Selections](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In *Poster Proceedings of ACM RecSys 2015*.
+
+-   Santiago Larraín, Denis Parra, and Alvaro Soto. 2015. [Towards Improving Top-N Recommendation by
+Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In *Poster Proceedings of ACM RecSys 2015*.
+
+-   Ioannis T. Christou, Emmanouil Amolochitis, and Zheng-Hua Tan. 2015. AMORE: design and implementation of a commercial-strength parallel hybrid movie recommendation engine. *Knowl Inf Syst* (August 2015), 1–26. DOI=[10.1007/s10115-015-0866-z](http://dx.doi.org/10.1007/s10115-015-0866-z).
+
+-   Nipa Chowdhury , Xiongcai Cai, Cheng Luo. 2015. BoostMF: Boosted Matrix Factorization for Collaborative Ranking. *Machine Learning and Knowledge Discovery in Databases*, *Lecture Notes in Computer Science* vol. 9285. Springer. DOI=[10.1007/978-3-319-23525-7_1](http://dx.doi.org/10.1007/978-3-319-23525-7_1)
+
+-   Shuo Chang, F. Maxwell Harper, and Loren Terveen. 2015. Using Groups of Items for Preference Elicitation in Recommender Systems. In Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing. CSCW ’15. New York, NY, USA: ACM, 1258–1269. DOI=[10.1145/2675133.2675210](http://dx.doi.org/10.1145/2675133.2675210)
+
+-   Yinzhi Cao and Junfeng Yang. 2015. [Towards Making Systems Forget with Machine Unlearning](http://www.ieee-security.org/TC/SP2015/papers-archived/6949a463.pdf). In *Proceedings of the 36th IEEE Symposium on Security and Privacy*. IEEE.
+
+-   Benjamin Kille et al. 2015. Stream-Based Recommendations: Online and Offline Evaluation as a Service. In Josiane Mothe et al., eds. *Experimental IR Meets Multilinguality, Multimodality, and Interaction*. *Lecture Notes in Computer Science*. Springer International Publishing, 497–517. DOI=[10.1007/978-3-319-24027-5_48](http://dx.doi.org/10.1007/978-3-319-24027-5_48).
+
+-   Abhijeet Ghoshal, Syam Menon, and Sumit Sarkar. 2015. Recommendations Using Information from Multiple Association Rules: A Probabilistic Approach. *Information Systems Research*, vol. 26, iss. 3, pp. 532–551. DOI=[10.1287/isre.2015.0583](http://dx.doi.org/10.1287/isre.2015.0583)
+
+-   Frederik Ek and Robert Stigsson. 2015. [Recommender Systems; Contextual Multi-Armed Bandit Algorithms for the purpose of targeted advertisement within e-commerce](http://publications.lib.chalmers.se/records/fulltext/219662/219662.pdf). Masters’ thesis. Gothenburg, Sweden: Chalmers University of Technology.
+
+### 2014
 
 -   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI [10.1145/2645710.2645746](http://dx.doi.org/10.1145/2645710.2645746)
 
@@ -71,13 +97,19 @@ Is your project missing from this list? [Let us know](/connect/).
     First ACM Conference on Learning @ Scale* (ACM L@S ’14). ACM.
     DOI=[10.1145/2556325.2566244](http://dx.doi.org/10.1145/2556325.2566244).
 
+### 2013
+
 -   Tien T. Nguyen, Daniel Kluver, Ting-Yu Wang, Pik-Mai Hui, Michael D. Ekstrand, Martijn C. Willemsen, and John Riedl. 2013. Rating Support Interfaces to Improve User Experience and Recommender Accuracy. In *Proceedings of the Seventh ACM Conference on Recommender Systems* (RecSys '13). ACM, New York, NY, USA. DOI=[10.1145/2507157.2507188](http://dx.doi.org/10.1145/2507157.2507188).
+
+### 2012
 
 -   Daniel Kluver, Tien T. Nguyen, Michael Ekstrand, Shilad Sen, and John Riedl. 2012. How Many Bits per Rating?. In *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 99-106. DOI=[10.1145/2365952.2365974](http://doi.acm.org/10.1145/2365952.2365974).
 
 -   Michael Ekstrand and John Riedl. 2012. [When Recommenders Fail: Predicting Recommender Failure for Algorithm Selection and Combination](https://elehack.net/research/pubs/when-recommenders-fail/). Short paper in *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 233-236. DOI=[10.1145/2365952.2366002](http://doi.acm.org/10.1145/2365952.2366002).
 
 -   Guimerà, R., Llorente, A., Moro, E. and Sales-Pardo, M., 2012. Predicting Human Preferences Using the Block Structure of Complex Social Networks. *PLoS ONE*, **7**(9), p.e44620. DOI=[10.1371/journal.pone.0044620](http://dx.doi.org/10.1371/journal.pone.0044620).
+
+### 2011
 
 -   Michael D. Ekstrand, Michael Ludwig, Joseph A. Konstan, and John T. Riedl. 2011. [Rethinking The Recommender Research Ecosystem: Reproducibility,
     Openness, and LensKit](https://elehack.net/research/pubs/lenskit). In
