@@ -37,7 +37,7 @@ This list is also available as a [Zotero group collection][zotero].
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
-### 2015
+### 2015 {#2015}
 
 -   F. Maxwell Harper, Funing Xu, Harmanpreet Kaur, Kyle Condiff, Shuo Chang, and Loren Terveen. 2015. Putting Users in Control of Their Recommendations. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. New York, NY, USA: ACM, 3–10. DOI=[10.1145/2792838.2800179](http://dx.doi.org/10.1145/2792838.2800179)
 
@@ -68,7 +68,7 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
 
 -   Frederik Ek and Robert Stigsson. 2015. [Recommender Systems; Contextual Multi-Armed Bandit Algorithms for the purpose of targeted advertisement within e-commerce](http://publications.lib.chalmers.se/records/fulltext/219662/219662.pdf). Masters’ thesis. Gothenburg, Sweden: Chalmers University of Technology.
 
-### 2014
+### 2014 {#2014}
 
 -   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI [10.1145/2645710.2645746](http://dx.doi.org/10.1145/2645710.2645746)
 
