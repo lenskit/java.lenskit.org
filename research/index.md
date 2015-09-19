@@ -37,7 +37,7 @@ This list is also available as a [Zotero group collection][zotero].
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
-### 2015 {#2015}
+### 2015 {: #2015}
 
 -   F. Maxwell Harper, Funing Xu, Harmanpreet Kaur, Kyle Condiff, Shuo Chang, and Loren Terveen. 2015. Putting Users in Control of Their Recommendations. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. New York, NY, USA: ACM, 3–10. DOI=[10.1145/2792838.2800179](http://dx.doi.org/10.1145/2792838.2800179)
 
@@ -68,7 +68,7 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
 
 -   Frederik Ek and Robert Stigsson. 2015. [Recommender Systems; Contextual Multi-Armed Bandit Algorithms for the purpose of targeted advertisement within e-commerce](http://publications.lib.chalmers.se/records/fulltext/219662/219662.pdf). Masters’ thesis. Gothenburg, Sweden: Chalmers University of Technology.
 
-### 2014 {#2014}
+### 2014 {: #2014}
 
 -   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI [10.1145/2645710.2645746](http://dx.doi.org/10.1145/2645710.2645746)
 
@@ -97,11 +97,11 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
     First ACM Conference on Learning @ Scale* (ACM L@S ’14). ACM.
     DOI=[10.1145/2556325.2566244](http://dx.doi.org/10.1145/2556325.2566244).
 
-### 2013
+### 2013 {:#2013}
 
 -   Tien T. Nguyen, Daniel Kluver, Ting-Yu Wang, Pik-Mai Hui, Michael D. Ekstrand, Martijn C. Willemsen, and John Riedl. 2013. Rating Support Interfaces to Improve User Experience and Recommender Accuracy. In *Proceedings of the Seventh ACM Conference on Recommender Systems* (RecSys '13). ACM, New York, NY, USA. DOI=[10.1145/2507157.2507188](http://dx.doi.org/10.1145/2507157.2507188).
 
-### 2012
+### 2012 {:#2012}
 
 -   Daniel Kluver, Tien T. Nguyen, Michael Ekstrand, Shilad Sen, and John Riedl. 2012. How Many Bits per Rating?. In *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 99-106. DOI=[10.1145/2365952.2365974](http://doi.acm.org/10.1145/2365952.2365974).
 
