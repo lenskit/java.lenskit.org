@@ -26,6 +26,8 @@ New York, NY, USA, 133-140. DOI=<a
 href="http://dx.doi.org/10.1145/2043932.2043958">10.1145/2043932.2043958</a>.
 </div>
 
+We would also appreciate it if you could send a PDF and citation for your article to <ekstrand@acm.org>, so we can know where all LensKit is being used.
+
 ## Research Using LensKit
 
 [zotero]: https://www.zotero.org/groups/lenskit/items/collectionKey/MQR6B47C
@@ -86,10 +88,16 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
     the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI
     [10.1145/2645710.2645737](http://dx.doi.org/10.1145/2645710.2645737).
 
+-   Tien T. Nguyen. 2014. Improving Recommender Systems: User Roles and Lifecycles. In *Proceedings of the 8th ACM Conference on Recommender Systems*. RecSys ’14. ACM, 417–420. DOI=[10.1145/2645710.2653363](http://dx.doi.org/10.1145/2645710.2653363)
+
 -   Michael D. Ekstrand. 2014. [*Towards Recommender Engineering: Tools and
     Experiments for Identifying Recommender
     Differences*](http://elehack.net/research/thesis). Ph.D thesis, University
     of Minnesota.
+
+-   E. Amolochitis, I.T. Christou, and Zheng-Hua Tan. 2014. Implementing a Commercial-Strength Parallel Hybrid Movie Recommendation Engine. *IEEE Intelligent Systems* 29, 2 (March 2014), 92–96. DOI=[10.1109/MIS.2014.23](http://dx.doi.org/10.1109/MIS.2014.23)
+
+-   Yuchen Zhao, Juan Ye, and Tristan Henderson. 2014. Privacy-aware Location Privacy Preference Recommendations. In *Proceedings of the 11th International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services*. MOBIQUITOUS ’14. ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering), 120–129. DOI=[10.4108/icst.mobiquitous.2014.258017](http://dx.doi.org/10.4108/icst.mobiquitous.2014.258017)
 
 -   Joseph A. Konstan, J.D. Walker, D. Christopher Brooks, Keith Brown, and
     Michael D. Ekstrand. 2014. Teaching Recommender Systems at Large Scale:
@@ -108,6 +116,8 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
 -   Michael Ekstrand and John Riedl. 2012. [When Recommenders Fail: Predicting Recommender Failure for Algorithm Selection and Combination](https://elehack.net/research/pubs/when-recommenders-fail/). Short paper in *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 233-236. DOI=[10.1145/2365952.2366002](http://doi.acm.org/10.1145/2365952.2366002).
 
 -   Guimerà, R., Llorente, A., Moro, E. and Sales-Pardo, M., 2012. Predicting Human Preferences Using the Block Structure of Complex Social Networks. *PLoS ONE*, **7**(9), p.e44620. DOI=[10.1371/journal.pone.0044620](http://dx.doi.org/10.1371/journal.pone.0044620).
+
+-   Sebastian Schelter, Christoph Boden, and Volker Markl. 2012. Scalable Similarity-based Neighborhood Methods with MapReduce. In Proceedings of the Sixth ACM Conference on Recommender Systems. RecSys ’12. New York, NY, USA: ACM, 163–170. DOI=[10.1145/2365952.2365984](http://dx.doi.org/10.1145/2365952.2365984).
 
 ### 2011
 
