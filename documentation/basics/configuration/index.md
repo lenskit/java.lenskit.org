@@ -6,13 +6,13 @@ redirect_from:
 
 # Configuring a LensKit Recommender
 
-[LenskitRecommenderEngineFactory]: http://lenskit.org/apidocs/org/grouplens/lenskit/core/LenskitRecommenderEngineFactory.html
+[LenskitRecommenderEngineFactory]: http://lenskit.org/apidocs/org/grouplens/lenskit/core/LenskitConfiguration.html
 
 One of LensKit's goals is to be highly configurable with regards to
 the algorithms used, choice of parameters for them, and various
 algorithmic decisions for each algorithm (e.g. the similarity function
 used for k-NN collaborative filtering, or the normalization applied to
-ratings). [LenskitRecommenderEngineFactory][] is the main entry point
+ratings). [LenskitConfiguration][] is the main entry point
 for configuring a recommender.
 
 Recommender configuration is done by selecting the correct
@@ -23,32 +23,33 @@ many of them use other components behind the scenes to do their
 work. In the example code in GettingStarted, we find this line:
 
 ~~~java
-factory.bind(RatingPredictor.class).to(ItemItemRatingPredictor.class);
+config.bind(ItemScorer.class).to(ItemItemScorer.class);
 ~~~
 
-[ItemItemRatingPredictor]: http://lenskit.org/apidocs/org/grouplens/knn/item/ItemItemRatingPredictor.html
-[RatingPredictor]: http://lenskit.org/apidocs/org/grouplens/lenskit/RatingPredictor.html
+[ItemItemScorer]: http://lenskit.org/apidocs/org/grouplens/knn/item/ItemItemRatingPredictor.html
+[ItemScorer]: http://lenskit.org/apidocs/org/grouplens/lenskit/RatingPredictor.html
 [Guice]: https://code.google.com/p/google-guice/
 [WP:DI]: http://en.wikipedia.org/wiki/Dependency_injection
 
 If you are familiar with [dependency injection][WP:DI], particularly
 with [Guice][], this line will look familiar.  What it does is tell
-LensKit that we want to use [ItemItemRatingPredictor][] as the
-implementation of the [RatingPredictor][] component. When our code
-then asks the recommender for a rating predictor, it will use an
-`ItemItemRatingPredictor`. Likewise, any other components that use a
-`RatingPredictor`, such as an `ItemItemRecommender`, will use the
-`ItemItemRatingPredictor`.
+LensKit that we want to use [ItemItemScorer][] as the
+implementation of the [ItemScorer][] component. When our code
+then asks the recommender for an item scorer, it will use the item-item collaborative filter
+provided by
+`ItemItemScorer`. Likewise, any other components that use a
+`ItemScorer`, such as an `TopNItemRecommender`, will use the
+`ItemItemScorer`.
 
-[ItemItemRecommender]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/item/ItemItemRecommender.html
+[TopNItemRecommender]: http://lenskit.org/apidocs/org/grouplens/lenskit/basic/TopNItemRecommender.html
 [Grapht]: http://github.com/grouplens/grapht
 
 When you look at the JavaDoc for a component implementation, such as
-[ItemItemRecommender][], you will see that it takes the components it
+[ItemItemScorer][], you will see that it takes the components it
 uses (its ''dependencies'') as parameters to its constructor or,
 occasionally, parameters to setter methods. This is because LensKit is
 built using the Dependency Injection design pattern. The
-`LenskitRecommenderEngineFactory` provides ''automatic dependency
+LensKit recommender engine and its builders provide ''automatic dependency
 injection'', built using the [Grapht][] dependency injection
 container. It automatically instantiates the various components in
 accordance with the configuration (bindings) you provide in order to
@@ -69,9 +70,9 @@ provide a cleaner, more easily discoverable solution in most cases.
 To bind in a context, use the `within` method:
 
 ~~~java
-factory.within(SimpleNeighborhoodFinder.class)
-       .bind(UserVectorNormalizer.class)
-       .to(BaselineSubtractingNormalizer.class);
+config.within(SimpleNeighborhoodFinder.class)
+      .bind(UserVectorNormalizer.class)
+      .to(BaselineSubtractingNormalizer.class);
 ~~~
 
 [SimpleNeighborhoodFinder]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/SimpleNeighborhoodFinder.html
@@ -107,7 +108,7 @@ factory.set(NeighborhoodSize.class).to(50);
 Type safety is somewhat relaxed for parameters, but they are used for
 numeric or occasionally string values.
 
-### Qualifiers 
+### Qualifiers
 
 Parameters are a special case of the more general concept of
 ''qualifiers'' — annotations which are annotated with `@Qualifier`
@@ -115,16 +116,16 @@ from JSR 330, and are used to specify additional distinctions between
 objects. You can bind one using the two-parameter version of `bind`:
 
 ~~~java
-factory.bind(Qualifier.class, ComponentType.class)
-       .to(ComponentImpl.class);
+config.bind(Qualifier.class, ComponentType.class)
+      .to(ComponentImpl.class);
 ~~~
 
 Alternatively, you can use the `withQualifier` method of `Binding`:
 
 ~~~java
-factory.bind(ComponentType.class)
-       .withQualifier(Qualifier.class)
-       .to(ComponentImpl.class);
+config.bind(ComponentType.class)
+      .withQualifier(Qualifier.class)
+      .to(ComponentImpl.class);
 ~~~
 
 Qualifiers are used in a couple of places:
