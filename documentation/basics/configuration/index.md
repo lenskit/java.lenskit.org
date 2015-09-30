@@ -6,7 +6,7 @@ redirect_from:
 
 # Configuring a LensKit Recommender
 
-[LenskitRecommenderEngineFactory]: http://lenskit.org/apidocs/org/grouplens/lenskit/core/LenskitConfiguration.html
+[LenskitConfiguration]: http://lenskit.org/apidocs/org/grouplens/lenskit/core/LenskitConfiguration.html
 
 One of LensKit's goals is to be highly configurable with regards to
 the algorithms used, choice of parameters for them, and various
