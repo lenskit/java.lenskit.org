@@ -6,14 +6,15 @@ redirect_from:
 
 # Configuring a LensKit Recommender
 
-[LenskitConfiguration]: http://lenskit.org/apidocs/org/grouplens/lenskit/core/LenskitConfiguration.html
+[LenskitConfiguration]: /apidocs/org/grouplens/lenskit/core/LenskitConfiguration.html
 
 One of LensKit's goals is to be highly configurable with regards to
 the algorithms used, choice of parameters for them, and various
 algorithmic decisions for each algorithm (e.g. the similarity function
 used for k-NN collaborative filtering, or the normalization applied to
 ratings). [LenskitConfiguration][] is the main entry point
-for configuring a recommender.
+for configuring a recommender; typically, configurations are described
+by Groovy files loaded using [ConfigHelpers][load] or [ConfigurationLoader][].
 
 Recommender configuration is done by selecting the correct
 implementation for various ''components'' (typically defined by Java
@@ -26,8 +27,8 @@ work. In the example code in GettingStarted, we find this line:
 config.bind(ItemScorer.class).to(ItemItemScorer.class);
 ~~~
 
-[ItemItemScorer]: http://lenskit.org/apidocs/org/grouplens/knn/item/ItemItemRatingPredictor.html
-[ItemScorer]: http://lenskit.org/apidocs/org/grouplens/lenskit/RatingPredictor.html
+[ItemItemScorer]: /apidocs/org/grouplens/lenskit/knn/item/ItemItemRatingPredictor.html
+[ItemScorer]: /apidocs/org/grouplens/lenskit/RatingPredictor.html
 [Guice]: https://code.google.com/p/google-guice/
 [WP:DI]: http://en.wikipedia.org/wiki/Dependency_injection
 
@@ -41,7 +42,7 @@ provided by
 `ItemScorer`, such as an `TopNItemRecommender`, will use the
 `ItemItemScorer`.
 
-[TopNItemRecommender]: http://lenskit.org/apidocs/org/grouplens/lenskit/basic/TopNItemRecommender.html
+[TopNItemRecommender]: /apidocs/org/grouplens/lenskit/basic/TopNItemRecommender.html
 [Grapht]: http://github.com/grouplens/grapht
 
 When you look at the JavaDoc for a component implementation, such as
@@ -75,7 +76,7 @@ config.within(SimpleNeighborhoodFinder.class)
       .to(BaselineSubtractingNormalizer.class);
 ~~~
 
-[SimpleNeighborhoodFinder]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/user/SimpleNeighborhoodFinder.html
+[SimpleNeighborhoodFinder]: /apidocs/org/grouplens/lenskit/knn/user/SimpleNeighborhoodFinder.html
 
 This uses the baseline-subtracting normalizer as the vector
 normalizer, but only when building the [SimpleNeighborhoodFinder][] or
@@ -95,7 +96,7 @@ Grapht also provides an `at` method, in addition to `within`; if you use `at` in
 
 ### Parameters
 
-[NeighborhoodSize]: http://lenskit.org/apidocs/org/grouplens/lenskit/knn/params/NeighborhoodSize.html
+[NeighborhoodSize]: /apidocs/org/grouplens/lenskit/knn/params/NeighborhoodSize.html
 
 LensKit provides many parameters, which are annotated with various
 annotations (such as [NeighborhoodSize][].  These parameters are set
@@ -148,7 +149,7 @@ within(UserVectorNormalizer) {
 }
 ~~~
 
-[load]: http://lenskit.org/apidocs/org/grouplens/lenskit/config/ConfigHelpers.html#load%28java.io.File%29
-[ConfigurationLoader]: http://lenskit.org/apidocs/org/grouplens/lenskit/config/ConfigurationLoader.html
+[load]: /apidocs/org/grouplens/lenskit/config/ConfigHelpers.html#load%28java.io.File%29
+[ConfigurationLoader]: /apidocs/org/grouplens/lenskit/config/ConfigurationLoader.html
 
 You can load this by using [ConfigHelpers.load][load] or the [ConfigurationLoader][] class.
