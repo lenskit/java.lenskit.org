@@ -70,3 +70,4 @@ This will produce a box plot of per-user RMSE:
 
 - This whole project can be [cloned from GitHub](https://github.com/lenskit/simple-eval-demo/).
 - [Walk through the eval script](../walkthrough/)
+- [Example code integrating a LensKit evaluation with custom Java code](https://github.com/lenskit/eval-quickstart)

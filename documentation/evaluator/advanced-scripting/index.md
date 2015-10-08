@@ -4,6 +4,10 @@ title: Advanced Evaluator Scripting
 
 # Advanced Evaluator Scripting
 
+<aside markdown="1">
+**Note**: This functionality is deprecated and will be replaced with Gradle plugins in LensKit 3.0.
+</aside>
+
 The evaluation scripts are actually Groovy scripts, using an embedded
 domain-specific language (EDSL) for evaluating recommenders provided as a part
 of the LensKit evaluation framework.  Simple scripts look a lot like sectioned
@@ -52,7 +56,7 @@ target("evaluate") {
 
     trainTest("item-item algorithm") {
         dataset ml100k
-   
+
         algorithm("PersMean") {
             bind ItemScorer to UserMeanItemScorer
             bind (UserMeanBaseline, ItemScorer) to ItemMeanRatingItemScorer
