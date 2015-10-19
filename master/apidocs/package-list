@@ -34,6 +34,7 @@ org.lenskit.data.output
 org.lenskit.data.packed
 org.lenskit.data.ratings
 org.lenskit.eval.crossfold
+org.lenskit.eval.temporal
 org.lenskit.eval.traintest
 org.lenskit.eval.traintest.metrics
 org.lenskit.eval.traintest.predict
