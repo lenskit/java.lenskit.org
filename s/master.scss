@@ -145,10 +145,12 @@ footer {
     style: none none none solid;
     width: 6px;
   }
-  &.warning {
+
+  &.warning, &.info, &.error {
     background: #F7F7F7 none repeat scroll 0% 0%;
     color: #333;
   }
+
   p:last-child {
     margin-bottom: 0;
   }
