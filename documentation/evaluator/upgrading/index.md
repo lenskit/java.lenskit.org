@@ -198,8 +198,8 @@ Recommendations operate similarly, but have some additional configuration option
 ~~~groovy
 recommend {
     listSize 25
-    candidates "allItems"
-    exclude "user.trainItems"
+    candidateItems "allItems"
+    excludeItems "user.trainItems"
     outputFile "$buildDir/recommendations.csv.gz"
     metric 'ndcg'
     metric('mrr') {
@@ -229,11 +229,11 @@ This is a little complicated, because we want to remove the training items from 
 These changes do mean that any metrics you wrote for LensKit 2 will need to be modified to work with
 the new metric interfaces for LensKit 3.  There are two base classes, [PredictMetric][] and
 [TopNMetric][].  Consult the source code for LensKit's metric implementations, such as
-[TopNMRRMetric][], for an example of what a new metric should look like.
+[TopNLengthMetric][], for an example of what a new metric should look like.
 
 [PredictMetric]: /master/apidocs/org/lenskit/eval/traintest/predict/PredictMetric.html
 [TopNMetric]: /master/apidocs/org/lenskit/eval/traintest/recommend/TopNMetric.html
-[TopNMRRMetric]: https://github.com/lenskit/lenskit/blob/master/lenskit-eval/src/main/java/org/lenskit/eval/traintest/recommend/TopNMRRMetric.java
+[TopNLengthMetric]: https://github.com/lenskit/lenskit/blob/master/lenskit-eval/src/main/java/org/lenskit/eval/traintest/recommend/TopNLengthMetric.java
 [ItemSelectScript]: /master/apidocs/org/lenskit/eval/traintest/recommend/ItemSelector.ItemSelectScript.html
 
 ## Finishing Up
