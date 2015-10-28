@@ -18,12 +18,12 @@ on GitHub.
 [qs]: https://github.com/lenskit/eval-quickstart
 [Gradle]: http://gradle.org
 
-<aside class="alert-box note" markdown="1">
+<aside class="alert-box info" markdown="1">
 Previously, there was a Maven plugin for controlling these evaluations.  The Maven plugin is no
 longer supported as of LensKit 2.2.
 </aside>
 
-<aside class="alert-box note" markdown="1">
+<aside class="alert-box info" markdown="1">
 In LensKit 3, the evaluator will be even more closely integrated with Gradle.  See [Upgrading](../upgrading/) for more details of what's coming.
 </aside>
 
