@@ -11,7 +11,8 @@ capabilities.
 
 -   [Quick Start](quickstart)
 -   [Eval Script Walkthrough](walkthrough)
--   [Advanced Evaluation Scripting](advanced-scripting)
+-   [Organizing an Evaluation Project](organizing)
 -   [Data Processing](data)
 -   [Metrics](metrics)
+-   [Advanced Evaluation Scripting](advanced-scripting)
 -   [Evaluator Internals](http://github.com/lenskit/lenskit/wiki/EvaluatorInternals)

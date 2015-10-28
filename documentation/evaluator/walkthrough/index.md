@@ -9,7 +9,7 @@ operations such as crossfolding a data set an running a train-test evaluation
 over it.  By convention, these script files are named `eval.groovy`; if you are
 running several different experiments on the same data set(s), it is useful to
 put them in separate `.groovy` files and select the one you want with the `-f`
-option to `lenskit eval`. 
+option to `lenskit eval`.
 
 Consider again the evaluation script from the [Quick Start guide](../quickstart/):
 
@@ -118,3 +118,6 @@ You can also set two additional output files:
 -   `userOutput` will write a file containing metric results for each test user.  Use this if you want to post-process metric results on a user-by-user level.
 -   `predictOutput` writes each prediction (and its associated actual rating) to a CSV file.  This allows you to compute your own prediction accuracy metrics externally.
 
+## Further Reading
+
+- [Organizing an Evaluation Project](../organizing/)
