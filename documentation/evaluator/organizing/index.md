@@ -88,6 +88,8 @@ You can also use Gradle to render the notebook to a static HTML file, `build/ana
 
     ./gradlew analyzeResults
 
+The results will look [something like this](analysis.html).
+
 ## Understanding the Build Script
 
 The heart of the build script is the `evaluate` task, that runs the LensKit evaluator:
