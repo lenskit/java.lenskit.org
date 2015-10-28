@@ -4,7 +4,7 @@ title: Advanced Evaluator Scripting
 
 # Advanced Evaluator Scripting
 
-<aside markdown="1">
+<aside class="alert-box warning" markdown="1">
 **Note**: This functionality is deprecated and will be replaced with Gradle plugins in LensKit 3.0.
 </aside>
 
