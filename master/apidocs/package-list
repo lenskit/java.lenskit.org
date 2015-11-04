@@ -52,6 +52,9 @@ org.lenskit.predict
 org.lenskit.predict.ordrec
 org.lenskit.results
 org.lenskit.slopeone
+org.lenskit.specs
+org.lenskit.specs.data
+org.lenskit.specs.eval
 org.lenskit.transform.quantize
 org.lenskit.util
 org.lenskit.util.collections

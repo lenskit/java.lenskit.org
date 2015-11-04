@@ -142,7 +142,18 @@ function windowTitle()
         </ul>
     </div>
 
-    <div class="aboutLanguage"><em>Groovy Documentation</em></div>
+    <div class="aboutLanguage"><em>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/languages/groovy.min.js"></script>
+      <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+      <script type="text/javascript">
+        var link = document.createElement('link')
+        link.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/mono-blue.min.css')
+        link.setAttribute('rel', 'stylesheet')
+        link.setAttribute('type', 'text/css')
+        document.getElementsByTagName('head')[0].appendChild(link)
+      </script>
+    </em></div>
     <a name="skip-navbar_bottom">
         <!--   -->
     </a></div>

@@ -1,6 +1,3 @@
 org.lenskit.gradle
 org.lenskit.gradle.delegates
 org.lenskit.gradle.traits
-org.lenskit.specs
-org.lenskit.specs.data
-org.lenskit.specs.eval
