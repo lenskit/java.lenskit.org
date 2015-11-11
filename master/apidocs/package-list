@@ -1,5 +1,3 @@
-org.grouplens.lenskit
-org.grouplens.lenskit.basic
 org.grouplens.lenskit.cli
 org.grouplens.lenskit.collections
 org.grouplens.lenskit.data.history
