@@ -164,8 +164,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 
 <dt><span class="strong"><a href="org/lenskit/gradle/traits/DataBuilder.html" title="Trait in org.lenskit.gradle.traits">DataBuilder</a></span> - Trait in <a href="./org/lenskit/gradle/traits/package-summary.html">org.lenskit.gradle.traits</a>
 </dt><dd><div class="block">Something that builds data sources.  </div></dd>
-<dt><span class="strong"><a href="org/lenskit/gradle/TrainTest.html#dataSet(org.lenskit.gradle.Crossfold)" title="Method in TrainTest">dataSet(Crossfold)</a></span> - Method in <a href="org/lenskit/gradle/TrainTest.html">TrainTest</a>
+<dt><span class="strong"><a href="org/lenskit/gradle/TrainTest.html#dataSet(Map<String, Object>, org.lenskit.gradle.DataSetProvider)" title="Method in TrainTest">dataSet(Map&lt;String, Object&gt;, DataSetProvider)</a></span> - Method in <a href="org/lenskit/gradle/TrainTest.html">TrainTest</a>
 </dt><dd> <div class="block">Add a data sets produced by a crossfold task.</div></dd>
+<dt><span class="strong"><a href="org/lenskit/gradle/DataSetProvider.html" title="Interface in org.lenskit.gradle">DataSetProvider</a></span> - Interface in <a href="./org/lenskit/gradle/package-summary.html">org.lenskit.gradle</a>
+</dt><dd><div class="block">Interface implemented by tasks that provide data sets for the train-test evaluator.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/traits/DataSources.html" title="Trait in org.lenskit.gradle.traits">DataSources</a></span> - Trait in <a href="./org/lenskit/gradle/traits/package-summary.html">org.lenskit.gradle.traits</a>
 </dt><dd><div class="block">Support for specifying various types of data sources.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/LenskitTask.html#doCleanup(org.gradle.process.ExecResult)" title="Method in LenskitTask">doCleanup(ExecResult)</a></span> - Method in <a href="org/lenskit/gradle/LenskitTask.html">LenskitTask</a>
@@ -231,6 +233,8 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/Crossfold.html#getDataSets()" title="Method in Crossfold">getDataSets()</a></span> - Method in <a href="org/lenskit/gradle/Crossfold.html">Crossfold</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="org/lenskit/gradle/DataSetProvider.html#getDataSets()" title="Method in DataSetProvider">getDataSets()</a></span> - Method in <a href="org/lenskit/gradle/DataSetProvider.html">DataSetProvider</a>
+</dt><dd> <div class="block">Get the data sets built by this task.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/traits/DataBuilder.html#getDataSourceSpec()" title="Method in DataBuilder">getDataSourceSpec()</a></span> - Method in <a href="org/lenskit/gradle/traits/DataBuilder.html">DataBuilder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/PackRatings.html#getDataSourceSpec()" title="Method in PackRatings">getDataSourceSpec()</a></span> - Method in <a href="org/lenskit/gradle/PackRatings.html">PackRatings</a>
