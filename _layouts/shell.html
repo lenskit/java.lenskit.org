@@ -12,6 +12,10 @@
 </title>
 <link rel="icon" type="image/png" href="/s/lenskit-mini.png">
 <link rel="stylesheet" href="/s/master.css">
+<link rel="stylesheet" href="/s/fonts/liberation/stylesheet.css">
+<link rel="stylesheet" href="/s/fonts/pt-sans/stylesheet.css">
+<link rel="stylesheet" href="/s/fonts/inconsolata/stylesheet.css">
+<link rel="stylesheet" href="/bower_components/highlightjs/styles/github.css">
 {% capture basename %}{{ page.url | split:"/" | last }}{% endcapture %}
 {% if basename == 'index.html' %}
 <link rel="canonical" href="{{ page.url | remove: 'index.html' }}">
@@ -28,6 +32,7 @@
 </footer>
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/foundation/js/foundation.min.js"></script>
+<script src="/bower_components/highlightjs/highlight.pack.js"></script>
 <script src="/s/lenskit.js"></script>
 {% for script in page.scripts %}
 <script type="text/javascript" src="{{script}}"></script>

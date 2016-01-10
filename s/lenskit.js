@@ -1,4 +1,5 @@
 $(document).foundation();
+hljs.initHighlighting();
 
 function navMatches(elt) {
   var path = window.location.pathname;
@@ -41,14 +42,3 @@ $('#site-menu li').each(function() {
     $(this).addClass('active');
   }
 });
-
-$(document).load(function() {
-  if ($('pre code').length > 0) {
-    // we need highlight.js
-    $('head').append('<script src="/bower_components/highlightjs/highlightjs.pack.js" type="text/javascript"></script>')
-    $('head').append('<link rel="stylesheet" href="/bower_components/highlightjs/styles/github.css">')
-    $('head script').last().load(function() {
-      hljs.initHighlighting();
-    })
-  }
-})
