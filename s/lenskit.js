@@ -1,6 +1,19 @@
-$(document).foundation();
+var hjsb = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/'
+require.config({
+  paths: {
+    'foundation': '/bower_components/foundation/js/foundation',
+    'modernizr': '/bower_components/modernizr/modernizr',
+    'jquery': '/bower_components/jquery/dist/jquery',
+    'hljs': '/bower_components/highlightjs/highlight.pack'
+  }
+})
+require(["jquery", "modernizr"], function($) {
+  require(["foundation"], function() {
+    $(document).foundation();
+  })
+})
 
-function navMatches(elt) {
+function navMatches($, elt) {
   var path = window.location.pathname;
   var url = $('a', elt).attr('href');
   if (url === undefined || url.match('^(https?:)?\\/\\/')) {
@@ -29,25 +42,26 @@ function navMatches(elt) {
   }
 }
 
-$('.side-nav li').each(function() {
-  if (navMatches(this)) {
-    console.log('found active URL');
-    $(this).addClass('active');
+require(["jquery"], function($) {
+  $('.side-nav li').each(function() {
+    if (navMatches($, this)) {
+      console.log('found active URL');
+      $(this).addClass('active');
+    }
+  });
+  $('#site-menu li').each(function() {
+    if (navMatches($, this)) {
+      console.log('found active URL');
+      $(this).addClass('active');
+    }
+  });
+  // check if we need to enable HighlightJS
+  if ($('pre code').length > 0) {
+    console.log('enabling highlight.js')
+    $('head').append('<link rel="stylesheet" type="text/css" href="' + hjsb + 'styles/github.min.css">')
+    require(['hljs'], function(hljs) {
+      console.log('highlight.js loaded, initializing')
+      window.hljs.initHighlighting();
+    })
   }
-});
-$('#site-menu li').each(function() {
-  if (navMatches(this)) {
-    console.log('found active URL');
-    $(this).addClass('active');
-  }
-});
-// check if we need to enable HighlightJS
-if ($('pre code').length > 0) {
-  console.log('enabling HighlightJS')
-  var hjsb = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/'
-  $('head').append('<link rel="stylesheet" type="text/css" href="' + hjsb + 'styles/github.min.css">')
-  $('head').append('<script type="text/javascript" src="' + hjsb + 'highlight.min.js" id="hljs-load" async></script>')
-  $('#hljs-load').load(function() {
-    hljs.initHighlighting();
-  })
-}
+})
