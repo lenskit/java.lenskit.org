@@ -30,6 +30,8 @@ defaults:
       priority: 0.8
 
 markdown: kramdown
+sass:
+  style: compressed
 
 kramdown:
   input: kramdown
