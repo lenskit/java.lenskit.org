@@ -3,6 +3,7 @@ require.config({
   paths: {
     'foundation': '/bower_components/foundation/js/foundation.min',
     // 'modernizr': '/bower_components/modernizr/modernizr',
+    'modernizr': 'modernizr.min',
     'jquery': '/bower_components/jquery/dist/jquery.min',
     'hljs': '/bower_components/highlightjs/highlight.pack'
   }
