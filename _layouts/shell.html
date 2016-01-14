@@ -16,7 +16,6 @@
 {% if basename == 'index.html' %}
 <link rel="canonical" href="{{ page.url | remove: 'index.html' }}">
 {% endif %}
-<script src="/bower_components/modernizr/modernizr.js"></script>
 <script type="text/javascript">
   WebFontConfig = {
     google: { families: [
@@ -44,6 +43,7 @@
 <footer>
   {% include footer.html %}
 </footer>
+<script src="/bower_components/modernizr/modernizr.js"></script>
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/foundation/js/foundation.min.js"></script>
 <script src="/s/lenskit.js"></script>

@@ -1,5 +1,4 @@
 $(document).foundation();
-hljs.initHighlighting();
 
 function navMatches(elt) {
   var path = window.location.pathname;
@@ -44,7 +43,11 @@ $('#site-menu li').each(function() {
 });
 // check if we need to enable HighlightJS
 if ($('pre code').length > 0) {
+  console.log('enabling HighlightJS')
   var hjsb = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/'
   $('head').append('<link rel="stylesheet" type="text/css" href="' + hjsb + 'styles/github.min.css">')
-  $('head').append('<script type="text/javascript" src="' + hjsb + 'highlight.min.js" async></script>')
+  $('head').append('<script type="text/javascript" src="' + hjsb + 'highlight.min.js" id="hljs-load" async></script>')
+  $('#hljs-load').load(function() {
+    hljs.initHighlighting();
+  })
 }
