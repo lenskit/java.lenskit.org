@@ -2,7 +2,7 @@ var hjsb = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/'
 require.config({
   paths: {
     'foundation': '/bower_components/foundation/js/foundation.min',
-    'modernizr': '/bower_components/modernizr/modernizr',
+    // 'modernizr': '/bower_components/modernizr/modernizr',
     'jquery': '/bower_components/jquery/dist/jquery.min',
     'hljs': '/bower_components/highlightjs/highlight.pack'
   }
