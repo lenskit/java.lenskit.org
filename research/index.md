@@ -90,6 +90,8 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
 
 -   Tien T. Nguyen. 2014. Improving Recommender Systems: User Roles and Lifecycles. In *Proceedings of the 8th ACM Conference on Recommender Systems*. RecSys ’14. ACM, 417–420. DOI=[10.1145/2645710.2653363](http://dx.doi.org/10.1145/2645710.2653363)
 
+-   Abhijeet Ghoshal and Sumit Sakar. 2014. Association Rules for Recommendations with Multiple Items. *INFORMS Journal on Computing* 26(3):433–448. DOI [10.1287/ijoc.2013.0575](http://dx.doi.org/10.1287/ijoc.2013.0575).
+
 -   Michael D. Ekstrand. 2014. [*Towards Recommender Engineering: Tools and
     Experiments for Identifying Recommender
     Differences*](http://md.ekstrandom.net/research/thesis). Ph.D thesis, University
