@@ -17,7 +17,7 @@ If you publish research that uses LensKit, please cite:
 
 <div class="citation" markdown="span">
 Michael D. Ekstrand, Michael Ludwig, Joseph A. Konstan,
-and John T. Riedl. 2011. <a href="https://md.ekstrandom.net/research/pubs/lenskit"
+and John T. Riedl. 2011. <a href="http://md.ekstrandom.net/research/pubs/lenskit"
 class="pub-title">Rethinking The Recommender Research Ecosystem:
 Reproducibility, Openness, and LensKit</a>. In <span
 class="pub-venue">Proceedings
@@ -115,7 +115,7 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
 
 -   Daniel Kluver, Tien T. Nguyen, Michael Ekstrand, Shilad Sen, and John Riedl. 2012. How Many Bits per Rating?. In *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 99-106. DOI=[10.1145/2365952.2365974](http://doi.acm.org/10.1145/2365952.2365974).
 
--   Michael Ekstrand and John Riedl. 2012. [When Recommenders Fail: Predicting Recommender Failure for Algorithm Selection and Combination](https://md.ekstrandom.net/research/pubs/when-recommenders-fail/). Short paper in *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 233-236. DOI=[10.1145/2365952.2366002](http://doi.acm.org/10.1145/2365952.2366002).
+-   Michael Ekstrand and John Riedl. 2012. [When Recommenders Fail: Predicting Recommender Failure for Algorithm Selection and Combination](http://md.ekstrandom.net/research/pubs/when-recommenders-fail/). Short paper in *Proceedings of the Sixth ACM Conference on Recommender Systems* (RecSys '12). ACM, New York, NY, USA, 233-236. DOI=[10.1145/2365952.2366002](http://doi.acm.org/10.1145/2365952.2366002).
 
 -   Guimerà, R., Llorente, A., Moro, E. and Sales-Pardo, M., 2012. Predicting Human Preferences Using the Block Structure of Complex Social Networks. *PLoS ONE*, **7**(9), p.e44620. DOI=[10.1371/journal.pone.0044620](http://dx.doi.org/10.1371/journal.pone.0044620).
 
@@ -124,6 +124,6 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
 ### 2011
 
 -   Michael D. Ekstrand, Michael Ludwig, Joseph A. Konstan, and John T. Riedl. 2011. [Rethinking The Recommender Research Ecosystem: Reproducibility,
-    Openness, and LensKit](https://md.ekstrandom.net/research/pubs/lenskit). In
+    Openness, and LensKit](http://md.ekstrandom.net/research/pubs/lenskit). In
     *Proceedings of the Fifth ACM Conference on Recommender
     Systems* (RecSys ’11). ACM, New York, NY, USA, 133-140. DOI=[10.1145/2043932.2043958](http://dx.doi.org/10.1145/2043932.2043958).
