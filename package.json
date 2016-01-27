@@ -2,9 +2,13 @@
   "name": "lenskit.github.io",
   "version": "0.1.0",
   "devDependencies": {
+    "cheerio": "^0.19.0",
     "gulp": "^3.9.0",
+    "gulp-ignore": "^2.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.1"
+    "gulp-uglify": "^1.5.1",
+    "lunr": "^0.6.0",
+    "through": "^2.3.8"
   },
   "license": "UNLICENSED",
   "repository": {
