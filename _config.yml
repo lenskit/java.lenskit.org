@@ -8,7 +8,7 @@ exclude:
   - bower.json
   - package.json
   - node_modules
-  - Gruntfile.js
+  - gulpfile.js
   - Vagrantfile
   - .vagrant
 
