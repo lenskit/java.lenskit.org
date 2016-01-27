@@ -111,6 +111,7 @@ gulp.task('index-apidocs', function() {
               method.declaration = $('h4:first-child + pre', this).text()
                 .replace(/\s+/g, ' ').trim();
               method.description = stringify($, $('h4:first-child + pre ~ *', this));
+              lastA = undefined;
             }
           } else {
             console.warn('found unexpected tag %s', tag)
