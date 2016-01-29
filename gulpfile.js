@@ -162,7 +162,7 @@ gulp.task('index-apidocs', function() {
       this.emit('data', new VF({
         base: '/apidocs/',
         path: '/apidocs/search-index.json',
-        contents: new Buffer(JSON.stringify(this.index.toJSON()))
+        contents: new Buffer(JSON.stringify(this.index))
       }))
       this.emit('data', new VF({
         base: '/apidocs/',
