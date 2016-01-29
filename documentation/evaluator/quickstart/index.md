@@ -28,8 +28,9 @@ To run the evaluator, you'll need the following:
 
 The core of an experiment is the evaluation script, typically called `eval.groovy`:
 
-{% gist 4f86eb836dc4ed35e995 %}
-
+```groovy
+{% include_relative eval.groovy %}
+```
 
 Unpack your MovieLens data set (your current directory should have an
 `eval.groovy` file and a `ml-100k` directory), and run the script using the
@@ -60,7 +61,15 @@ This does does a few things:
 LensKit produces a CSV file containing the evaluation results.  This can be
 analyzed with your choice of tool, for example R:
 
-{% gist 14e07223ccca80860aed %}
+```R
+library(ggplot2)
+
+eval.results = read.csv('eval-results.csv')
+
+png('results.png')
+qplot(Algorithm, RMSE.ByUser, data=eval.results, geom='boxplot')
+dev.off()
+```
 
 This will produce a box plot of per-user RMSE:
 
