@@ -1,0 +1,13 @@
+---
+index: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+    {% for page in site.pages|where:"index",true %}
+    <page>
+        <title>{{page.title}}</title>
+        <url>{{page.url}}</url>
+        <body><![CDATA[{{page.content}}]]></body>
+    </page>
+    {% endfor %}
+</index>
