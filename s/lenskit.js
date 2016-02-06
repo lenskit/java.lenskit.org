@@ -57,12 +57,12 @@ require(["jquery"], function($) {
     }
   });
   // check if we need to enable HighlightJS
-  if ($('pre code').length > 0) {
+  /*if ($('pre code').length > 0) {
     console.log('enabling highlight.js')
     $('head').append('<link rel="stylesheet" type="text/css" href="' + hjsb + 'styles/github.min.css">')
     require(['hljs'], function(hljs) {
       console.log('highlight.js loaded, initializing')
       window.hljs.initHighlighting();
     })
-  }
+  }*/
 })

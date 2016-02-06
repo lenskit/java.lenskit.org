@@ -68,6 +68,10 @@ header div{
 pre {
   font-size: $paragraph-font-size;
   margin-bottom: 1em;
+  background: #f8f8f8;
+  code {
+    border: 0;
+  }
 }
 
 article {
