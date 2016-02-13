@@ -13,9 +13,9 @@ option to `lenskit eval`.
 
 Consider again the evaluation script from the [Quick Start guide](../quickstart/):
 
-```groovy
+~~~groovy
 {% include_relative eval.groovy %}
-```
+~~~
 
 To run an evaluation, you need four basic things:
 
