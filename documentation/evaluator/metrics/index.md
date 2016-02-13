@@ -67,7 +67,7 @@ As of LensKit 2.2, the following Top-N metrics are available:
 
 -   `topNnDCG` — normalized discounted cumulative gain
 -   `topNLength` — actual length of the top-N list (to measure truncated lists due to low coverage)
--   `topNPrecisionRecall` — precision and recall at *N*; requires a `good` set
+-   `topNRecallPrecision` — precision and recall at *N*; requires a `good` set
 -   `topNnDCG` — nDCG applied to top-*N* lists (its more typical application)
 -   `topNPopularity` — measures popularity of recommended items
 -   `topNMAP` — mean average precision; requires a `good` set
