@@ -67,6 +67,8 @@ header div{
 
 pre {
   font-size: $paragraph-font-size;
+  font-size: $paragraph-font-size * 0.85;
+  padding: 1ex;
   margin-bottom: 1em;
   background: #f8f8f8;
   code {
