@@ -4,3 +4,4 @@
 .idea
 *.iml
 .vagrant
+.jekyll-metadata

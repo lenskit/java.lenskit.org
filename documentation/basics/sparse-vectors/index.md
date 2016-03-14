@@ -1,5 +1,7 @@
 ---
 title: Sparse Vectors
+prev: configuration
+next: data-access
 ---
 
 [sv]: http://lenskit.org/apidocs/org/grouplens/lenskit/vectors/package-summary.html

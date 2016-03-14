@@ -4,4 +4,27 @@ scripts:
 - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 layout: default
 ---
+<article>
 {{content}}
+</article>
+<nav class="doc-nav">
+  {% assign url_parts = page.url | split:"/" %}
+  {% if page.prev %}
+  {% for other in site.pages %}
+  {% assign parts = other.url | split:"/" %}
+  {% assign bn = parts | last %}
+  {% if parts[1] == "documentation" and bn == page.prev %}
+  <div class="prev">Previous: <a href="{{other.url}}" class="prev">{{other.title}}</a></div>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  {% if page.next %}
+  {% for other in site.pages %}
+  {% assign parts = other.url | split:"/" %}
+  {% assign bn = parts | last %}
+  {% if parts[1] == "documentation" and bn == page.next %}
+  <div class="next">Next: <a href="{{other.url}}" class="next">{{other.title}}</a></div>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+</nav>

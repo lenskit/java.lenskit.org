@@ -2,6 +2,8 @@
 title: Configuration
 redirect_from:
   - /lenskit-groovy/index.html
+next: data-access
+prev: structure
 ---
 
 # Configuring a LensKit Recommender
