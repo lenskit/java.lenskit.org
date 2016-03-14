@@ -1,5 +1,6 @@
 ---
 title: Item-Item CF
+next: user-user
 ---
 
 # Item-Item Collaborative Filtering

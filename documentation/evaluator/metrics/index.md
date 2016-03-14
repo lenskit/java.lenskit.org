@@ -1,5 +1,7 @@
 ---
 title: Evaluator Metrics
+prev: data
+next: advanced-scripting
 ---
 
 # Evaluator Metrics

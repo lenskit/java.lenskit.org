@@ -1,5 +1,7 @@
 ---
 title: Organizing an Evaluation Project
+next: data
+prev: walkthrough
 ---
 
 # Organizing an Evaluation Project

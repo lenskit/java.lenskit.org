@@ -1,5 +1,7 @@
 ---
 title: Matrix Factorization
+next: slope-one
+prev: user-user
 ---
 
 # Matrix Factorization CF

@@ -1,5 +1,7 @@
 ---
 title: Evaluator Data Processing
+prev: organizing
+next: metrics
 ---
 
 # Data Processing in the Evaluator

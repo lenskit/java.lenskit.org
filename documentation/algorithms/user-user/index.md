@@ -1,5 +1,7 @@
 ---
 title: User-User CF
+next: svd
+prev: item-item
 ---
 
 # User-User Collaborative Filtering
@@ -65,4 +67,3 @@ Unless you use anchored matching (`at` instead of `within`), you need to overrid
 The components of the user-user algorithm are shown below:
 
 ![User-User Components](user-user.svg)
-    
