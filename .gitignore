@@ -1,6 +1,9 @@
 /_site
 /node_modules
 Gemfile.lock
+/result
+/_vendor
+/.bundle
 .sass-cache
 .idea
 *.iml
