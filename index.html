@@ -9,68 +9,62 @@ header:
 redirect_from:
   - /maven-site/index.html
 ---
-<div itemscope itemtype="http://schema.org/SoftwareApplication">
-<header class="row">
-  <div class="large-12 columns logo">
-    <a href="//lenskit.org/" itemprop="url"><img src="/s/logo.png" alt="LensKit" itemprop="image"></a>
-    <p itemprop="description">Open-Source Tools for Recommender Systems
-  </div>
+<div itemscope itemtype="http://schema.org/SoftwareApplication" class="pure-g main frontpage">
+<header class="pure-u-1-1">
+  <a href="//lenskit.org/" itemprop="url"><img src="/s/logo.png" alt="LensKit" itemprop="image"></a>
+  <p itemprop="description">Open-Source Tools for Recommender Systems
 </header>
-<div class="row">
-  <div class="medium-6 columns use-case">
-    <div class="uc-header">
-      <a href="build"><img class='uc-logo' src="/s/building.svg"></a>
-      <h2><a href="build">Build</a></h2>
-      <p>Use LensKit to build your next recommender application.
-    </div>
-  </div>
-  <div class="medium-6 columns use-case">
-    <div class="uc-header">
-      <a href="research"><img class='uc-logo' src="/s/science.svg"></a>
-      <h2><a href="research">Research</a></h2>
-      <p>Use LensKit to research recommender algorithms, evaluation techniques, or user experience.
-    </div>
+<div class="use-case pure-u-1-1 pure-u-md-1-2">
+  <div class="uc-header">
+    <a href="build"><img class='uc-logo' src="/s/building.svg"></a>
+    <h2><a href="build">Build</a></h2>
+    <p>Use LensKit to build your next recommender application.
   </div>
 </div>
-<div class="row">
-  <div class="medium-6 columns project-info">
-    <section>
-      <h2>Get <span itemprop="name">LensKit</span></h2>
-      <ul class='highlights'>
-        <li><a itemprop="downloadUrl" href="https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view">Download latest binaries</a> (<a itemprop="releaseNotes" href="/releases/lenskit-{{site.data.lenskit.version}}.html">version <span itemprop="softwareVersion">{{site.data.lenskit.version}}</span></a>)
-        <li>Latest version: <a href="/releases/lenskit-{{site.data.lenskit.version}}.html">{{site.data.lenskit.version}}</a>
-        {% if site.data.lenskit.prerelease %}
-        <li>Latest prelease: <a href="/releases/lenskit-{{site.data.lenskit.next}}.html">{{site.data.lenskit.prerelease}}</a>
-        {% endif %}
-        <li><a href="http://search.maven.org/#artifactdetails|org.grouplens.lenskit|lenskit-all|2.1-M4|jar">Get from Maven Central</a>
-        <li><a href="https://github.com/grouplens/lenskit">Get the source on GitHub</a>
-      </ul>
-      <div class="read-more"><a href="download/">More download information &rightarrow;</a></div>
-    </section>
-    <section>
-      <h2>Learn about LensKit</h2>
-      <ul class='highlights'>
-        <li><a href="http://www.youtube.com/watch?v=ug_JfORWK7w">Watch the video</a>
-        <li><a itemprop="softwareHelp" href="documentation/">Read the documentation</a>
-      </ul>
-    </section>
-    <section>
-      <h2>Connect with LensKit</h2>
-      <ul class='highlights'>
-        <li>Join our <a itemprop="discussionUrl" href="https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit">mailing list</a>
-        <li>Report and discuss <a href="https://github.com/grouplens/lenskit/issues">issues on GitHub</a>
-        <li><a href="https://twitter.com/intent/user?screen_name=LensKitRS">Follow LensKit on Twitter</a>
-      </ul>
-    </section>
-  </div>
-  <div class="show-for-large-up large-1 columns">&nbsp;</div>
-  <div class="medium-6 large-5 columns twitterbox">
-    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/LensKitRS" data-widget-id="285782633399599104">Tweets by &commat;LensKitRS</a>
+<div class="use-case pure-u-1-1 pure-u-md-1-2">
+  <div class="uc-header">
+    <a href="research"><img class='uc-logo' src="/s/science.svg"></a>
+    <h2><a href="research">Research</a></h2>
+    <p>Use LensKit to research recommender algorithms, evaluation techniques, or user experience.
   </div>
 </div>
-<div class="row">
+<div class="project-info pure-u-1-1 pure-u-md-1-2">
+  <section>
+    <h2>Get <span itemprop="name">LensKit</span></h2>
+    <ul class='highlights'>
+      <li><a itemprop="downloadUrl" href="https://bintray.com/lenskit/lenskit-releases/lenskit/{{site.data.lenskit.version}}/view">Download latest binaries</a> (<a itemprop="releaseNotes" href="/releases/lenskit-{{site.data.lenskit.version}}.html">version <span itemprop="softwareVersion">{{site.data.lenskit.version}}</span></a>)
+      <li>Latest version: <a href="/releases/lenskit-{{site.data.lenskit.version}}.html">{{site.data.lenskit.version}}</a>
+      {% if site.data.lenskit.prerelease %}
+      <li>Latest prelease: <a href="/releases/lenskit-{{site.data.lenskit.next}}.html">{{site.data.lenskit.prerelease}}</a>
+      {% endif %}
+      <li><a href="http://search.maven.org/#artifactdetails|org.grouplens.lenskit|lenskit-all|2.1-M4|jar">Get from Maven Central</a>
+      <li><a href="https://github.com/grouplens/lenskit">Get the source on GitHub</a>
+    </ul>
+    <div class="read-more"><a href="download/">More download information &rightarrow;</a></div>
+  </section>
+  <section>
+    <h2>Learn about LensKit</h2>
+    <ul class='highlights'>
+      <li><a href="http://www.youtube.com/watch?v=ug_JfORWK7w">Watch the video</a>
+      <li><a itemprop="softwareHelp" href="documentation/">Read the documentation</a>
+    </ul>
+  </section>
+  <section>
+    <h2>Connect with LensKit</h2>
+    <ul class='highlights'>
+      <li>Join our <a itemprop="discussionUrl" href="https://wwws.cs.umn.edu/mm-cs/listinfo/lenskit">mailing list</a>
+      <li>Report and discuss <a href="https://github.com/grouplens/lenskit/issues">issues on GitHub</a>
+      <li><a href="https://twitter.com/intent/user?screen_name=LensKitRS">Follow LensKit on Twitter</a>
+    </ul>
+  </section>
+</div>
+<div class="pure-u-lg-1-12">&nbsp;</div>
+<div class="twitterbox pure-u-md-1-2 pure-u-lg-5-12">
+  <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/LensKitRS" data-widget-id="285782633399599104">Tweets by &commat;LensKitRS</a>
+</div>
+<div class="pure-u-1-1 info">
   <p>LensKit is free and open-source software, available under the terms of the <a href="https://www.gnu.org/licenses/lgpl-2.1.html" itemprop="license">GNU Lesser General Public license version 2.1 or later</a></p>
-  <section class="small-12 columns">
+  <section class="acknowledgements">
     <h2 class="subheader">Acknowledgements</h2>
     {% include thanks.html %}
   </section>

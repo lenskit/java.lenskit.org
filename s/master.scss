@@ -2,52 +2,6 @@
 nositemap: true
 ---
 
-@import "settings";
-@import "foundation";
-// @import "foundation/components/grid";
-// @import "foundation/components/visibility";
-// @import "foundation/components/type";
-// @import "foundation/components/top-bar";
-// @import "foundation/components/side-nav";
-
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switch",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
-
 $caption-font: 'PT Sans Caption', 'PT Sans', sans-serif;
 nav.top-bar {
   h1 {
@@ -56,18 +10,17 @@ nav.top-bar {
 }
 
 body {
-  margin-top: $topbar-height;
+  //margin-top: $topbar-height;
 }
 
 header div{
   text-align: center;
   padding-top: 50px;
-  padding-bottom: $topbar-height + 45px;
+  //padding-bottom: $topbar-height + 45px;
 }
 
 pre {
-  font-size: $paragraph-font-size;
-  font-size: $paragraph-font-size * 0.85;
+  font-size: 0.85em;
   padding: 1ex;
   margin-bottom: 1em;
   background: #f8f8f8;
@@ -83,14 +36,14 @@ article {
 }
 
 .main {
-  max-width: $row-width;
+  // max-width: $row-width;
   margin: 0 auto;
 }
 
 footer {
-  @extend .row;
+  // @extend .row;
   text-align: center;
-  color: $subheader-font-color;
+  // color: $subheader-font-color;
   font-style: italic;
 }
 
@@ -114,7 +67,7 @@ footer {
 .read-more {
     text-align: text-right;
     font-style: italic;
-    font-size: $paragraph-font-size;
+    // font-size: $paragraph-font-size;
 }
 
 .index article {
@@ -133,13 +86,13 @@ footer {
 .citation {
     line-height: 130%;
     font: {
-        size: $paragraph-font-size;
+        size: 1rem;
     }
     padding: {
         left: 2rem;
         right: 2rem;
     }
-    margin-bottom: $paragraph-margin-bottom;
+    margin-bottom: 1ex;
 
     .pub-venue {
         font-style: italic;
@@ -165,9 +118,9 @@ footer {
 aside {
     font: {
         style: italic;
-        size: $paragraph-aside-font-size;
+        size: 1rem;
     }
-    margin-bottom: $paragraph-margin-bottom;
+    margin-bottom: 1ex;
     padding: {
         left: 2rem;
         right: 2rem;
@@ -176,12 +129,12 @@ aside {
 
 a:link, a:visited {
   code {
-    color: $anchor-font-color;
+    //color: $anchor-font-color;
   }
 }
 a:hover {
   code {
-    color: $anchor-font-color-hover;
+    //color: $anchor-font-color-hover;
   }
 }
 
@@ -189,3 +142,9 @@ a:hover {
 dd {
     padding-left: 2em;
 }
+
+@import "pure";
+@import "style";
+@import "layout";
+@import "mod-frontpage";
+@import "mod-menu";

@@ -1,0 +1,49 @@
+$menu-bg: #2e3436;
+$menu-hover-bg: #555753;
+$menu-text-color: #eeeeec;
+$menu-active-color: #fcaf3e;
+
+.nav-menu {
+  background-color: $menu-bg;
+
+  font-family: $header-font;
+  font-size: 0.85rem;
+
+  .pure-menu-heading {
+    font-family: $caption-font;
+    font-weight: bold;
+    text-transform: none;
+  }
+
+  .pure-menu-link {
+    &:link,
+    &:visited {
+      color: $menu-text-color;
+    }
+
+    &:active {
+      color: $menu-active-color;
+      background-color: $menu-hover-bg;
+    }
+
+    &:hover {
+      background-color: $menu-hover-bg;
+      color: $menu-text-color;
+    }
+  }
+
+  ul {
+    position: absolute;
+    right: 0;
+  }
+
+  li {
+    @extend .pure-menu-item;
+    a {
+      @extend .pure-menu-link;
+    }
+    .dropdown {
+      display: none;
+    }
+  }
+}

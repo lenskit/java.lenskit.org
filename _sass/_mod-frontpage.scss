@@ -1,0 +1,16 @@
+.frontpage {
+  .acknowledgements {
+    margin: 1ex 1em;
+    h2 {
+      color: $light-color;
+    }
+  }
+}
+
+.use-case .uc-header {
+  text-align: center;
+  .uc-logo {
+    height: 120px;
+    width: 120px;
+  }
+}

@@ -1,0 +1,13 @@
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - config.rb
+  - bower.json
+  - package.json
+  - node_modules
+  - Gruntfile.js
+  - Vagrantfile
+  - .vagrant
+  - next
+  - apidocs
+  - master
