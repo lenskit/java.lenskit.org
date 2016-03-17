@@ -1,3 +1,7 @@
+/*!
+ * LensKit Support JavaScript
+ */
+(function() {
 function navMatches($, elt) {
   var path = window.location.pathname;
   var url = $('a', elt).attr('href');
@@ -8,13 +12,11 @@ function navMatches($, elt) {
   if (!mode) {
     mode = 'prefix';
   }
-  console.log('checking url ' + url);
   if (mode == 'exact') {
     return url === path;
   } else if (mode.substring(0,3) == 're:') {
-    var regex = mode.substring(3);
-    console.log('testing regex ' + regex);
-    return new RegExp(regex).test(path);
+    var cre = mode.substring(3);
+    return new RegExp(cre).test(path);
   } else {
     var pat;
     if (url.charAt(0) == '/') {
@@ -31,18 +33,14 @@ function checkMenu() {
   var isWide = false;
   if (window.matchMedia) {
     isWide = window.matchMedia('(min-width: 48em)').matches;
-  } else {
-    console.warn('matchMedia unavailable');
   }
   if (isWide) {
-    console.log('using wide menu');
     $('.nav-menu').each(function() {
       if (!$(this).hasClass('pure-menu-horizontal')) {
         $('.nav-menu').addClass('pure-menu-horizontal');
       }
     });
   } else {
-    console.log('using wide menu');
     $('.nav-menu').removeClass('pure-menu-horizontal');
   }
 }
@@ -52,13 +50,12 @@ window.addEventListener('onorientationchange', checkMenu);
 
 $('.side-nav li').each(function() {
   if (navMatches($, this)) {
-    console.log('found active URL');
     $(this).addClass('active');
   }
 });
 $('.nav-menu li').each(function() {
   if (navMatches($, this)) {
-    console.log('found active URL');
     $(this).addClass('active');
   }
 });
+})();

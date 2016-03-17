@@ -5,12 +5,13 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uglify: {
       options: {
-        banner: '/*! <%= grunt.task.current.nameArgs %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+        banner: '/*! LensKit JS and dependencies <%= grunt.template.today("yyyy-mm-dd") %> */\n',
         preserveComments: 'some'
       },
       lenskit: {
-        src: 's/lenskit.js',
-        dest: 's/lenskit.min.js'
+        files: {
+          's/lenskit.min.js': ['s/ender.js', 's/lenskit.js']
+        }
       }
     },
     ender: {
