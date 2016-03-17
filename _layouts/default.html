@@ -1,15 +1,20 @@
 ---
 layout: shell
 ---
-{% assign bodyWidth = "pure-u-md-1" %}
+{% assign bodyWidth = "pure-u-md-5-6" %}
 <div class="shell pure-g">
   {% if page.sidenav %}
   {% assign bodyWidth = "pure-u-md-3-4" %}
   <nav class="sidebar pure-u-1 pure-u-md-1-4">
     {% include {{page.sidenav}} %}
   </nav>
+  {% else %}
+  <div class="spacer pure-u-1 pure-u-md-1-12"></div>
   {% endif %}
   <main class="main pure-u-1 {{bodyWidth}}">
     {{content}}
   </main>
+  {% if page.sidenav %}{% else %}
+  <div class="spacer pure-u-1 pure-u-md-1-12"></div>
+  {% endif %}
 </div>

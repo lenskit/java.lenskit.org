@@ -15,13 +15,14 @@
 
     h2 {
       color: $light-color;
+      font-weight: normal;
     }
   }
 
   .read-more {
     text-align: right;
 
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: $breakpoint) {
       padding-right: 2em;
     }
   }
@@ -32,6 +33,7 @@
 
   h2 {
     font-size: 2rem;
+    font-weight: normal;
     margin: 2pt 0;
   }
 
