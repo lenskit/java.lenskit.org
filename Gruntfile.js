@@ -11,10 +11,6 @@ module.exports = function(grunt) {
       lenskit: {
         src: 's/lenskit.js',
         dest: 's/lenskit.min.js'
-      },
-      modernizr: {
-        src: 'bower_components/modernizr/modernizr.js',
-        dest: 's/modernizr.min.js'
       }
     },
     ender: {
