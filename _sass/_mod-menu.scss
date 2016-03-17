@@ -36,7 +36,7 @@ $menu-active-color: $orange-light;
     background-color: $plum-dark;
   }
 
-  ul {
+  &.pure-menu-horizontal ul {
     position: absolute;
     right: 0;
   }

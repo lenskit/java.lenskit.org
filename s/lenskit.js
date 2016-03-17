@@ -27,6 +27,29 @@ function navMatches($, elt) {
   }
 }
 
+function checkMenu() {
+  var isWide = false;
+  if (window.matchMedia) {
+    isWide = window.matchMedia('(min-width: 48em)').matches;
+  } else {
+    console.warn('matchMedia unavailable');
+  }
+  if (isWide) {
+    console.log('using wide menu');
+    $('.nav-menu').each(function() {
+      if (!$(this).hasClass('pure-menu-horizontal')) {
+        $('.nav-menu').addClass('pure-menu-horizontal');
+      }
+    });
+  } else {
+    console.log('using wide menu');
+    $('.nav-menu').removeClass('pure-menu-horizontal');
+  }
+}
+checkMenu();
+window.addEventListener('resize', checkMenu);
+window.addEventListener('onorientationchange', checkMenu);
+
 $('.side-nav li').each(function() {
   if (navMatches($, this)) {
     console.log('found active URL');
