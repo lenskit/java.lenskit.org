@@ -1,15 +1,15 @@
 ---
 layout: shell
 ---
-{% assign bodyWidth = "medium-12" %}
-<div class="row">
+{% assign bodyWidth = "pure-u-md-1" %}
+<div class="shell pure-g">
   {% if page.sidenav %}
-  {% assign bodyWidth = "medium-9" %}
-  <nav class="sidebar medium-3 columns">
+  {% assign bodyWidth = "pure-u-md-3-4" %}
+  <nav class="sidebar pure-u-1 pure-u-md-1-4">
     {% include {{page.sidenav}} %}
   </nav>
   {% endif %}
-  <div class="main {{bodyWidth}} columns">
+  <main class="main pure-u-1 {{bodyWidth}}">
     {{content}}
-  </div>
+  </main>
 </div>

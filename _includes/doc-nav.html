@@ -1,14 +1,16 @@
-<ul class="side-nav">
-  <li class="heading"><a href="/documentation/" data-match="exact">Documentation</a>
-  <li><a href="/documentation/basics/">LensKit Basics</a>
-  <li><a href="/documentation/algorithms/">Algorithms</a>
-  <li><a href="/documentation/evaluator/">Evaluator</a>
-  <li><a href="/documentation/cli/">CLI Tools</a>
-  <li><a href="/documentation/versioning/">Versioning</a>
-  <li><a href="/releases/">Release Notes</a>
-  <li><a href="/apidocs/">API Docs ({{site.data.lenskit.version}})</a>
+<div class="pure-menu">
+  <span class="pure-menu-heading"><a href="/documentation/" data-match="exact" class="">Documentation</a></span>
+<ul class="pure-menu-list">
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/documentation/basics/">LensKit Basics</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/documentation/algorithms/">Algorithms</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/documentation/evaluator/">Evaluator</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/documentation/cli/">CLI Tools</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/documentation/versioning/">Versioning</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/releases/">Release Notes</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/apidocs/">API Docs ({{site.data.lenskit.version}})</a>
   {%if site.data.lenskit.prerelease%}
-  <li><a href="/next/apidocs/">API Docs (milestone {{site.data.lenskit.prerelease}})</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/next/apidocs/">API Docs (milestone {{site.data.lenskit.prerelease}})</a>
   {%endif%}
-  <li><a href="/master/apidocs/">API Docs (development)</a>
+  <li class="pure-menu-item"><a class="pure-menu-link" href="/master/apidocs/">API Docs (development)</a>
 </ul>
+</div>

@@ -14,6 +14,7 @@ $link-visited-color: $plumb-med;
 $link-active-color: $orange-med;
 $link-hover-color: $butter-med;
 
+// base font settings
 html,
 button,
 input,
@@ -27,6 +28,7 @@ textarea,
   text-rendering: optimizeLegibility;
 }
 
+// headings
 h1,
 h2,
 h3,
@@ -44,11 +46,17 @@ h2 {
   font-weight: normal;
 }
 
+// lists
+dt {
+  font-weight: bold;
+}
+
 a:link {
   color: $link-color;
   text-decoration: none;
 }
 
+// links
 a:visited {
   color: $link-visited-color;
   text-decoration: none;
