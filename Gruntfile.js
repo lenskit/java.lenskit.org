@@ -16,12 +16,19 @@ module.exports = function(grunt) {
         src: 'bower_components/modernizr/modernizr.js',
         dest: 's/modernizr.min.js'
       }
+    },
+    ender: {
+      options: {
+        output: "s/ender.js",
+        dependencies: ["bonzo", "qwery", "bean"]
+      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-ender');
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
+  grunt.registerTask('default', ['uglify', 'ender']);
 };

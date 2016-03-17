@@ -7,5 +7,14 @@
   .pure-menu-heading {
     font-family: $caption-font;
     letter-spacing: .5pt;
+
+    a:link,
+    a:visited {
+      color: $text-color;
+    }
+  }
+
+  .active {
+    font-weight: bold;
   }
 }

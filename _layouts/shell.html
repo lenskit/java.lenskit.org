@@ -36,8 +36,6 @@
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(wf, s);
   })();</script>
-<script type="text/javascript" data-main="/s/lenskit.min" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.22/require.min.js" async>
-</script>
 </head>
 <body>
 <div class="fixed">
@@ -47,6 +45,8 @@
 <footer>
   {% include footer.html %}
 </footer>
+<script type="text/javascript" src="/s/ender.min.js"></script>
+<script type="text/javascript" src="/s/lenskit.js"></script>
 {% for script in page.scripts %}
 <script type="text/javascript" src="{{script}}"></script>
 {% endfor %}

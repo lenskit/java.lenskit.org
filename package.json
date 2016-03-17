@@ -6,5 +6,8 @@
     "grunt-contrib-uglify": "~0.5.0"
   },
   "license": "UNLICENSED",
-  "repository": "lenskit/lenskit.github.io"
+  "repository": "lenskit/lenskit.github.io",
+  "dependencies": {
+    "grunt-ender": "^0.2.1"
+  }
 }

@@ -32,13 +32,16 @@ $menu-active-color: $orange-light;
     }
   }
 
+  .pure-menu-item.active {
+    background-color: $plum-dark;
+  }
+
   ul {
     position: absolute;
     right: 0;
   }
 
   li {
-    @extend .pure-menu-item;
     a {
       @extend .pure-menu-link;
     }
