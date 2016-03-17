@@ -7,24 +7,28 @@ layout: default
 <article>
 {{content}}
 </article>
-<nav class="doc-nav">
+<nav class="doc-nav pure-g">
   {% assign url_parts = page.url | split:"/" %}
+  <div class="prev pure-u-1 pure-u-md-1-2">
   {% if page.prev %}
   {% for other in site.pages %}
   {% assign parts = other.url | split:"/" %}
   {% assign bn = parts | last %}
   {% if parts[1] == "documentation" and bn == page.prev %}
-  <div class="prev">Previous: <a href="{{other.url}}" class="prev">{{other.title}}</a></div>
+  Previous: <a href="{{other.url}}" class="prev">{{other.title}}</a>
   {% endif %}
   {% endfor %}
   {% endif %}
+  </div>
+  <div class="next pure-u-1 pure-u-md-1-2">
   {% if page.next %}
   {% for other in site.pages %}
   {% assign parts = other.url | split:"/" %}
   {% assign bn = parts | last %}
   {% if parts[1] == "documentation" and bn == page.next %}
-  <div class="next">Next: <a href="{{other.url}}" class="next">{{other.title}}</a></div>
+  Next: <a href="{{other.url}}" class="next">{{other.title}}</a>
   {% endif %}
   {% endfor %}
   {% endif %}
+  </div>
 </nav>

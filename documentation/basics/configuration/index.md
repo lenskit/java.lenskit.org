@@ -61,7 +61,7 @@ have default settings, so LensKit will “just work” if you specify the
 predictor and/or recommender you want to use, but you can always swap
 out components for ones more suited to your application as necessary.
 
-### Contexts
+## Contexts
 
 One feature provided by Grapht, and used heavily by LensKit, is
 ''context-sensitive'' bindings. These are bindings that choose how to
@@ -96,7 +96,7 @@ chain of contexts determines the actual binding to use.
 
 Grapht also provides an `at` method, in addition to `within`; if you use `at` instead of `within`, the resulting bindings are *anchored*.  Anchored bindings only override direct dependencies of the context they're applied to, whereas unanchored ones (produced by `within`) override bindings for transitive dependencies as well.
 
-### Parameters
+## Parameters
 
 [NeighborhoodSize]: /apidocs/org/grouplens/lenskit/knn/params/NeighborhoodSize.html
 
@@ -111,7 +111,7 @@ factory.set(NeighborhoodSize.class).to(50);
 Type safety is somewhat relaxed for parameters, but they are used for
 numeric or occasionally string values.
 
-### Qualifiers
+## Qualifiers
 
 Parameters are a special case of the more general concept of
 ''qualifiers'' — annotations which are annotated with `@Qualifier`
@@ -140,7 +140,7 @@ Qualifiers are used in a couple of places:
 
 Other DI frameworks, such as Guice, encourage much broader use of qualifiers than we use in LensKit. Contexts provide a preferable solution in many cases.
 
-### Groovy
+## Groovy
 
 LensKit supports a Groovy-based DSL for configuration as well.  This is used in the [evaluator](../evaluator/), and can be used by applications via the `lenskit-groovy` module.  Here is an example of a configuration in the DSL:
 

@@ -42,8 +42,24 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  
+  & + p {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  font-style: italic;
   font-weight: normal;
+  margin-bottom: 0;
+
+  & + p {
+    margin-top: 0;
+  }
 }
 
 // lists
@@ -51,12 +67,21 @@ dt {
   font-weight: bold;
 }
 
+dd {
+  padding-left: 2em;
+}
+
+ul,
+ol {
+  padding-left: 1em;
+}
+
+// links
 a:link {
   color: $link-color;
   text-decoration: none;
 }
 
-// links
 a:visited {
   color: $link-visited-color;
   text-decoration: none;
@@ -70,4 +95,66 @@ a:active {
 a:hover {
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+
+// code
+pre,
+code {
+  font-family: $code-font;
+}
+
+code {
+  background: $aluminium1;
+  padding: 1pt 2.5pt;
+}
+
+pre {
+  background: $aluminium1;
+
+  font-size: .85em;
+
+  margin-bottom: 1em;
+  padding: 1ex;
+}
+
+// text block features
+aside {
+    font: {
+        style: italic;
+        size: 1rem;
+    }
+    margin-bottom: 1ex;
+    padding: {
+        left: 2rem;
+        right: 2rem;
+    }
+}
+
+.alert-box {
+  border: {
+    style: none none none solid;
+    width: 6px;
+  }
+
+  &.warning, &.info, &.error {
+    background: #F7F7F7 none repeat scroll 0% 0%;
+    color: #333;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// citations
+.citation {
+    padding: {
+        left: 2rem;
+        right: 2rem;
+    }
+    margin-bottom: 1ex;
+
+    .pub-venue {
+        font-style: italic;
+    }
 }
