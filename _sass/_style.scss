@@ -46,16 +46,20 @@ h2 {
 
 a:link {
   color: $link-color;
+  text-decoration: none;
 }
 
 a:visited {
   color: $link-visited-color;
+  text-decoration: none;
 }
 
 a:active {
   color: $link-active-color;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: $link-hover-color;
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
