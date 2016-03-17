@@ -39,6 +39,7 @@ org.lenskit.eval.traintest.predict
 org.lenskit.eval.traintest.recommend
 org.lenskit.external
 org.lenskit.graph
+org.lenskit.hybrid
 org.lenskit.inject
 org.lenskit.knn
 org.lenskit.knn.item

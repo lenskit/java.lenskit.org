@@ -1,5 +1,6 @@
 ---
 title: Data Access
+prev: sparse-vectors
 ---
 
 # Data Access in LensKit

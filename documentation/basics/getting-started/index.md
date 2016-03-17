@@ -1,5 +1,6 @@
 ---
 title: Getting Started
+next: structure
 ---
 
 # Getting Started with LensKit

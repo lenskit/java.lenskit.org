@@ -1,5 +1,6 @@
 ---
 title: Slope-One
+prev: svd
 ---
 
 # Slope-One Recommenders
@@ -39,7 +40,7 @@ The [SlopeOneModel][] consists of two matrices, one to store deviation values an
 
 - `@DeviationDamping`: The only configurable parameter for Slope One is [Deviation Damping][]. This is a constant value that is added to the number of coratings when calculating the deviation of an item pair. The default value for this parameter is 0.
 
-  
+
 ## Diagram
 
 ![Slope-One object diagram](slope-one.svg)

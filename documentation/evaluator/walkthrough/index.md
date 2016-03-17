@@ -1,5 +1,7 @@
 ---
 title: Eval Script Walkthrough
+next: organizing
+prev: quickstart
 ---
 
 # Evaluation Scripts

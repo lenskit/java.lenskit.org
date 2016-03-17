@@ -1,5 +1,7 @@
 ---
 title: Recommender Structure
+next: configuration
+prev: getting-started
 ---
 
 # Structure of a LensKit Recommender
@@ -53,4 +55,3 @@ Both the rating predictor and the item recommender use the item scorer to genera
 You can use different item scorers for prediction and recommendation, using [context-sensitive configuration](../configuration/).
 
 Also, while the default rating predictor and item recommender use an item scorer, you can implement item recommenders and rating predictors that do not use an item scorer if you wish.
-

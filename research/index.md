@@ -39,9 +39,17 @@ This list is also available as a [Zotero group collection][zotero].
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
+### 2016
+
+-   Toon de Pessemier, Jeroen Dhondt, and Luc Martens. 2016. Hybrid group recommendations for a travel service. *Multimedia Tools and Applications* vol. 75 no. 5 (March 2016). Springer. DOI=[10.1007/s11042-016-3265-x](http://dx.doi.org/10.1007/s11042-016-3265-x).
+
+-   F. Maxwell Harper and Joseph A. Konstan. [The MovieLens Datasets: History and Context](http://grouplens.org/publications/#entry-I8IHQBTU). *Transactions on Interactive Intelligent Systems* vol. 5 no. 4 (January, 2016). ACM. DOI=[10.1145/2827872](http://dx.doi.org/10.1145/2827872).
+
 ### 2015
 
--   F. Maxwell Harper, Funing Xu, Harmanpreet Kaur, Kyle Condiff, Shuo Chang, and Loren Terveen. 2015. Putting Users in Control of Their Recommendations. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. ACM. DOI=[10.1145/2792838.2800179](http://dx.doi.org/10.1145/2792838.2800179)
+-   A. Elkhelifi, F. Ben Kharrat, and R. Faiz. 2015. Recommendation Systems Based on Online User's Action. In *Proceedings of the 2015 IEEE International Conference on Computer and Information Technology; Ubiquitous Computing and Communications; Dependable, Autonomic, and Secure Computing; Pervasive Intelligence and Computing* (CIT/IUCC/DASC/PICOM). IEEE. DOI=[10.1109/CIT/IUCC/DASC/PICOM.2015.69](http://dx.doi.org/10.1109/CIT/IUCC/DASC/PICOM.2015.69).
+
+-   F. Maxwell Harper, Funing Xu, Harmanpreet Kaur, Kyle Condiff, Shuo Chang, and Loren Terveen. 2015. Putting Users in Control of Their Recommendations. In *Proceedings of the 9th ACM Conference on Recommender Systems (RecSys ’15)*. ACM. DOI=[10.1145/2792838.2800179](http://dx.doi.org/10.1145/2792838.2800179).
 
 -   Michael D. Ekstrand, Daniel Kluver, F. Maxwell Harper, and Joseph A. Konstan. 2015. [Letting Users Choose Recommender Algorithms: An Experimental Study](http://md.ekstrandom.net/research/pubs/choose-recs). In *Proceedings of the Ninth ACM Conference on Recommender Systems (RecSys ‘15)*. ACM. DOI=[10.1145/2792838.2800195](http://doi.acm.org/10.1145/2792838.2800195).
 
@@ -58,21 +66,23 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
 
 -   Ioannis T. Christou, Emmanouil Amolochitis, and Zheng-Hua Tan. 2015. AMORE: design and implementation of a commercial-strength parallel hybrid movie recommendation engine. *Knowl Inf Syst* (August 2015), 1–26. DOI=[10.1007/s10115-015-0866-z](http://dx.doi.org/10.1007/s10115-015-0866-z).
 
--   Nipa Chowdhury , Xiongcai Cai, Cheng Luo. 2015. BoostMF: Boosted Matrix Factorization for Collaborative Ranking. *Machine Learning and Knowledge Discovery in Databases*, *Lecture Notes in Computer Science* vol. 9285. Springer. DOI=[10.1007/978-3-319-23525-7_1](http://dx.doi.org/10.1007/978-3-319-23525-7_1)
+-   Nipa Chowdhury , Xiongcai Cai, Cheng Luo. 2015. BoostMF: Boosted Matrix Factorization for Collaborative Ranking. *Machine Learning and Knowledge Discovery in Databases*, *Lecture Notes in Computer Science* vol. 9285. Springer. DOI=[10.1007/978-3-319-23525-7_1](http://dx.doi.org/10.1007/978-3-319-23525-7_1).
 
--   Shuo Chang, F. Maxwell Harper, and Loren Terveen. 2015. Using Groups of Items for Preference Elicitation in Recommender Systems. In Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing. CSCW ’15. New York, NY, USA: ACM, 1258–1269. DOI=[10.1145/2675133.2675210](http://dx.doi.org/10.1145/2675133.2675210)
+-   Jeroen Dhondt. 2015. [*A Hybrid Group Recommender System for Travel Destinations*](http://lib.ugent.be/catalog/rug01:002224826). M.S. thesis, University of Gent.
+
+-   Shuo Chang, F. Maxwell Harper, and Loren Terveen. 2015. Using Groups of Items for Preference Elicitation in Recommender Systems. In Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing. CSCW ’15. New York, NY, USA: ACM, 1258–1269. DOI=[10.1145/2675133.2675210](http://dx.doi.org/10.1145/2675133.2675210).
 
 -   Yinzhi Cao and Junfeng Yang. 2015. [Towards Making Systems Forget with Machine Unlearning](http://www.ieee-security.org/TC/SP2015/papers-archived/6949a463.pdf). In *Proceedings of the 36th IEEE Symposium on Security and Privacy*. IEEE.
 
 -   Benjamin Kille et al. 2015. Stream-Based Recommendations: Online and Offline Evaluation as a Service. In Josiane Mothe et al., eds. *Experimental IR Meets Multilinguality, Multimodality, and Interaction*. *Lecture Notes in Computer Science*. Springer International Publishing, 497–517. DOI=[10.1007/978-3-319-24027-5_48](http://dx.doi.org/10.1007/978-3-319-24027-5_48).
 
--   Abhijeet Ghoshal, Syam Menon, and Sumit Sarkar. 2015. Recommendations Using Information from Multiple Association Rules: A Probabilistic Approach. *Information Systems Research*, vol. 26, iss. 3, pp. 532–551. DOI=[10.1287/isre.2015.0583](http://dx.doi.org/10.1287/isre.2015.0583)
+-   Abhijeet Ghoshal, Syam Menon, and Sumit Sarkar. 2015. Recommendations Using Information from Multiple Association Rules: A Probabilistic Approach. *Information Systems Research*, vol. 26, iss. 3, pp. 532–551. DOI=[10.1287/isre.2015.0583](http://dx.doi.org/10.1287/isre.2015.0583).
 
 -   Frederik Ek and Robert Stigsson. 2015. [Recommender Systems; Contextual Multi-Armed Bandit Algorithms for the purpose of targeted advertisement within e-commerce](http://publications.lib.chalmers.se/records/fulltext/219662/219662.pdf). Masters’ thesis. Gothenburg, Sweden: Chalmers University of Technology.
 
 ### 2014
 
--   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI [10.1145/2645710.2645746](http://dx.doi.org/10.1145/2645710.2645746)
+-   Alan Said and Alejandro Bellogin. 2014. Comparative Recommender System Evaluation: Benchmarking Recommendation Frameworks. In *Proceedings of the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI=[10.1145/2645710.2645746](http://dx.doi.org/10.1145/2645710.2645746).
 
     This work introduces and uses [Rival](http://rival.recommenders.net/), a
     cross-framework recommender evaluation toolkit supporting LensKit, Mahout,
@@ -88,7 +98,9 @@ Generalization of SLIM](http://ceur-ws.org/Vol-1441/recsys2015_poster7.pdf). In 
     the Eighth ACM Conference on Recommender Systems* (RecSys '14). ACM. DOI
     [10.1145/2645710.2645737](http://dx.doi.org/10.1145/2645710.2645737).
 
--   Tien T. Nguyen. 2014. Improving Recommender Systems: User Roles and Lifecycles. In *Proceedings of the 8th ACM Conference on Recommender Systems*. RecSys ’14. ACM, 417–420. DOI=[10.1145/2645710.2653363](http://dx.doi.org/10.1145/2645710.2653363)
+-   Tien T. Nguyen. 2014. Improving Recommender Systems: User Roles and Lifecycles. In *Proceedings of the 8th ACM Conference on Recommender Systems*. RecSys ’14. ACM, 417–420. DOI=[10.1145/2645710.2653363](http://dx.doi.org/10.1145/2645710.2653363).
+
+-   Nikos Manouselis and Giannis Stoitsis. 2014. Towards an e-Science Environment for Collaborative Filtering Researchers. *International Journal of Digital Library Systems* vol 4 no 1. 32pp. IGI Global. DOI=[10.4018/ijdls.2014010104](http://dx.doi.org/10.4018/ijdls.2014010104).
 
 -   Abhijeet Ghoshal and Sumit Sakar. 2014. Association Rules for Recommendations with Multiple Items. *INFORMS Journal on Computing* 26(3):433–448. DOI [10.1287/ijoc.2013.0575](http://dx.doi.org/10.1287/ijoc.2013.0575).
 

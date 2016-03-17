@@ -1,5 +1,6 @@
 ---
 title: Experiment Quickstart
+next: walkthrough
 ---
 
 # Getting Started with the Evaluator

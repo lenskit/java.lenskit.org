@@ -9,8 +9,8 @@ exclude:
   - package.json
   - node_modules
   - Gruntfile.js
-  - Vagrantfile
-  - .vagrant
+  - result
+  - vendor
 
 defaults:
   - scope:
