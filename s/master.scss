@@ -3,6 +3,9 @@ nositemap: true
 ---
 
 @import "pure";
+/*!
+LensKit styles
+ */
 @import "style";
 @import "layout";
 @import "mod-frontpage";
@@ -10,3 +13,7 @@ nositemap: true
 @import "mod-side-menu";
 @import "mod-doc-nav";
 @import "syntax";
+/*!
+Pure responsive grids
+ */
+@import "grids-responsive";
