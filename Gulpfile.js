@@ -12,7 +12,7 @@ gulp.task('ender', function(done) {
 
 gulp.task('uglify', ['ender'], function() {
   return gulp.src(['s/ender.js', 's/lenskit.js'])
-      .pipe(concat('lenskit.js'))
+      .pipe(concat('lenskit.min.js'))
       .pipe(uglify())
       .pipe(gulp.dest('s'));
 });
