@@ -1,16 +1,41 @@
 .frontpage {
+  .banner {
+    box-sizing: border-box;
+    padding: 2em 0 3em;
+    text-align: center;
+
+    .slogan {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+  }
+
   .acknowledgements {
     margin: 1ex 1em;
+
     h2 {
       color: $light-color;
+    }
+  }
+
+  .read-more {
+    text-align: right;
+
+    @media screen and (min-width: 48em) {
+      padding-right: 2em;
     }
   }
 }
 
 .use-case .uc-header {
   text-align: center;
+
   .uc-logo {
     height: 120px;
     width: 120px;
   }
+}
+
+.project-info section:first-child h2 {
+  margin-top: 0;
 }

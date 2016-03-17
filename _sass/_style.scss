@@ -1,13 +1,18 @@
+@import 'tango';
+
 $body-font: 'Tinos', 'Liberation Serif', Georgia, serif;
 $header-font: 'PT Sans', sans-serif;
+$caption-font: 'PT Sans Caption', 'PT Sans', sans-serif;
 $code-font: Inconsolata, Consolas, Courier, monospace;
 
-$light-color: #888a85;
+$text-color: #000;
 
-$link-color: #3465a4;
-$link-visited-color: #75507b;
-$link-active-color: #f57900;
-$link-hover-color: #edd400;
+$light-color: $aluminium4;
+
+$link-color: $blue-med;
+$link-visited-color: $plumb-med;
+$link-active-color: $orange-med;
+$link-hover-color: $butter-med;
 
 html,
 button,
@@ -15,6 +20,7 @@ input,
 select,
 textarea,
 .pure-g [class *= "pure-u"] {
+  color: $text-color;
   font-family: $body-font;
   font-size: 14pt;
   line-height: 1.5;
@@ -26,6 +32,16 @@ h2,
 h3,
 h4 {
   font-family: $header-font;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
 }
 
 a:link {
