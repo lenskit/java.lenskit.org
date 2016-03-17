@@ -30,6 +30,15 @@
 .use-case .uc-header {
   text-align: center;
 
+  h2 {
+    font-size: 2rem;
+    margin: 2pt 0;
+  }
+
+  p {
+    margin-top: 3pt;
+  }
+
   .uc-logo {
     height: 120px;
     width: 120px;
