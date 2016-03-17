@@ -1,8 +1,8 @@
 /*!
   * =============================================================
   * Ender: open module JavaScript framework (https://enderjs.com)
-  * Build: ender build bonzo qwery bean --output s/ender.js
-  * Packages: ender-core@2.0.0 ender-commonjs@1.0.8 bonzo@2.0.0 qwery@4.0.0 bean@1.0.15
+  * Build: ender build qwery bonzo bean --output s/ender.js
+  * Packages: ender-core@2.0.0 ender-commonjs@1.0.8 qwery@4.0.0 bonzo@2.0.0 bean@1.0.15
   * =============================================================
   */
 
@@ -285,6 +285,151 @@
     ender.expose('Module', Module)
   }
   
+  Module.createPackage('qwery', {
+    'qwery': function (module, exports, require, global) {
+      /*!
+        * @preserve Qwery - A selector engine
+        * https://github.com/ded/qwery
+        * (c) Dustin Diaz 2014 | License MIT
+        */
+      
+      (function (name, context, definition) {
+        if (typeof module != 'undefined' && module.exports) module.exports = definition()
+        else if (typeof define == 'function' && define.amd) define(definition)
+        else context[name] = definition()
+      })('qwery', this, function () {
+      
+        var classOnly = /^\.([\w\-]+)$/
+          , doc = document
+          , win = window
+          , html = doc.documentElement
+          , nodeType = 'nodeType'
+        var isAncestor = 'compareDocumentPosition' in html ?
+          function (element, container) {
+            return (container.compareDocumentPosition(element) & 16) == 16
+          } :
+          function (element, container) {
+            container = container == doc || container == window ? html : container
+            return container !== element && container.contains(element)
+          }
+      
+        function toArray(ar) {
+          return [].slice.call(ar, 0)
+        }
+      
+        function isNode(el) {
+          var t
+          return el && typeof el === 'object' && (t = el.nodeType) && (t == 1 || t == 9)
+        }
+      
+        function arrayLike(o) {
+          return (typeof o === 'object' && isFinite(o.length))
+        }
+      
+        function flatten(ar) {
+          for (var r = [], i = 0, l = ar.length; i < l; ++i) arrayLike(ar[i]) ? (r = r.concat(ar[i])) : (r[r.length] = ar[i])
+          return r
+        }
+      
+        function uniq(ar) {
+          var a = [], i, j
+          label:
+          for (i = 0; i < ar.length; i++) {
+            for (j = 0; j < a.length; j++) {
+              if (a[j] == ar[i]) {
+                continue label
+              }
+            }
+            a[a.length] = ar[i]
+          }
+          return a
+        }
+      
+      
+        function normalizeRoot(root) {
+          if (!root) return doc
+          if (typeof root == 'string') return qwery(root)[0]
+          if (!root[nodeType] && arrayLike(root)) return root[0]
+          return root
+        }
+      
+        /**
+         * @param {string|Array.<Element>|Element|Node} selector
+         * @param {string|Array.<Element>|Element|Node=} opt_root
+         * @return {Array.<Element>}
+         */
+        function qwery(selector, opt_root) {
+          var m, root = normalizeRoot(opt_root)
+          if (!root || !selector) return []
+          if (selector === win || isNode(selector)) {
+            return !opt_root || (selector !== win && isNode(root) && isAncestor(selector, root)) ? [selector] : []
+          }
+          if (selector && arrayLike(selector)) return flatten(selector)
+      
+      
+          if (doc.getElementsByClassName && selector == 'string' && (m = selector.match(classOnly))) {
+            return toArray((root).getElementsByClassName(m[1]))
+          }
+          // using duck typing for 'a' window or 'a' document (not 'the' window || document)
+          if (selector && (selector.document || (selector.nodeType && selector.nodeType == 9))) {
+            return !opt_root ? [selector] : []
+          }
+          return toArray((root).querySelectorAll(selector))
+        }
+      
+        qwery.uniq = uniq
+      
+        return qwery
+      }, this);
+      
+    },
+    'src/ender': function (module, exports, require, global) {
+      (function ($) {
+        var q = require('qwery')
+      
+        $._select = function (s, r) {
+          // detect if sibling module 'bonzo' is available at run-time
+          // rather than load-time since technically it's not a dependency and
+          // can be loaded in any order
+          // hence the lazy function re-definition
+          return ($._select = (function () {
+            var b
+            if (typeof $.create == 'function') return function (s, r) {
+              return /^\s*</.test(s) ? $.create(s, r) : q(s, r)
+            }
+            try {
+              b = require('bonzo')
+              return function (s, r) {
+                return /^\s*</.test(s) ? b.create(s, r) : q(s, r)
+              }
+            } catch (e) { }
+            return q
+          })())(s, r)
+        }
+      
+        $.ender({
+            find: function (s) {
+              var r = [], i, l, j, k, els
+              for (i = 0, l = this.length; i < l; i++) {
+                els = q(s, this[i])
+                for (j = 0, k = els.length; j < k; j++) r.push(els[j])
+              }
+              return $(q.uniq(r))
+            }
+          , and: function (s) {
+              var plus = $(s)
+              for (var i = this.length, j = 0, l = this.length + plus.length; i < l; i++, j++) {
+                this[i] = plus[j]
+              }
+              this.length += plus.length
+              return this
+            }
+        }, true)
+      }(ender));
+      
+    }
+  }, 'qwery');
+
   Module.createPackage('bonzo', {
     'bonzo': function (module, exports, require, global) {
       /*!
@@ -1525,151 +1670,6 @@
     }
   }, 'bonzo');
 
-  Module.createPackage('qwery', {
-    'qwery': function (module, exports, require, global) {
-      /*!
-        * @preserve Qwery - A selector engine
-        * https://github.com/ded/qwery
-        * (c) Dustin Diaz 2014 | License MIT
-        */
-      
-      (function (name, context, definition) {
-        if (typeof module != 'undefined' && module.exports) module.exports = definition()
-        else if (typeof define == 'function' && define.amd) define(definition)
-        else context[name] = definition()
-      })('qwery', this, function () {
-      
-        var classOnly = /^\.([\w\-]+)$/
-          , doc = document
-          , win = window
-          , html = doc.documentElement
-          , nodeType = 'nodeType'
-        var isAncestor = 'compareDocumentPosition' in html ?
-          function (element, container) {
-            return (container.compareDocumentPosition(element) & 16) == 16
-          } :
-          function (element, container) {
-            container = container == doc || container == window ? html : container
-            return container !== element && container.contains(element)
-          }
-      
-        function toArray(ar) {
-          return [].slice.call(ar, 0)
-        }
-      
-        function isNode(el) {
-          var t
-          return el && typeof el === 'object' && (t = el.nodeType) && (t == 1 || t == 9)
-        }
-      
-        function arrayLike(o) {
-          return (typeof o === 'object' && isFinite(o.length))
-        }
-      
-        function flatten(ar) {
-          for (var r = [], i = 0, l = ar.length; i < l; ++i) arrayLike(ar[i]) ? (r = r.concat(ar[i])) : (r[r.length] = ar[i])
-          return r
-        }
-      
-        function uniq(ar) {
-          var a = [], i, j
-          label:
-          for (i = 0; i < ar.length; i++) {
-            for (j = 0; j < a.length; j++) {
-              if (a[j] == ar[i]) {
-                continue label
-              }
-            }
-            a[a.length] = ar[i]
-          }
-          return a
-        }
-      
-      
-        function normalizeRoot(root) {
-          if (!root) return doc
-          if (typeof root == 'string') return qwery(root)[0]
-          if (!root[nodeType] && arrayLike(root)) return root[0]
-          return root
-        }
-      
-        /**
-         * @param {string|Array.<Element>|Element|Node} selector
-         * @param {string|Array.<Element>|Element|Node=} opt_root
-         * @return {Array.<Element>}
-         */
-        function qwery(selector, opt_root) {
-          var m, root = normalizeRoot(opt_root)
-          if (!root || !selector) return []
-          if (selector === win || isNode(selector)) {
-            return !opt_root || (selector !== win && isNode(root) && isAncestor(selector, root)) ? [selector] : []
-          }
-          if (selector && arrayLike(selector)) return flatten(selector)
-      
-      
-          if (doc.getElementsByClassName && selector == 'string' && (m = selector.match(classOnly))) {
-            return toArray((root).getElementsByClassName(m[1]))
-          }
-          // using duck typing for 'a' window or 'a' document (not 'the' window || document)
-          if (selector && (selector.document || (selector.nodeType && selector.nodeType == 9))) {
-            return !opt_root ? [selector] : []
-          }
-          return toArray((root).querySelectorAll(selector))
-        }
-      
-        qwery.uniq = uniq
-      
-        return qwery
-      }, this);
-      
-    },
-    'src/ender': function (module, exports, require, global) {
-      (function ($) {
-        var q = require('qwery')
-      
-        $._select = function (s, r) {
-          // detect if sibling module 'bonzo' is available at run-time
-          // rather than load-time since technically it's not a dependency and
-          // can be loaded in any order
-          // hence the lazy function re-definition
-          return ($._select = (function () {
-            var b
-            if (typeof $.create == 'function') return function (s, r) {
-              return /^\s*</.test(s) ? $.create(s, r) : q(s, r)
-            }
-            try {
-              b = require('bonzo')
-              return function (s, r) {
-                return /^\s*</.test(s) ? b.create(s, r) : q(s, r)
-              }
-            } catch (e) { }
-            return q
-          })())(s, r)
-        }
-      
-        $.ender({
-            find: function (s) {
-              var r = [], i, l, j, k, els
-              for (i = 0, l = this.length; i < l; i++) {
-                els = q(s, this[i])
-                for (j = 0, k = els.length; j < k; j++) r.push(els[j])
-              }
-              return $(q.uniq(r))
-            }
-          , and: function (s) {
-              var plus = $(s)
-              for (var i = this.length, j = 0, l = this.length + plus.length; i < l; i++, j++) {
-                this[i] = plus[j]
-              }
-              this.length += plus.length
-              return this
-            }
-        }, true)
-      }(ender));
-      
-    }
-  }, 'qwery');
-
   Module.createPackage('bean', {
     'bean': function (module, exports, require, global) {
       /*!
@@ -2484,10 +2484,10 @@
     }
   }, 'bean');
 
-  require('bonzo');
-  require('bonzo/src/ender');
   require('qwery');
   require('qwery/src/ender');
+  require('bonzo');
+  require('bonzo/src/ender');
   require('bean');
   require('bean/src/ender');
 

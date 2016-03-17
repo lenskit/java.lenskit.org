@@ -8,6 +8,13 @@
   "license": "UNLICENSED",
   "repository": "lenskit/lenskit.github.io",
   "dependencies": {
-    "grunt-ender": "^0.2.1"
+    "ender": "^2.1.1",
+    "grunt-ender": "^0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "jshintConfig": {
+    "esversion": 6
   }
 }
