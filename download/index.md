@@ -3,6 +3,8 @@ title: Downloads
 layout: default
 priority: 1
 changefreq: weekly
+redirect_from:
+- /download.html
 ---
 
 # Download LensKit
