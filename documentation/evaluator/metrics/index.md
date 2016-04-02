@@ -55,7 +55,7 @@ metric topNMRR {
     listSize 10
     candidates ItemSelectors.addNRandom(ItemSelectors.testItems(), 100)
     exclude ItemSelectors.trainingItems()
-    good ItemSelectors.testRatingMatches(Matchers.greaterThanOrEqualTo(3.5))
+    goodItems ItemSelectors.testRatingMatches(Matchers.greaterThanOrEqualTo(3.5d))
 }
 ~~~
 
