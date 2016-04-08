@@ -149,7 +149,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 <h2 class="title">C</h2>
 <dl>
 
-<dt><span class="strong"><a href="org/lenskit/gradle/delegates/SpecDelegate.html#configure(Class<? extends T>, Class<? extends SpecDelegate>, groovy.lang.Closure)" title="Method in SpecDelegate">configure(Class&lt;? extends T&gt;, Class&lt;? extends SpecDelegate&gt;, Closure)</a></span> - Method in <a href="org/lenskit/gradle/delegates/SpecDelegate.html">SpecDelegate</a>
+<dt><span class="strong"><a href="org/lenskit/gradle/delegates/SpecDelegate.html#configureSpec(org.gradle.api.Project, Class<? extends T>, Class<? extends SpecDelegate>, groovy.lang.Closure)" title="Method in SpecDelegate">configureSpec(Project, Class&lt;? extends T&gt;, Class&lt;? extends SpecDelegate&gt;, Closure)</a></span> - Method in <a href="org/lenskit/gradle/delegates/SpecDelegate.html">SpecDelegate</a>
 </dt><dd> <div class="block">Instantiate and configure a spec using a block.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/Crossfold.html" title="Class in org.lenskit.gradle">Crossfold</a></span> - Class in <a href="./org/lenskit/gradle/package-summary.html">org.lenskit.gradle</a>
 </dt><dd><div class="block">Crossfold a data set.  </div></dd>
@@ -165,7 +165,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 <dt><span class="strong"><a href="org/lenskit/gradle/traits/DataBuilder.html" title="Trait in org.lenskit.gradle.traits">DataBuilder</a></span> - Trait in <a href="./org/lenskit/gradle/traits/package-summary.html">org.lenskit.gradle.traits</a>
 </dt><dd><div class="block">Something that builds data sources.  </div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/TrainTest.html#dataSet(Map<String, Object>, org.lenskit.gradle.DataSetProvider)" title="Method in TrainTest">dataSet(Map&lt;String, Object&gt;, DataSetProvider)</a></span> - Method in <a href="org/lenskit/gradle/TrainTest.html">TrainTest</a>
-</dt><dd> <div class="block">Add a data sets produced by a crossfold task.</div></dd>
+</dt><dd> <div class="block">Add a data sets produced by a crossfold task or other data set provider.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/DataSetProvider.html" title="Interface in org.lenskit.gradle">DataSetProvider</a></span> - Interface in <a href="./org/lenskit/gradle/package-summary.html">org.lenskit.gradle</a>
 </dt><dd><div class="block">Interface implemented by tasks that provide data sets for the train-test evaluator.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/traits/DataSources.html" title="Trait in org.lenskit.gradle.traits">DataSources</a></span> - Trait in <a href="./org/lenskit/gradle/traits/package-summary.html">org.lenskit.gradle.traits</a>
@@ -189,7 +189,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 
 <dt><span class="strong"><a href="org/lenskit/gradle/delegates/EvalTaskDelegate.html" title="Class in org.lenskit.gradle.delegates">EvalTaskDelegate</a></span> - Class in <a href="./org/lenskit/gradle/delegates/package-summary.html">org.lenskit.gradle.delegates</a>
 </dt><dd><div class="block">Delegate for configuring evaluation tasks.</div></dd>
-<dt><span class="strong"><a href="org/lenskit/gradle/delegates/EvalTaskDelegate.html#EvalTaskDelegate(org.lenskit.specs.eval.EvalTaskSpec)" title="Constructor in EvalTaskDelegate">EvalTaskDelegate(EvalTaskSpec)</a></span> - Constructor in <a href="org/lenskit/gradle/delegates/EvalTaskDelegate.html">EvalTaskDelegate</a>
+<dt><span class="strong"><a href="org/lenskit/gradle/delegates/EvalTaskDelegate.html#EvalTaskDelegate(org.gradle.api.Project, org.lenskit.specs.eval.EvalTaskSpec)" title="Constructor in EvalTaskDelegate">EvalTaskDelegate(Project, EvalTaskSpec)</a></span> - Constructor in <a href="org/lenskit/gradle/delegates/EvalTaskDelegate.html">EvalTaskDelegate</a>
 </dt><dd> <div class="block"></div></dd>
 </dl>
 
@@ -395,7 +395,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/delegates/SpecDelegate.html" title="Class in org.lenskit.gradle.delegates">SpecDelegate</a></span> - Class in <a href="./org/lenskit/gradle/delegates/package-summary.html">org.lenskit.gradle.delegates</a>
 </dt><dd><div class="block">Configurable wrapper for a specification.  </div></dd>
-<dt><span class="strong"><a href="org/lenskit/gradle/delegates/SpecDelegate.html#SpecDelegate(org.lenskit.specs.AbstractSpec)" title="Constructor in SpecDelegate">SpecDelegate(AbstractSpec)</a></span> - Constructor in <a href="org/lenskit/gradle/delegates/SpecDelegate.html">SpecDelegate</a>
+<dt><span class="strong"><a href="org/lenskit/gradle/delegates/SpecDelegate.html#SpecDelegate(org.gradle.api.Project, org.lenskit.specs.AbstractSpec)" title="Constructor in SpecDelegate">SpecDelegate(Project, AbstractSpec)</a></span> - Constructor in <a href="org/lenskit/gradle/delegates/SpecDelegate.html">SpecDelegate</a>
 </dt><dd> <div class="block"></div></dd>
 </dl>
 
@@ -404,8 +404,8 @@ if (location.href.indexOf('is-external=true') == -1) {
 <h2 class="title">T</h2>
 <dl>
 
-<dt><span class="strong"><a href="org/lenskit/gradle/traits/DataSources.html#textFile(groovy.lang.Closure)" title="Method in DataSources">textFile(Closure)</a></span> - Method in <a href="org/lenskit/gradle/traits/DataSources.html">DataSources</a>
-</dt><dd> <div class="block">Configure a text file data source.</div></dd>
+<dt><span class="strong"><a href="org/lenskit/gradle/traits/DataSources.html#textFile(java.lang.Object)" title="Method in DataSources">textFile(Object)</a></span> - Method in <a href="org/lenskit/gradle/traits/DataSources.html">DataSources</a>
+</dt><dd> <div class="block">Configure a rating CSV file data source.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/TrainTest.html" title="Class in org.lenskit.gradle">TrainTest</a></span> - Class in <a href="./org/lenskit/gradle/package-summary.html">org.lenskit.gradle</a>
 </dt><dd><div class="block">Run a train-test evaluation.</div></dd>
 <dt><span class="strong"><a href="org/lenskit/gradle/TrainTest.html#TrainTest()" title="Constructor in TrainTest">TrainTest()</a></span> - Constructor in <a href="org/lenskit/gradle/TrainTest.html">TrainTest</a>
