@@ -41,6 +41,10 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2016
 
+-   Safair Najafi and Ziad Salam. 2016. [*Evaluating Prediction Accuracy for Collaborative Filtering Algorithms in Recommender Systems*](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A927356). Degree Project in Technology, KTH Royal Institute of Technology School of Computer Science and Communication, Stockholm, Sweden.
+
+-   Penghua Yu, Lanfen Lin, and Yuangang Yao. 2016. A Novel Framework to Process the Quantity and Quality of User Behavior Data in Recommender Systems. In *Proceedings of the 17th International Conference on Web-Age Information Management*; published by Springer-Verlag as *Lecture Notes in Computer Science* vol. 9658 pp. 231–243. DOI=[10.1007/978-3-319-39937-9_18](http://dx.doi.org/10.1007/978-3-319-39937-9_18).
+
 -   Toon de Pessemier, Jeroen Dhondt, and Luc Martens. 2016. Hybrid group recommendations for a travel service. *Multimedia Tools and Applications* vol. 75 no. 5 (March 2016). Springer. DOI=[10.1007/s11042-016-3265-x](http://dx.doi.org/10.1007/s11042-016-3265-x).
 
 -   F. Maxwell Harper and Joseph A. Konstan. [The MovieLens Datasets: History and Context](http://grouplens.org/publications/#entry-I8IHQBTU). *Transactions on Interactive Intelligent Systems* vol. 5 no. 4 (January, 2016). ACM. DOI=[10.1145/2827872](http://dx.doi.org/10.1145/2827872).
