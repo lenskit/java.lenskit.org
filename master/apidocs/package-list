@@ -25,6 +25,7 @@ org.lenskit.cli.commands
 org.lenskit.cli.util
 org.lenskit.config
 org.lenskit.data.dao
+org.lenskit.data.entities
 org.lenskit.data.events
 org.lenskit.data.history
 org.lenskit.data.output
