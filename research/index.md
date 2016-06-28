@@ -41,6 +41,8 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2016
 
+-   Toon de Pessemier, Jeroen Dhondt, Kris Vanhecke, and Luc Martens. 2015. [TravelWithFriends: a hybrid group recommender system for travel destinations](https://biblio.ugent.be/publication/7259715/file/7259727). In *Proceedings of the Workshop on Tourism Recommender Systems* (TouRS15), in conjunction with the 9th ACM Conference on Recommender Systems (RecSys 2015).
+
 -   Safair Najafi and Ziad Salam. 2016. [*Evaluating Prediction Accuracy for Collaborative Filtering Algorithms in Recommender Systems*](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A927356). Degree Project in Technology, KTH Royal Institute of Technology School of Computer Science and Communication, Stockholm, Sweden.
 
 -   Penghua Yu, Lanfen Lin, and Yuangang Yao. 2016. A Novel Framework to Process the Quantity and Quality of User Behavior Data in Recommender Systems. In *Proceedings of the 17th International Conference on Web-Age Information Management*; published by Springer-Verlag as *Lecture Notes in Computer Science* vol. 9658 pp. 231–243. DOI=[10.1007/978-3-319-39937-9_18](http://dx.doi.org/10.1007/978-3-319-39937-9_18).
