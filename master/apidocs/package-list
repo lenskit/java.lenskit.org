@@ -1,9 +1,6 @@
 org.grouplens.lenskit.cli
 org.grouplens.lenskit.collections
-org.grouplens.lenskit.data.history
-org.grouplens.lenskit.data.source
 org.grouplens.lenskit.data.sql
-org.grouplens.lenskit.data.text
 org.grouplens.lenskit.iterative
 org.grouplens.lenskit.scored
 org.grouplens.lenskit.symbols
@@ -52,9 +49,6 @@ org.lenskit.predict
 org.lenskit.predict.ordrec
 org.lenskit.results
 org.lenskit.slopeone
-org.lenskit.specs
-org.lenskit.specs.data
-org.lenskit.specs.eval
 org.lenskit.transform.quantize
 org.lenskit.util
 org.lenskit.util.collections
