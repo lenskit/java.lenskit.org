@@ -13,6 +13,7 @@ LensKit 3.0 is the upcoming major release of LensKit.  This release will not be 
 -   LensKit code has been moved from `org.grouplens.lenskit` to `org.lenskit`.
 -   The LensKit Maven group has moved from `org.grouplens.lenskit` to `org.lenskit`.
 -   The LensKit Data Structures module is being removed in favor of fewer custom data structures.  The custom data structures still in use are in the LensKit Core.
+-   We have [standardized our `Builder` and `Provider` language](https://github.com/lenskit/lenskit/issues/552).  Components that build other components in the recommender build process are called `Provider`s, and the term `Builder` is reserved for classes that are used to programmatically assemble other objects.
 
 ## New Public APIs
 
