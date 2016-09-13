@@ -1,0 +1,3 @@
+org.lenskit.gradle
+org.lenskit.gradle.delegates
+org.lenskit.gradle.traits

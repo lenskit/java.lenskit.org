@@ -35,5 +35,5 @@ is recommended reading for people wanting to work on the LensKit code.
 
 LensKit is under continual development, so the documentation for the latest release may not be up-to-date with the latest developments in the LensKit source tree.  If you are using a prerelease milestone, tracking the latest `master` sources, or working on LensKit itself, we have some additional documentation:
 
-{%if site.data.lenskit.prerelease%}- [JavaDoc for {{site.lenskit.prerelease}}](/next/apidocs/), leading up to {{site.lenskit.next}}{%endif%}
-- [JavaDoc for current dev tree](/master/apidocs/) (built from the `master` branch by our continuous integration builds)
+{%if site.data.lenskit.prerelease%}- [JavaDoc](/next/apidocs/) and [Gradle API docs](/next/gradle-docs) for {{site.data.lenskit.prerelease}}, leading up to {{site.lenskit.next}}{%endif%}
+- [JavaDoc](/master/apidocs/) and [Gradle API docs](/master/gradle-docs/) for current dev tree (built from the `master` branch by our continuous integration builds)
