@@ -17,6 +17,7 @@ org.lenskit
 org.lenskit.api
 org.lenskit.baseline
 org.lenskit.basic
+org.lenskit.bias
 org.lenskit.cli
 org.lenskit.cli.commands
 org.lenskit.cli.util
