@@ -5,7 +5,6 @@ org.grouplens.lenskit.iterative
 org.grouplens.lenskit.scored
 org.grouplens.lenskit.symbols
 org.grouplens.lenskit.transform.clamp
-org.grouplens.lenskit.transform.normalize
 org.grouplens.lenskit.transform.threshold
 org.grouplens.lenskit.transform.truncate
 org.grouplens.lenskit.util
@@ -50,6 +49,7 @@ org.lenskit.predict
 org.lenskit.predict.ordrec
 org.lenskit.results
 org.lenskit.slopeone
+org.lenskit.transform.normalize
 org.lenskit.transform.quantize
 org.lenskit.util
 org.lenskit.util.collections
