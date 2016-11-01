@@ -41,6 +41,10 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2016
 
+-   Shuo Chang. 2016. [*Leveraging Collective Intelligence in Recommender System*](http://hdl.handle.net/11299/182725).  Ph.D dissertation, University of Minnesota, Minneapolis, MN, USA.
+
+-   Tien Nguyen. 2016. [*Enhancing User Experience With Recommender Systems Beyond Prediction Accuracies*](http://hdl.handle.net/11299/182780).  Ph.D dissertation, University of Minnesota, Minneapolis, MN, USA.
+
 -   Toon de Pessemier, Jeroen Dhondt, Kris Vanhecke, and Luc Martens. 2015. [TravelWithFriends: a hybrid group recommender system for travel destinations](https://biblio.ugent.be/publication/7259715/file/7259727). In *Proceedings of the Workshop on Tourism Recommender Systems* (TouRS15), in conjunction with the 9th ACM Conference on Recommender Systems (RecSys 2015).
 
 -   Safair Najafi and Ziad Salam. 2016. [*Evaluating Prediction Accuracy for Collaborative Filtering Algorithms in Recommender Systems*](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A927356). Degree Project in Technology, KTH Royal Institute of Technology School of Computer Science and Communication, Stockholm, Sweden.
