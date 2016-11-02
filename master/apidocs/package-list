@@ -56,6 +56,7 @@ org.lenskit.util.collections
 org.lenskit.util.io
 org.lenskit.util.keys
 org.lenskit.util.math
+org.lenskit.util.monitor
 org.lenskit.util.parallel
 org.lenskit.util.table
 org.lenskit.util.table.writer
