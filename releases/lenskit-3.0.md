@@ -8,6 +8,8 @@ layout: release
 
 LensKit 3.0 is the upcoming major release of LensKit.  This release will not be backwards-compatible with LensKit 2.2.  These release notes are not exhaustive, but are intended to provide a general guide to the changes to look for.  As 3.0's final release nears, we will be writing additional documentation on translating and updating experiments and other migration concerns.
 
+For a preview of the manual for LensKit 3.0, [see here](http://mooc.lenskit.org/documentation/).
+
 ## Organization Changes
 
 -   LensKit code has been moved from `org.grouplens.lenskit` to `org.lenskit`.
