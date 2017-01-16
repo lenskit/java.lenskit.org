@@ -11,7 +11,6 @@ org.grouplens.lenskit.util
 org.grouplens.lenskit.util.io
 org.grouplens.lenskit.util.statistics
 org.grouplens.lenskit.vectors
-org.grouplens.lenskit.vectors.similarity
 org.lenskit
 org.lenskit.api
 org.lenskit.baseline
@@ -48,6 +47,7 @@ org.lenskit.mf.svd
 org.lenskit.predict
 org.lenskit.predict.ordrec
 org.lenskit.results
+org.lenskit.similarity
 org.lenskit.slopeone
 org.lenskit.transform.normalize
 org.lenskit.transform.quantize
