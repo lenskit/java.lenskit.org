@@ -58,5 +58,6 @@ org.lenskit.util.keys
 org.lenskit.util.math
 org.lenskit.util.monitor
 org.lenskit.util.parallel
+org.lenskit.util.reflect
 org.lenskit.util.table
 org.lenskit.util.table.writer
