@@ -1,6 +1,5 @@
 org.grouplens.lenskit.cli
 org.grouplens.lenskit.collections
-org.grouplens.lenskit.data.sql
 org.grouplens.lenskit.iterative
 org.grouplens.lenskit.scored
 org.grouplens.lenskit.symbols
@@ -23,10 +22,7 @@ org.lenskit.config
 org.lenskit.data.dao
 org.lenskit.data.dao.file
 org.lenskit.data.entities
-org.lenskit.data.events
-org.lenskit.data.history
 org.lenskit.data.output
-org.lenskit.data.packed
 org.lenskit.data.ratings
 org.lenskit.eval.crossfold
 org.lenskit.eval.temporal
