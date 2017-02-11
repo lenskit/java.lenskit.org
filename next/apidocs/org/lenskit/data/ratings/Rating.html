@@ -48,15 +48,15 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/lenskit/data/ratings/PreferenceDomainBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/lenskit/data/ratings/PreferenceDomainBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Prev&#xA0;Class</span></a></li>
+<li><a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Next&#xA0;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/lenskit/data/ratings/Rating.html" target="_top">Frames</a></li>
-<li><a href="Rating.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="Rating.html" target="_top">No&#xA0;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
-<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+<li><a href="../../../../allclasses-noframe.html">All&#xA0;Classes</a></li>
 </ul>
 <div>
 <script type="text/javascript"><!--
@@ -72,16 +72,16 @@ var activeTableTab = "activeTableTab";
 </div>
 <div>
 <ul class="subNavList">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.lenskit.data.entities.AbstractEntity">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Summary:&#xA0;</li>
+<li>Nested&#xA0;|&#xA0;</li>
+<li><a href="#fields.inherited.from.class.org.lenskit.data.entities.AbstractEntity">Field</a>&#xA0;|&#xA0;</li>
+<li>Constr&#xA0;|&#xA0;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Detail:&#xA0;</li>
+<li>Field&#xA0;|&#xA0;</li>
+<li>Constr&#xA0;|&#xA0;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -119,11 +119,11 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre><a href="../../../../org/lenskit/data/events/BuiltBy.html" title="annotation in org.lenskit.data.events">@BuiltBy</a>(<a href="../../../../org/lenskit/data/events/BuiltBy.html#value--">value</a>=<a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings">RatingBuilder.class</a>)
  <a href="../../../../org/lenskit/data/entities/BuiltBy.html" title="annotation in org.lenskit.data.entities">@BuiltBy</a>(<a href="../../../../org/lenskit/data/entities/BuiltBy.html#value--">value</a>=<a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings">RatingBuilder.class</a>)
- <a href="../../../../org/lenskit/data/entities/DefaultEntityType.html" title="annotation in org.lenskit.data.entities">@DefaultEntityType</a>(<a href="../../../../org/lenskit/data/entities/DefaultEntityType.html#value--">value</a>="rating")
+ <a href="../../../../org/lenskit/data/entities/DefaultEntityType.html" title="annotation in org.lenskit.data.entities">@DefaultEntityType</a>(<a href="../../../../org/lenskit/data/entities/DefaultEntityType.html#value--">value</a>=&quot;rating&quot;)
 public final class <span class="typeNameLabel">Rating</span>
 extends <a href="../../../../org/lenskit/data/entities/AbstractEntity.html" title="class in org.lenskit.data.entities">AbstractEntity</a>
 implements <a href="../../../../org/lenskit/data/events/Event.html" title="interface in org.lenskit.data.events">Event</a>, <a href="../../../../org/lenskit/data/ratings/Preference.html" title="interface in org.lenskit.data.ratings">Preference</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
-<div class="block"><p>A user rating an item. A rating is an expression of preference, in the form of a real-valued rating, for an item by a user. Ratings are also used to represent un-rate events, if the system supports them; these are represented by a rating value of <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true#NaN" title="class or interface in java.lang"><code>Double.NaN</code></a>. <p> To create a rating, use <a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings"><code>RatingBuilder</code></a> or the factory methods <a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-long-"><code>create(long, long, double, long)</code></a>, <a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-"><code>create(long, long, double)</code></a>, and <a href="../../../../org/lenskit/data/ratings/Rating.html#createUnrate-long-long-long-"><code>createUnrate(long, long, long)</code></a>. </p></p></div>
+<div class="block"><p>A user rating an item. A rating is an expression of preference, in the form of a real-valued rating, for an item by a user. Ratings are also used to represent un-rate events, if the system supports them; these are represented by a rating value of <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true#NaN" title="class or interface in java.lang"><code>Double.NaN</code></a>. </p><p> To create a rating, use <a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings"><code>RatingBuilder</code></a> or the factory methods <a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-long-"><code>create(long, long, double, long)</code></a>, <a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-"><code>create(long, long, double)</code></a>, and <a href="../../../../org/lenskit/data/ratings/Rating.html#createUnrate-long-long-long-"><code>createUnrate(long, long, long)</code></a>. </p><p></p></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../serialized-form.html#org.lenskit.data.ratings.Rating">Serialized Form</a></dd>
@@ -146,7 +146,7 @@ implements <a href="../../../../org/lenskit/data/events/Event.html" title="inter
 <li class="blockList"><a name="fields.inherited.from.class.org.lenskit.data.entities.AbstractEntity">
 <!--   -->
 </a>
-<h3>Fields inherited from class&nbsp;org.lenskit.data.entities.<a href="../../../../org/lenskit/data/entities/AbstractEntity.html" title="class in org.lenskit.data.entities">AbstractEntity</a></h3>
+<h3>Fields inherited from class&#xA0;org.lenskit.data.entities.<a href="../../../../org/lenskit/data/entities/AbstractEntity.html" title="class in org.lenskit.data.entities">AbstractEntity</a></h3>
 <code><a href="../../../../org/lenskit/data/entities/AbstractEntity.html#id">id</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#type">type</a></code></li>
 </ul>
 </li>
@@ -158,7 +158,7 @@ implements <a href="../../../../org/lenskit/data/events/Event.html" title="inter
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&#xA0;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&#xA0;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&#xA0;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&#xA0;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&#xA0;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -171,38 +171,38 @@ implements <a href="../../../../org/lenskit/data/events/Event.html" title="inter
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-">create</a></span>(long&nbsp;uid,
-      long&nbsp;iid,
-      double&nbsp;rating)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-">create</a></span>(long&#xA0;uid,
+      long&#xA0;iid,
+      double&#xA0;rating)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;
 <div class="block"><span class="deprecationComment">Use <a href="../../../../org/lenskit/data/entities/EntityFactory.html#rating-long-long-double-"><code>EntityFactory.rating(long, long, double)</code></a></span></div>
 </div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-long-">create</a></span>(long&nbsp;uid,
-      long&nbsp;iid,
-      double&nbsp;rating,
-      long&nbsp;ts)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#create-long-long-double-long-">create</a></span>(long&#xA0;uid,
+      long&#xA0;iid,
+      double&#xA0;rating,
+      long&#xA0;ts)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;
 <div class="block"><span class="deprecationComment">Use <a href="../../../../org/lenskit/data/entities/EntityFactory.html#rating-long-long-double-long-"><code>EntityFactory.rating(long, long, double, long)</code></a></span></div>
 </div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#createUnrate-long-long-long-">createUnrate</a></span>(long&nbsp;uid,
-            long&nbsp;iid,
-            long&nbsp;ts)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#createUnrate-long-long-long-">createUnrate</a></span>(long&#xA0;uid,
+            long&#xA0;iid,
+            long&#xA0;ts)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;
 <div class="block"><span class="deprecationComment">Unrates have gone away.</span></div>
 </div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#equals-java.lang.Object-">equals</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&#xA0;obj)</code>&#xA0;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>long</code></td>
@@ -236,21 +236,21 @@ implements <a href="../../../../org/lenskit/data/events/Event.html" title="inter
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#hasAttribute-java.lang.String-">hasAttribute</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#hasAttribute-java.lang.String-">hasAttribute</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&#xA0;name)</code>
 <div class="block">Check if the entity has a field with a particular name.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#hasValue--">hasValue</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;
 <div class="block"><span class="deprecationComment">Unrates have gone away.</span></div>
 </div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#maybeGet-java.lang.String-">maybeGet</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;attr)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/lenskit/data/ratings/Rating.html#maybeGet-java.lang.String-">maybeGet</a></span>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&#xA0;attr)</code>
 <div class="block">Get the value of a possibly-missing attribute by name.</div>
 </td>
 </tr>
@@ -265,14 +265,14 @@ implements <a href="../../../../org/lenskit/data/events/Event.html" title="inter
 <li class="blockList"><a name="methods.inherited.from.class.org.lenskit.data.entities.AbstractEntity">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;org.lenskit.data.entities.<a href="../../../../org/lenskit/data/entities/AbstractEntity.html" title="class in org.lenskit.data.entities">AbstractEntity</a></h3>
+<h3>Methods inherited from class&#xA0;org.lenskit.data.entities.<a href="../../../../org/lenskit/data/entities/AbstractEntity.html" title="class in org.lenskit.data.entities">AbstractEntity</a></h3>
 <code><a href="../../../../org/lenskit/data/entities/AbstractEntity.html#asMap--">asMap</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#describeTo-org.grouplens.lenskit.util.io.DescriptionWriter-">describeTo</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#get-java.lang.String-">get</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#get-org.lenskit.data.entities.TypedName-">get</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getAttributeNames--">getAttributeNames</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getAttributes--">getAttributes</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getBoolean-org.lenskit.data.entities.TypedName-">getBoolean</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getDouble-org.lenskit.data.entities.TypedName-">getDouble</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getId--">getId</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getInteger-org.lenskit.data.entities.TypedName-">getInteger</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getLong-org.lenskit.data.entities.TypedName-">getLong</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#getType--">getType</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#hasAttribute-org.lenskit.data.entities.TypedName-">hasAttribute</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#hashCode--">hashCode</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#maybeGet-org.lenskit.data.entities.TypedName-">maybeGet</a>, <a href="../../../../org/lenskit/data/entities/AbstractEntity.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<h3>Methods inherited from class&#xA0;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
@@ -296,10 +296,10 @@ implements <a href="../../../../org/lenskit/data/events/Event.html" title="inter
 <li class="blockList">
 <h4>create</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a>&nbsp;create(long&nbsp;uid,
-                                         long&nbsp;iid,
-                                         double&nbsp;rating)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../org/lenskit/data/entities/EntityFactory.html#rating-long-long-double-"><code>EntityFactory.rating(long, long, double)</code></a></span></div>
+public static&#xA0;<a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a>&#xA0;create(long&#xA0;uid,
+                                         long&#xA0;iid,
+                                         double&#xA0;rating)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;<span class="deprecationComment">Use <a href="../../../../org/lenskit/data/entities/EntityFactory.html#rating-long-long-double-"><code>EntityFactory.rating(long, long, double)</code></a></span></div>
 <div class="block"><p>Create a new rating object with no timestamp.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -320,12 +320,12 @@ public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" ti
 <li class="blockList">
 <h4>create</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a>&nbsp;create(long&nbsp;uid,
-                                         long&nbsp;iid,
-                                         double&nbsp;rating,
-                                         long&nbsp;ts)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../org/lenskit/data/entities/EntityFactory.html#rating-long-long-double-long-"><code>EntityFactory.rating(long, long, double, long)</code></a></span></div>
-<div class="block"><p>Create a new rating object. <p> In order to prevent computation errors from producing unintended unrate events, this method cannot be used to create an unrate event. Instead, use <a href="../../../../org/lenskit/data/ratings/Rating.html#createUnrate-long-long-long-"><code>createUnrate(long, long, long)</code></a>. </p></p></div>
+public static&#xA0;<a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a>&#xA0;create(long&#xA0;uid,
+                                         long&#xA0;iid,
+                                         double&#xA0;rating,
+                                         long&#xA0;ts)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;<span class="deprecationComment">Use <a href="../../../../org/lenskit/data/entities/EntityFactory.html#rating-long-long-double-long-"><code>EntityFactory.rating(long, long, double, long)</code></a></span></div>
+<div class="block"><p>Create a new rating object. </p><p> In order to prevent computation errors from producing unintended unrate events, this method cannot be used to create an unrate event. Instead, use <a href="../../../../org/lenskit/data/ratings/Rating.html#createUnrate-long-long-long-"><code>createUnrate(long, long, long)</code></a>. </p><p></p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>uid</code> - The user ID.</dd>
@@ -346,10 +346,10 @@ public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" ti
 <li class="blockList">
 <h4>createUnrate</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a>&nbsp;createUnrate(long&nbsp;uid,
-                                               long&nbsp;iid,
-                                               long&nbsp;ts)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Unrates have gone away.</span></div>
+public static&#xA0;<a href="../../../../org/lenskit/data/ratings/Rating.html" title="class in org.lenskit.data.ratings">Rating</a>&#xA0;createUnrate(long&#xA0;uid,
+                                               long&#xA0;iid,
+                                               long&#xA0;ts)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;<span class="deprecationComment">Unrates have gone away.</span></div>
 <div class="block"><p>Create a an unrate object.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -367,7 +367,7 @@ public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>newBuilder</h4>
-<pre>public static&nbsp;<a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings">RatingBuilder</a>&nbsp;newBuilder()</pre>
+<pre>public static&#xA0;<a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings">RatingBuilder</a>&#xA0;newBuilder()</pre>
 <div class="block"><p>Create a new rating builder.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -381,16 +381,16 @@ public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getUserId</h4>
-<pre>public&nbsp;long&nbsp;getUserId()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/lenskit/data/events/Event.html#getUserId--">Event</a></code></span></div>
+<pre>public&#xA0;long&#xA0;getUserId()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&#xA0;<code><a href="../../../../org/lenskit/data/events/Event.html#getUserId--">Event</a></code></span></div>
 <div class="block"><p>Get the ID of the user responsible for the event.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/events/Event.html#getUserId--">getUserId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/events/Event.html" title="interface in org.lenskit.data.events">Event</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/events/Event.html#getUserId--">getUserId</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/events/Event.html" title="interface in org.lenskit.data.events">Event</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/ratings/Preference.html#getUserId--">getUserId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/ratings/Preference.html" title="interface in org.lenskit.data.ratings">Preference</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/ratings/Preference.html#getUserId--">getUserId</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/ratings/Preference.html" title="interface in org.lenskit.data.ratings">Preference</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The event&rsquo;s user ID.</dd>
+<dd>The event&#x2019;s user ID.</dd>
 </dl>
 </li>
 </ul>
@@ -400,14 +400,14 @@ public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getItemId</h4>
-<pre>public&nbsp;long&nbsp;getItemId()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/lenskit/data/events/Event.html#getItemId--">Event</a></code></span></div>
+<pre>public&#xA0;long&#xA0;getItemId()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&#xA0;<code><a href="../../../../org/lenskit/data/events/Event.html#getItemId--">Event</a></code></span></div>
 <div class="block"><p>Get the item ID.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/events/Event.html#getItemId--">getItemId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/events/Event.html" title="interface in org.lenskit.data.events">Event</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/events/Event.html#getItemId--">getItemId</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/events/Event.html" title="interface in org.lenskit.data.events">Event</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/ratings/Preference.html#getItemId--">getItemId</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/ratings/Preference.html" title="interface in org.lenskit.data.ratings">Preference</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/ratings/Preference.html#getItemId--">getItemId</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/ratings/Preference.html" title="interface in org.lenskit.data.ratings">Preference</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The item ID of the event.</dd>
 </dl>
@@ -419,12 +419,12 @@ public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getTimestamp</h4>
-<pre>public&nbsp;long&nbsp;getTimestamp()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/lenskit/data/events/Event.html#getTimestamp--">Event</a></code></span></div>
+<pre>public&#xA0;long&#xA0;getTimestamp()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&#xA0;<code><a href="../../../../org/lenskit/data/events/Event.html#getTimestamp--">Event</a></code></span></div>
 <div class="block"><p>Get the event timestamp. A timestamp of -1 indicates that the event has no timestamp; such events should generally be considered to happen infinitely long ago.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/events/Event.html#getTimestamp--">getTimestamp</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/events/Event.html" title="interface in org.lenskit.data.events">Event</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/events/Event.html#getTimestamp--">getTimestamp</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/events/Event.html" title="interface in org.lenskit.data.events">Event</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The event timestamp, or -1 if there is no timestamp.</dd>
 </dl>
@@ -437,8 +437,8 @@ public static&nbsp;<a href="../../../../org/lenskit/data/ratings/Rating.html" ti
 <li class="blockList">
 <h4>hasValue</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
-public&nbsp;boolean&nbsp;hasValue()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Unrates have gone away.</span></div>
+public&#xA0;boolean&#xA0;hasValue()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&#xA0;<span class="deprecationComment">Unrates have gone away.</span></div>
 <div class="block"><p>Query whether this rating has a value. Ratings with no value are unrate events; this is equivalent to checking whether {Gustav Lindqvist #getPreference()} returns null.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -452,11 +452,11 @@ public&nbsp;boolean&nbsp;hasValue()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getValue</h4>
-<pre>public&nbsp;double&nbsp;getValue()</pre>
+<pre>public&#xA0;double&#xA0;getValue()</pre>
 <div class="block"><p>Get the rating value.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/ratings/Preference.html#getValue--">getValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/ratings/Preference.html" title="interface in org.lenskit.data.ratings">Preference</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/ratings/Preference.html#getValue--">getValue</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/ratings/Preference.html" title="interface in org.lenskit.data.ratings">Preference</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>double The rating value, or <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true#NaN" title="class or interface in java.lang"><code>Double.NaN</code></a> if the rating has no value.</dd>
 </dl>
@@ -468,12 +468,12 @@ public&nbsp;boolean&nbsp;hasValue()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getTypedAttributeNames</h4>
-<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/lenskit/data/entities/TypedName.html" title="class in org.lenskit.data.entities">TypedName</a>&lt;?&gt;&gt;&nbsp;getTypedAttributeNames()</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/lenskit/data/entities/Entity.html#getTypedAttributeNames--">Entity</a></code></span></div>
+<pre>public&#xA0;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="../../../../org/lenskit/data/entities/TypedName.html" title="class in org.lenskit.data.entities">TypedName</a>&lt;?&gt;&gt;&#xA0;getTypedAttributeNames()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&#xA0;<code><a href="../../../../org/lenskit/data/entities/Entity.html#getTypedAttributeNames--">Entity</a></code></span></div>
 <div class="block"><p>Get the attributes in this entity.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/entities/Entity.html#getTypedAttributeNames--">getTypedAttributeNames</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/entities/Entity.html" title="interface in org.lenskit.data.entities">Entity</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/entities/Entity.html#getTypedAttributeNames--">getTypedAttributeNames</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/entities/Entity.html" title="interface in org.lenskit.data.entities">Entity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -483,12 +483,12 @@ public&nbsp;boolean&nbsp;hasValue()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>hasAttribute</h4>
-<pre>public&nbsp;boolean&nbsp;hasAttribute(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/lenskit/data/entities/Entity.html#hasAttribute-java.lang.String-">Entity</a></code></span></div>
+<pre>public&#xA0;boolean&#xA0;hasAttribute(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&#xA0;name)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&#xA0;<code><a href="../../../../org/lenskit/data/entities/Entity.html#hasAttribute-java.lang.String-">Entity</a></code></span></div>
 <div class="block"><p>Check if the entity has a field with a particular name.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/entities/Entity.html#hasAttribute-java.lang.String-">hasAttribute</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/entities/Entity.html" title="interface in org.lenskit.data.entities">Entity</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/entities/Entity.html#hasAttribute-java.lang.String-">hasAttribute</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/entities/Entity.html" title="interface in org.lenskit.data.entities">Entity</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>name</code> - The field name to look for.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -503,16 +503,16 @@ public&nbsp;boolean&nbsp;hasValue()</pre>
 <li class="blockList">
 <h4>maybeGet</h4>
 <pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;maybeGet(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;attr)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../org/lenskit/data/entities/Entity.html#maybeGet-java.lang.String-">Entity</a></code></span></div>
+public&#xA0;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&#xA0;maybeGet(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&#xA0;attr)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&#xA0;<code><a href="../../../../org/lenskit/data/entities/Entity.html#maybeGet-java.lang.String-">Entity</a></code></span></div>
 <div class="block"><p>Get the value of a possibly-missing attribute by name.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/entities/Entity.html#maybeGet-java.lang.String-">maybeGet</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/lenskit/data/entities/Entity.html" title="interface in org.lenskit.data.entities">Entity</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/entities/Entity.html#maybeGet-java.lang.String-">maybeGet</a></code>&#xA0;in interface&#xA0;<code><a href="../../../../org/lenskit/data/entities/Entity.html" title="interface in org.lenskit.data.entities">Entity</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>attr</code> - The attribute name.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The attribute&rsquo;s value, or <code>null</code> if it is not present.</dd>
+<dd>The attribute&#x2019;s value, or <code>null</code> if it is not present.</dd>
 </dl>
 </li>
 </ul>
@@ -522,7 +522,7 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.h
 <ul class="blockList">
 <li class="blockList">
 <h4>copyBuilder</h4>
-<pre>public&nbsp;<a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings">RatingBuilder</a>&nbsp;copyBuilder()</pre>
+<pre>public&#xA0;<a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings">RatingBuilder</a>&#xA0;copyBuilder()</pre>
 <div class="block"><p>Create a new rating builder that will build a copy of this rating.</p></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -536,10 +536,10 @@ public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.h
 <ul class="blockListLast">
 <li class="blockList">
 <h4>equals</h4>
-<pre>public&nbsp;boolean&nbsp;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;obj)</pre>
+<pre>public&#xA0;boolean&#xA0;equals(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&#xA0;obj)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../../org/lenskit/data/entities/AbstractEntity.html#equals-java.lang.Object-">equals</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/lenskit/data/entities/AbstractEntity.html" title="class in org.lenskit.data.entities">AbstractEntity</a></code></dd>
+<dd><code><a href="../../../../org/lenskit/data/entities/AbstractEntity.html#equals-java.lang.Object-">equals</a></code>&#xA0;in class&#xA0;<code><a href="../../../../org/lenskit/data/entities/AbstractEntity.html" title="class in org.lenskit.data.entities">AbstractEntity</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -574,15 +574,15 @@ hljs.initHighlightingOnLoad();
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/lenskit/data/ratings/PreferenceDomainBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../org/lenskit/data/ratings/PreferenceDomainBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Prev&#xA0;Class</span></a></li>
+<li><a href="../../../../org/lenskit/data/ratings/RatingBuilder.html" title="class in org.lenskit.data.ratings"><span class="typeNameLink">Next&#xA0;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/lenskit/data/ratings/Rating.html" target="_top">Frames</a></li>
-<li><a href="Rating.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="Rating.html" target="_top">No&#xA0;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
-<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+<li><a href="../../../../allclasses-noframe.html">All&#xA0;Classes</a></li>
 </ul>
 <div>
 <script type="text/javascript"><!--
@@ -598,16 +598,16 @@ hljs.initHighlightingOnLoad();
 </div>
 <div>
 <ul class="subNavList">
-<li>Summary:&nbsp;</li>
-<li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.org.lenskit.data.entities.AbstractEntity">Field</a>&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Summary:&#xA0;</li>
+<li>Nested&#xA0;|&#xA0;</li>
+<li><a href="#fields.inherited.from.class.org.lenskit.data.entities.AbstractEntity">Field</a>&#xA0;|&#xA0;</li>
+<li>Constr&#xA0;|&#xA0;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
-<li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li>Detail:&#xA0;</li>
+<li>Field&#xA0;|&#xA0;</li>
+<li>Constr&#xA0;|&#xA0;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -615,5 +615,21 @@ hljs.initHighlightingOnLoad();
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-</body>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.ekstrandom.net/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.ekstrandom.net/piwik/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt=""></p></noscript>
+<!-- End Piwik Code --></body>
 </html>

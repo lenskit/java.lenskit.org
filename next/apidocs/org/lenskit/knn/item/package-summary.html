@@ -42,15 +42,15 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/lenskit/knn/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../org/lenskit/knn/item/model/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../org/lenskit/knn/package-summary.html">Prev&#xA0;Package</a></li>
+<li><a href="../../../../org/lenskit/knn/item/model/package-summary.html">Next&#xA0;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/lenskit/knn/item/package-summary.html" target="_top">Frames</a></li>
-<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&#xA0;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_top">
-<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+<li><a href="../../../../allclasses-noframe.html">All&#xA0;Classes</a></li>
 </ul>
 <div>
 <script type="text/javascript"><!--
@@ -69,17 +69,17 @@
 </a></div>
 <!-- ========= END OF TOP NAVBAR ========= -->
 <div class="header">
-<h1 title="Package" class="title">Package&nbsp;org.lenskit.knn.item</h1>
+<h1 title="Package" class="title">Package&#xA0;org.lenskit.knn.item</h1>
 <div class="docSummary">
 <div class="block">Implementation of item-item collaborative filtering.</div>
 </div>
-<p>See:&nbsp;<a href="#package.description">Description</a></p>
+<p>See:&#xA0;<a href="#package.description">Description</a></p>
 </div>
 <div class="contentContainer">
 <ul class="blockList">
 <li class="blockList">
 <table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
-<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Interface Summary</span><span class="tabEnd">&#xA0;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Interface</th>
 <th class="colLast" scope="col">Description</th>
@@ -102,7 +102,7 @@
 </li>
 <li class="blockList">
 <table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
-<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Class Summary</span><span class="tabEnd">&#xA0;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Class</th>
 <th class="colLast" scope="col">Description</th>
@@ -155,7 +155,7 @@
 </li>
 <li class="blockList">
 <table class="typeSummary" border="0" cellpadding="3" cellspacing="0" summary="Annotation Types Summary table, listing annotation types, and an explanation">
-<caption><span>Annotation Types Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Annotation Types Summary</span><span class="tabEnd">&#xA0;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Annotation Type</th>
 <th class="colLast" scope="col">Description</th>
@@ -187,7 +187,7 @@
 <!--   -->
 </a>
 <h2 title="Package org.lenskit.knn.item Description">Package org.lenskit.knn.item Description</h2>
-<div class="block"><p>Implementation of item-item collaborative filtering. <p> The item-item CF implementation is built up of several pieces. The <a href="../../../../org/lenskit/knn/item/model/ItemItemModelProvider.html" title="class in org.lenskit.knn.item.model">model builder</a> takes the rating data and several parameters and components, such as the <a href="../../../../org/grouplens/lenskit/vectors/similarity/VectorSimilarity.html" title="interface in org.grouplens.lenskit.vectors.similarity">similarity function</a> and model size, and computes the <a href="../../../../org/lenskit/knn/item/model/SimilarityMatrixModel.html" title="class in org.lenskit.knn.item.model">similarity matrix</a>. The scorer uses this model to score items. <p> The basic idea of item-item CF is to compute similarities between items, typically based on the users that have rated them, and the recommend items similar to the items that a user likes. The model is then truncated — only the <code>ModelSize</code> most similar items are retained for each item – to save space. Neighborhoods are further truncated when doing recommendation; only the <a href="../../../../org/lenskit/knn/NeighborhoodSize.html" title="annotation in org.lenskit.knn"><code>NeighborhoodSize</code></a> most similar items that a user has rated are used to score any given item. <code>ModelSize</code> is typically larger than <a href="../../../../org/lenskit/knn/NeighborhoodSize.html" title="annotation in org.lenskit.knn"><code>NeighborhoodSize</code></a> to improve the ability of the recommender to find neighbors. <p> When the similarity function is asymmetric ((s(i,j)=s(j,i)) does not hold), some care is needed to make sure that the function is used in the correct direction. Following Deshpande and Karypis, we use the similarity function as (s(j,i)), where (j) is the item the user has purchased or rated and (i) is the item that is going to be scored. This function is then stored in row (i) and column (j) of the matrix. Rows are then truncated (so we retain the <code>ModelSize</code> most similar items for each (i)); this direction differs from Deshpande &amp; Karypis, as row truncation is more efficient &amp; simpler to write within LensKit&rsquo;s item-item algorithm structure, and performs better in offline tests against the MovieLens 1M data set (see <a href="http://dev.grouplens.org/trac/lenskit/wiki/ItemItemTruncateDirection">writeup</a>). Computation against a particular item the user has rated is done down that item&rsquo;s column. <p> The scorers and recommenders actually operate on a generic <a href="../../../../org/lenskit/knn/item/model/ItemItemModel.html" title="interface in org.lenskit.knn.item.model"><code>ItemItemModel</code></a>, so the item-based scoring algorithm can be used against other sources of similarity, such as similarities stored in a database or text index.</p></div>
+<div class="block"><p>Implementation of item-item collaborative filtering. </p><p> The item-item CF implementation is built up of several pieces. The <a href="../../../../org/lenskit/knn/item/model/ItemItemModelProvider.html" title="class in org.lenskit.knn.item.model">model builder</a> takes the rating data and several parameters and components, such as the <a href="../../../../org/grouplens/lenskit/vectors/similarity/VectorSimilarity.html" title="interface in org.grouplens.lenskit.vectors.similarity">similarity function</a> and model size, and computes the <a href="../../../../org/lenskit/knn/item/model/SimilarityMatrixModel.html" title="class in org.lenskit.knn.item.model">similarity matrix</a>. The scorer uses this model to score items. </p><p> The basic idea of item-item CF is to compute similarities between items, typically based on the users that have rated them, and the recommend items similar to the items that a user likes. The model is then truncated &#x2014; only the <code>ModelSize</code> most similar items are retained for each item &#x2013; to save space. Neighborhoods are further truncated when doing recommendation; only the <a href="../../../../org/lenskit/knn/NeighborhoodSize.html" title="annotation in org.lenskit.knn"><code>NeighborhoodSize</code></a> most similar items that a user has rated are used to score any given item. <code>ModelSize</code> is typically larger than <a href="../../../../org/lenskit/knn/NeighborhoodSize.html" title="annotation in org.lenskit.knn"><code>NeighborhoodSize</code></a> to improve the ability of the recommender to find neighbors. </p><p> When the similarity function is asymmetric ((s(i,j)=s(j,i)) does not hold), some care is needed to make sure that the function is used in the correct direction. Following Deshpande and Karypis, we use the similarity function as (s(j,i)), where (j) is the item the user has purchased or rated and (i) is the item that is going to be scored. This function is then stored in row (i) and column (j) of the matrix. Rows are then truncated (so we retain the <code>ModelSize</code> most similar items for each (i)); this direction differs from Deshpande &amp; Karypis, as row truncation is more efficient &amp; simpler to write within LensKit&#x2019;s item-item algorithm structure, and performs better in offline tests against the MovieLens 1M data set (see <a href="http://dev.grouplens.org/trac/lenskit/wiki/ItemItemTruncateDirection">writeup</a>). Computation against a particular item the user has rated is done down that item&#x2019;s column. </p><p> The scorers and recommenders actually operate on a generic <a href="../../../../org/lenskit/knn/item/model/ItemItemModel.html" title="interface in org.lenskit.knn.item.model"><code>ItemItemModel</code></a>, so the item-based scoring algorithm can be used against other sources of similarity, such as similarities stored in a database or text index.</p></div>
 </div>
 <!-- ======= START OF BOTTOM NAVBAR ====== -->
 <div class="bottomNav"><a name="navbar.bottom">
@@ -213,15 +213,15 @@ hljs.initHighlightingOnLoad();
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../org/lenskit/knn/package-summary.html">Prev&nbsp;Package</a></li>
-<li><a href="../../../../org/lenskit/knn/item/model/package-summary.html">Next&nbsp;Package</a></li>
+<li><a href="../../../../org/lenskit/knn/package-summary.html">Prev&#xA0;Package</a></li>
+<li><a href="../../../../org/lenskit/knn/item/model/package-summary.html">Next&#xA0;Package</a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?org/lenskit/knn/item/package-summary.html" target="_top">Frames</a></li>
-<li><a href="package-summary.html" target="_top">No&nbsp;Frames</a></li>
+<li><a href="package-summary.html" target="_top">No&#xA0;Frames</a></li>
 </ul>
 <ul class="navList" id="allclasses_navbar_bottom">
-<li><a href="../../../../allclasses-noframe.html">All&nbsp;Classes</a></li>
+<li><a href="../../../../allclasses-noframe.html">All&#xA0;Classes</a></li>
 </ul>
 <div>
 <script type="text/javascript"><!--
@@ -239,5 +239,21 @@ hljs.initHighlightingOnLoad();
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-</body>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//stats.ekstrandom.net/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//stats.ekstrandom.net/piwik/piwik.php?idsite=2&amp;rec=1" style="border:0;" alt=""></p></noscript>
+<!-- End Piwik Code --></body>
 </html>
