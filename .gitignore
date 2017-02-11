@@ -1,5 +1,6 @@
 /_site
 /node_modules
+/_incoming
 Gemfile.lock
 /result
 /_vendor
