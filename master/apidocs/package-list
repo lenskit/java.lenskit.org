@@ -1,7 +1,5 @@
-org.grouplens.lenskit.cli
 org.grouplens.lenskit.collections
 org.grouplens.lenskit.iterative
-org.grouplens.lenskit.scored
 org.grouplens.lenskit.symbols
 org.grouplens.lenskit.transform.clamp
 org.grouplens.lenskit.transform.threshold
