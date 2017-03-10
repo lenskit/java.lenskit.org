@@ -7,7 +7,6 @@ org.grouplens.lenskit.transform.truncate
 org.grouplens.lenskit.util
 org.grouplens.lenskit.util.io
 org.grouplens.lenskit.util.statistics
-org.grouplens.lenskit.vectors
 org.lenskit
 org.lenskit.api
 org.lenskit.baseline
