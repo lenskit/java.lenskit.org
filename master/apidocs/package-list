@@ -39,6 +39,7 @@ org.lenskit.mf.funksvd
 org.lenskit.mf.svd
 org.lenskit.predict
 org.lenskit.predict.ordrec
+org.lenskit.rerank
 org.lenskit.results
 org.lenskit.similarity
 org.lenskit.slopeone
