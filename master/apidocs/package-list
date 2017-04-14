@@ -1,12 +1,7 @@
-org.grouplens.lenskit.collections
 org.grouplens.lenskit.iterative
-org.grouplens.lenskit.symbols
 org.grouplens.lenskit.transform.clamp
 org.grouplens.lenskit.transform.threshold
 org.grouplens.lenskit.transform.truncate
-org.grouplens.lenskit.util
-org.grouplens.lenskit.util.io
-org.grouplens.lenskit.util.statistics
 org.lenskit
 org.lenskit.api
 org.lenskit.baseline
@@ -47,6 +42,7 @@ org.lenskit.transform.normalize
 org.lenskit.transform.quantize
 org.lenskit.util
 org.lenskit.util.collections
+org.lenskit.util.describe
 org.lenskit.util.io
 org.lenskit.util.keys
 org.lenskit.util.math
