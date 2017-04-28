@@ -16,6 +16,7 @@ org.lenskit.data.dao.file
 org.lenskit.data.entities
 org.lenskit.data.output
 org.lenskit.data.ratings
+org.lenskit.data.store
 org.lenskit.eval.crossfold
 org.lenskit.eval.temporal
 org.lenskit.eval.traintest
