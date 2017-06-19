@@ -39,6 +39,14 @@ This list is also available as a [Zotero group collection][zotero].
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
+### 2017
+
+-   F.B. Kharrat, A. Elkhleifi, R. Faiz. 2017. [Recommendation system based contextual analysis of Facebook comment](http://dx.doi.org/10.1109/AICCSA.2016.7945792). In *Proceedings of the 2016 IEEE/ACS 13th International Conference of Computer Systems and Applications (AICCSA)*.
+
+-   Michael D. Ekstrand and Vaibhav Mahant. 2017. [Sturgeon and the Cool Kids: Problems with Top-N Recommender Evaluation](https://md.ekstrandom.net/research/pubs/sturgeon). In *Proceedings of the 30th International Florida Artificial Intelligence Research Society Conference*. AAAI Press.
+
+-   Sushma Channamsetty and Michael D. Ekstrand. 2017. [Recommender Response to Diversity and Popularity Bias in User Profiles](https://md.ekstrandom.net/research/pubs/profile-bias). In *Proceedings of the 30th International Florida Artificial Intelligence Research Society Conference*. AAAI Press.
+
 ### 2016
 
 -   Shuo Chang. 2016. [*Leveraging Collective Intelligence in Recommender System*](http://hdl.handle.net/11299/182725).  Ph.D dissertation, University of Minnesota, Minneapolis, MN, USA.
