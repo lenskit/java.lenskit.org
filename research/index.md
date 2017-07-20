@@ -41,6 +41,10 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2017
 
+-   Michael D. Ekstrand and Maria Soledad Pera. 2017. The Demographics of Cool: Popularity and Demographic Bias in Recommender Evaluation. In *RecSys 2017 Poster Proceedings*.
+
+-   Yuchen Zhao. 2017. [*Recommending Privacy Preferences in Location-Sharing Services*](http://hdl.handle.net/10023/11055). Ph.D thesis, University of St. Andrews, Scotland.
+
 -   F.B. Kharrat, A. Elkhleifi, R. Faiz. 2017. [Recommendation system based contextual analysis of Facebook comment](http://dx.doi.org/10.1109/AICCSA.2016.7945792). In *Proceedings of the 2016 IEEE/ACS 13th International Conference of Computer Systems and Applications (AICCSA)*.
 
 -   Michael D. Ekstrand and Vaibhav Mahant. 2017. [Sturgeon and the Cool Kids: Problems with Top-N Recommender Evaluation](https://md.ekstrandom.net/research/pubs/sturgeon). In *Proceedings of the 30th International Florida Artificial Intelligence Research Society Conference*. AAAI Press.
