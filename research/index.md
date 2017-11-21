@@ -41,6 +41,8 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2017
 
+-   Maria Soledad Pera and Yui-Kai Ng. 2017. [Recommending books to be exchanged online in the absence of wish lists](http://dx.doi.org/10.1002/asi.23978). *Journal of the Association for Information Science and Technology* 
+
 -   Michael D. Ekstrand and Maria Soledad Pera. 2017. The Demographics of Cool: Popularity and Demographic Bias in Recommender Evaluation. In *RecSys 2017 Poster Proceedings*.
 
 -   Yuchen Zhao. 2017. [*Recommending Privacy Preferences in Location-Sharing Services*](http://hdl.handle.net/10023/11055). Ph.D thesis, University of St. Andrews, Scotland.
