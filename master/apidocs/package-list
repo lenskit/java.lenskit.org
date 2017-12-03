@@ -31,8 +31,6 @@ org.lenskit.knn
 org.lenskit.knn.item
 org.lenskit.knn.item.model
 org.lenskit.knn.user
-org.lenskit.mf.funksvd
-org.lenskit.mf.svd
 org.lenskit.predict
 org.lenskit.predict.ordrec
 org.lenskit.rerank
