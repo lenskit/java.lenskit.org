@@ -39,7 +39,13 @@ This list is also available as a [Zotero group collection][zotero].
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
+### 2018
+
+- Michael D. Ekstrand, Mucun Tian, Ion Madrazo Azpiazu, Jennifer D. Ekstrand, Oghenemaro Anuyah, David McNeill, and Maria Soledad Pera. 2018. [All The Cool Kids, How Do They Fit In?: Popularity and Demographic Biases in Recommender Evaluation and Effectiveness](https://md.ekstrandom.net/research/pubs/cool-kids/). To appear in *Proceedings of the Conference on Fairness, Accountability and Transparency*.
+
 ### 2017
+
+- Denis Kotkov, Jari Veijalainen, and Shuaiqiang Wang. 2017 A serendipity-oriented greedy algorithm for recommendations. In *Proceedings of the 13th International conference on web information systems and technologies*, volume 1, pages 32-40. SCITEPRESS, 2017. doi: [10.5220/0006232800320040](http://dx.doi.org/10.5220/0006232800320040).
 
 -   Maria Soledad Pera and Yui-Kai Ng. 2017. [Recommending books to be exchanged online in the absence of wish lists](http://dx.doi.org/10.1002/asi.23978). *Journal of the Association for Information Science and Technology* 
 
