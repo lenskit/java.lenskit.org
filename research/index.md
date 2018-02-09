@@ -41,6 +41,8 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2018
 
+- Toon De Pessemier and Luc Martens. Heart rate monitoring, activity recognition, and recommendation for e-coaching. *Multimedia Tools and Applications*. doi:[10.1007/s11042-018-5640-2](https://dx.doi.org/10.1007/s11042-018-5640-2)
+
 - Michael D. Ekstrand, Mucun Tian, Ion Madrazo Azpiazu, Jennifer D. Ekstrand, Oghenemaro Anuyah, David McNeill, and Maria Soledad Pera. 2018. [All The Cool Kids, How Do They Fit In?: Popularity and Demographic Biases in Recommender Evaluation and Effectiveness](https://md.ekstrandom.net/research/pubs/cool-kids/). To appear in *Proceedings of the Conference on Fairness, Accountability and Transparency*.
 
 ### 2017
@@ -49,7 +51,7 @@ Is your project missing from this list? [Let us know](/connect/).
 
 -   Maria Soledad Pera and Yui-Kai Ng. 2017. [Recommending books to be exchanged online in the absence of wish lists](http://dx.doi.org/10.1002/asi.23978). *Journal of the Association for Information Science and Technology* 
 
--   Michael D. Ekstrand and Maria Soledad Pera. 2017. The Demographics of Cool: Popularity and Demographic Bias in Recommender Evaluation. In *RecSys 2017 Poster Proceedings*.
+-   Michael D. Ekstrand and Maria Soledad Pera. 2017. [The Demographics of Cool: Popularity and Demographic Bias in Recommender Evaluation](https://md.ekstrandom.net/research/pubs/demographics-of-cool). In *RecSys 2017 Poster Proceedings*.
 
 -   Yuchen Zhao. 2017. [*Recommending Privacy Preferences in Location-Sharing Services*](http://hdl.handle.net/10023/11055). Ph.D thesis, University of St. Andrews, Scotland.
 
