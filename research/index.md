@@ -26,6 +26,23 @@ New York, NY, USA, 133-140. DOI=<a
 href="http://dx.doi.org/10.1145/2043932.2043958">10.1145/2043932.2043958</a>.
 </div>
 
+For your convenience, here is the BibTeX:
+
+```bibtex
+@INPROCEEDINGS{LensKit,
+    title = "Rethinking the Recommender Research Ecosystem: Reproducibility, Openness, and {LensKit}",
+    booktitle = "Proceedings of the Fifth {ACM} Conference on Recommender Systems",
+    author = "Ekstrand, Michael D and Ludwig, Michael and Konstan, Joseph A and Riedl, John T",
+    publisher = "ACM",
+    pages = "133--140",
+    series = "RecSys '11",
+    year =  2011,
+    url = "http://doi.acm.org/10.1145/2043932.2043958",
+    conference = "RecSys '11",
+    doi = "10.1145/2043932.2043958"
+}
+```
+
 We would also appreciate it if you could send a PDF and citation for your article to <ekstrand@acm.org>, so we can know where all LensKit is being used.
 
 ## Research Using LensKit
