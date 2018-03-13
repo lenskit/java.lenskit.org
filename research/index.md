@@ -47,11 +47,22 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2017
 
+- Diogo Nicolau. 2017. *Neighborhood Construction through Item Popularity in Collaborative Methods*. M.S. thesis, University of Lisbon - Instituto Superior Técnico
+
 - Denis Kotkov, Jari Veijalainen, and Shuaiqiang Wang. 2017 A serendipity-oriented greedy algorithm for recommendations. In *Proceedings of the 13th International conference on web information systems and technologies*, volume 1, pages 32-40. SCITEPRESS, 2017. doi: [10.5220/0006232800320040](http://dx.doi.org/10.5220/0006232800320040).
 
 -   Maria Soledad Pera and Yui-Kai Ng. 2017. [Recommending books to be exchanged online in the absence of wish lists](http://dx.doi.org/10.1002/asi.23978). *Journal of the Association for Information Science and Technology* 
 
 -   Michael D. Ekstrand and Maria Soledad Pera. 2017. [The Demographics of Cool: Popularity and Demographic Bias in Recommender Evaluation](https://md.ekstrandom.net/research/pubs/demographics-of-cool). In *RecSys 2017 Poster Proceedings*.
+
+-   Marius Lørstad Solvang and Steffen Sand. 2017. [*Video Recommendation Systems: Finding a Suitable Recommendation Approach for an Application Without Sufficient Data*
+](https://www.duo.uio.no/handle/10852/59239). Master thesis, University of Oslo, August 2017.
+
+- C. Sardianos, I. Varlamis, and M. Eirinaki. 2017. Scaling Collaborative Filtering to Large-Scale Bipartite Rating Graphs Using Lenskit and Spark. In 2017 IEEE Third International Conference on Big Data Computing Service and Applications (BigDataService), 70–79. DOI:[10.1109/BigDataService.2017.28](https://dx.doi.org/10.1109/BigDataService.2017.28).
+
+-  Harris Papadakis, Costas Panagiotakis, and Paraskevi Fragopoulou. 2017. SCoR: A Synthetic Coordinate based Recommender system. Expert Syst. Appl. 79, (August 2017), 8–19. DOI:[10.1016/j.eswa.2017.02.025](https://dx.doi.org/10.1016/j.eswa.2017.02.025).
+
+- Rajani Chulyadyo and Philippe Leray. 2017. [A Framework for Offline Evaluation of Recommender Systems based on Probabilistic Relational Models](https://hal.archives-ouvertes.fr/hal-01666117/). Laboratoire des Sciences du Numérique de Nantes; Capacités SAS. Technical report HAL-01666117.
 
 -   Yuchen Zhao. 2017. [*Recommending Privacy Preferences in Location-Sharing Services*](http://hdl.handle.net/10023/11055). Ph.D thesis, University of St. Andrews, Scotland.
 
