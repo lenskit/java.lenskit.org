@@ -28,7 +28,7 @@ href="http://dx.doi.org/10.1145/2043932.2043958">10.1145/2043932.2043958</a>.
 
 For your convenience, here is the BibTeX:
 
-```bibtex
+~~~bibtex
 @INPROCEEDINGS{LensKit,
     title = "Rethinking the Recommender Research Ecosystem: Reproducibility, Openness, and {LensKit}",
     booktitle = "Proceedings of the Fifth {ACM} Conference on Recommender Systems",
@@ -41,7 +41,7 @@ For your convenience, here is the BibTeX:
     conference = "RecSys '11",
     doi = "10.1145/2043932.2043958"
 }
-```
+~~~
 
 We would also appreciate it if you could send a PDF and citation for your article to <ekstrand@acm.org>, so we can know where all LensKit is being used.
 
