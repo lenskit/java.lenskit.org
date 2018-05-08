@@ -58,6 +58,8 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2018
 
+-   David Shriver. 2018. [Assessing the Quality and Stability of Recommender Systems](https://digitalcommons.unl.edu/computerscidiss/147). M.S. thesis, University of Nebraska - Lincoln.
+
 - Toon De Pessemier and Luc Martens. Heart rate monitoring, activity recognition, and recommendation for e-coaching. *Multimedia Tools and Applications*. doi:[10.1007/s11042-018-5640-2](https://dx.doi.org/10.1007/s11042-018-5640-2)
 
 - Michael D. Ekstrand, Mucun Tian, Ion Madrazo Azpiazu, Jennifer D. Ekstrand, Oghenemaro Anuyah, David McNeill, and Maria Soledad Pera. 2018. [All The Cool Kids, How Do They Fit In?: Popularity and Demographic Biases in Recommender Evaluation and Effectiveness](https://md.ekstrandom.net/research/pubs/cool-kids/). To appear in *Proceedings of the Conference on Fairness, Accountability and Transparency*.
