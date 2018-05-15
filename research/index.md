@@ -101,6 +101,8 @@ Is your project missing from this list? [Let us know](/connect/).
 
 -   Safair Najafi and Ziad Salam. 2016. [*Evaluating Prediction Accuracy for Collaborative Filtering Algorithms in Recommender Systems*](http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A927356). Degree Project in Technology, KTH Royal Institute of Technology School of Computer Science and Communication, Stockholm, Sweden.
 
+-   Lucas Colucci, Prachi Doshi, Kun-Lin Lee, Jiajie Liang, Yin Lin, Ishan Vashishtha, Jia Zhang, and Alvin Jude. 2016. [Evaluating Item-Item Similarity Algorithms for Movies](https://doi.org/10.1145/2851581.2892362). In _Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems (CHI EA '16)_.
+
 -   Penghua Yu, Lanfen Lin, and Yuangang Yao. 2016. A Novel Framework to Process the Quantity and Quality of User Behavior Data in Recommender Systems. In *Proceedings of the 17th International Conference on Web-Age Information Management*; published by Springer-Verlag as *Lecture Notes in Computer Science* vol. 9658 pp. 231–243. DOI=[10.1007/978-3-319-39937-9_18](http://dx.doi.org/10.1007/978-3-319-39937-9_18).
 
 -   Toon de Pessemier, Jeroen Dhondt, and Luc Martens. 2016. Hybrid group recommendations for a travel service. *Multimedia Tools and Applications* vol. 75 no. 5 (March 2016). Springer. DOI=[10.1007/s11042-016-3265-x](http://dx.doi.org/10.1007/s11042-016-3265-x).
