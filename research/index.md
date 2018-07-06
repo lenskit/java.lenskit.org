@@ -58,6 +58,10 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2018
 
+-   Yongjian Yang, Yuanbo Xu, En Wang, Jiayu Han, and Zhiwen Yu. 2018. Improving Existing Collaborative Filtering Recommendations via Serendipity-Based Algorithm. *IEEE Trans. Multimedia* **20**, 7 (July 2018), pp. 1888–1900.
+
+-   Denis Kotkov. 2018. [*Serendipity in Recommender Systems*](http://urn.fi/URN:ISBN:978-951-39-7438-1). Thesis, *Jyväskylä Studies in Computing* vol. 281.
+
 -   David Shriver. 2018. [Assessing the Quality and Stability of Recommender Systems](https://digitalcommons.unl.edu/computerscidiss/147). M.S. thesis, University of Nebraska - Lincoln.
 
 - Toon De Pessemier and Luc Martens. Heart rate monitoring, activity recognition, and recommendation for e-coaching. *Multimedia Tools and Applications*. doi:[10.1007/s11042-018-5640-2](https://dx.doi.org/10.1007/s11042-018-5640-2)
