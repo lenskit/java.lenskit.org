@@ -58,6 +58,8 @@ Is your project missing from this list? [Let us know](/connect/).
 
 ### 2018
 
+-   Ludovik Coba, Panagiotis Symeonidis, and Markus Zanker. 2018. Replicating and Improving Top-N Recommendations in Open Source Packages. In *Proceedings of the 8th International Conference on Web Intelligence, Mining and Semantics* (WIMS ’18), 40:1–40:7. doi:[10.1145/3227609.3227671](http://dx.doi.org/10.1145/3227609.3227671)
+
 -   Yongjian Yang, Yuanbo Xu, En Wang, Jiayu Han, and Zhiwen Yu. 2018. Improving Existing Collaborative Filtering Recommendations via Serendipity-Based Algorithm. *IEEE Trans. Multimedia* **20**, 7 (July 2018), pp. 1888–1900.
 
 -   Denis Kotkov. 2018. [*Serendipity in Recommender Systems*](http://urn.fi/URN:ISBN:978-951-39-7438-1). Thesis, *Jyväskylä Studies in Computing* vol. 281.
