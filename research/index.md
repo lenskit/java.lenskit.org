@@ -47,16 +47,15 @@ We would also appreciate it if you could send a PDF and citation for your articl
 
 ## Research Using LensKit
 
-[zotero]: https://www.zotero.org/groups/lenskit/items/collectionKey/MQR6B47C
-
 LensKit has been used in a number of published papers.  In this list, we have attempted to collect published research that has used the LensKit software in some capacity.
-This list is also available as a [Zotero group collection][zotero].
 
 <aside markdown="span">
 Is your project missing from this list? [Let us know](/connect/).
 </aside>
 
 ### 2018
+
+-   Denis Kotkov, Jari Veijalainen, and Shuaiqiang Wang. 2018. How does serendipity affect diversity in recommender systems? A serendipity-oriented greedy algorithm. <cite>Computing</cite> (December 2018). DOI:[10.1007/s00607-018-0687-5](https://doi.org/10.1007/s00607-018-0687-5)
 
 -   Ludovik Coba, Panagiotis Symeonidis, and Markus Zanker. 2018. Replicating and Improving Top-N Recommendations in Open Source Packages. In *Proceedings of the 8th International Conference on Web Intelligence, Mining and Semantics* (WIMS ’18), 40:1–40:7. doi:[10.1145/3227609.3227671](http://dx.doi.org/10.1145/3227609.3227671)
 
